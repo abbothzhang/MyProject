@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50576F2A1B915D9E003649B8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50576F291B915D9E003649B8 /* AVFoundation.framework */; };
+		50576F2C1B915DA5003649B8 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50576F2B1B915DA5003649B8 /* OpenGLES.framework */; };
+		50576F2E1B915DB0003649B8 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50576F2D1B915DB0003649B8 /* GLKit.framework */; };
 		50FD334A1B905590001B9B6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD32E31B905590001B9B6B /* AppDelegate.m */; };
 		50FD334B1B905590001B9B6B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50FD32E41B905590001B9B6B /* LaunchScreen.xib */; };
 		50FD334C1B905590001B9B6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50FD32E61B905590001B9B6B /* Main.storyboard */; };
@@ -67,6 +70,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		50576F291B915D9E003649B8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		50576F2B1B915DA5003649B8 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		50576F2D1B915DB0003649B8 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		50FD32B81B905556001B9B6B /* MirrorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MirrorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50FD32D11B905556001B9B6B /* MirrorDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MirrorDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		50FD32E21B905590001B9B6B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -160,6 +166,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50576F2E1B915DB0003649B8 /* GLKit.framework in Frameworks */,
+				50576F2C1B915DA5003649B8 /* OpenGLES.framework in Frameworks */,
+				50576F2A1B915D9E003649B8 /* AVFoundation.framework in Frameworks */,
 				50FD33581B905590001B9B6B /* libglass_release.a in Frameworks */,
 				50FD33571B905590001B9B6B /* libCosmeticSDK.a in Frameworks */,
 			);
@@ -390,6 +399,9 @@
 		50FD337B1B90579D001B9B6B /* SupportFile */ = {
 			isa = PBXGroup;
 			children = (
+				50576F2D1B915DB0003649B8 /* GLKit.framework */,
+				50576F2B1B915DA5003649B8 /* OpenGLES.framework */,
+				50576F291B915D9E003649B8 /* AVFoundation.framework */,
 				50FD32F21B905590001B9B6B /* ViewController.h */,
 				50FD32F31B905590001B9B6B /* ViewController.m */,
 				50FD32EC1B905590001B9B6B /* main.m */,
