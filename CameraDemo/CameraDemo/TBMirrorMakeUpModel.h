@@ -11,7 +11,8 @@
 @interface TBMirrorMakeUpModel : NSObject
 
 @property (nonatomic,strong) NSString           *action;//睫毛、口红等区分
-@property (nonatomic,strong) NSString           *modelFilePath;//模型文件地址
+//@property (nonatomic,strong) NSString           *modelFilePath;//模型文件地址
+@property (nonatomic,strong) NSData             *fileData;
 @property (nonatomic,strong) NSString           *cspuId;//模板文件的id
 @property (nonatomic,strong) NSString           *cspuVersion;//模板版本号
 @property (nonatomic) double                    weight;//化妆效果的比重

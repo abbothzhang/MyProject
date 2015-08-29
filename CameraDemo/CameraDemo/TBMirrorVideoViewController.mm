@@ -275,7 +275,7 @@ const int height = 480;
     int realCount = 0;
     for (int i = 0; i < totalCount; i++) {
         TBMirrorMakeUpModel* model = (TBMirrorMakeUpModel*)[models objectAtIndex:i];
-        NSData *templateData = [NSData dataWithContentsOfFile:model.modelFilePath];
+        NSData *templateData = model.fileData;//[NSData dataWithContentsOfFile:model.modelFilePath];
         if (!templateData || [templateData length] == 0) {
             continue;
         }
