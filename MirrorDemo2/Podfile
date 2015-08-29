@@ -1,0 +1,324 @@
+# coding: utf-8
+require 'cocoapods-timeconsuming'
+require 'cocoapods-multithread-installpod'
+require 'cocoapods-podtarget-optimize'
+
+source "http://gitlab.alibaba-inc.com/wireless/tbmainclientspecs.git"
+source "http://gitlab.alibaba-inc.com/alipods/specs.git"
+source "git@gitlab.alibaba-inc.com:alipods/specs-mirror.git"
+
+#platform :ios 
+
+#target 'TBMainClient' do
+#    platform:ios, '6.0'
+#    
+#    # ------------------------------二方、三方库------------------------------------------ #
+#    #Alog中 LumberjackConsole 依赖
+#    pod  'CocoaLumberjack',         '1.9.2', :configurations => ['Debug']
+#    # @晨燕 ，当前否处于debug模式的开关
+#    pod 'TBDebugModeSwitch',        '1.0.0.1'
+#    
+#    pod  'JSONKit',     '2.1.0'
+#    pod 'ZipArchive',   '1.3.0'
+#    # @戴码
+#    pod  'UserTrack',     '4.3.6.6'
+#    # @隐风
+#    pod  'WindVane',     '6.4.0.15'
+#    pod  'WindVaneFrameworkTBExt',     '6.0.0-build-1'
+#    # @一豪 @贾复
+#    pod  'WebP',     '2.0.0'
+#    
+#    pod  'OpenSSL',     '1.0.1'
+#    # @慎道
+#    pod  'munionSDK',     '1.4.1.2'
+#    
+#    # @苍至
+#    pod  'NetworkSDK',     '4.7.0.11'
+#    # @苍至
+#    pod  'MtopSDK',     '1.4.1.11'
+#    # @逸尘
+#    pod  'SecurityGuardSDK',     '2.6.21'
+#    pod  'TBSecuritySDK',     '2.6.21'
+#    # @四海
+#    pod  'MtopWVPlugin',     '1.2.0.12'
+#    pod  'TBMstore',     '1.2.0.6'
+#    # @卢克
+#    pod  'TBJSONModel',     '0.0.2'
+#    pod  'TBConnection',     '0.3.0.1'
+#    # @贾复
+#    pod  'SDWebImage',     '3.7.0.18'
+#    pod  'TBCDNImage',     '4.0.0.13'
+#    
+#    #SVProgressHUD为原TBUtility里的依赖
+#    pod  'SVProgressHUD', '~>0.9'
+#    pod  'TBUtility',     '2.18.1.1'
+#    
+#    pod  'TBSDK_Framework',     '3.7.0.1'
+#    
+#    
+#    pod  'TBUIKit',     '1.22.1.3'
+#    
+#    
+#    pod  'TBConfigCenter',     '1.3.1.13'
+#    
+#    pod  'TaobaoPlugin',     '3.4.0.3'
+#    # @亿刀
+#    pod  'CrashReporterSDK',     '1.1.0-build-2'
+#    
+#    pod  'TBMatrix',     '3.5.0.4'
+#    
+#    pod  'TBAccsSDK',     '1.2.0.6'
+#    # @锦超
+#    pod  'TBLocationSDK',     '2.6.1.7'
+#    
+#    pod  'TBShortURL',     '2.0.0-build-1'
+#    
+#    # hotpatch @君展
+#    pod  'TBHotpatchSDK',     '2.1.0.5'
+#    
+#    pod  'TBHotpatchService',     '2.0.0.5'
+#    
+#    # @君展
+#    pod  'AppMonitor',     '1.2.0.8'
+#    pod  'AppMonitorBundle',     '1.1.0.2'
+#    pod  'ALog',    '1.3.0.2', :configurations => ['Debug']
+#    # @玄聪
+#    pod  'TBSyncSDK',     '1.1.0.9'
+#    # @守冲
+#    pod  'SpeechRecognizer',     '2.0.0.6'
+#    # @亿刀
+#    pod  'PushCenterSDK',     '3.5.0.11'
+#    
+#    
+#    pod  'TBAppUISkeleton',     '1.22.1.6'
+#    
+#    
+#    pod  'TBAppEnvironment',     '1.26.3.4'
+#    
+#    # @诺夏
+#    pod  'ShareSDK',     '5.5.0.2'
+#    # 分享 @诺夏
+#    pod  'TBShareBundle',     '2.8.0.9'
+#    
+#    #React-Native
+#    pod  'AliReactNative',     '1.2.0'
+#    pod  'WindVane-React',     '0.1.11.6'
+#    pod  'TBReactModuleSDK',     '1.0.0.15'
+#    pod  'TBReactUI',     '0.0.1.12'
+#    # ------------------------------二方、三方库------------------------------------------ #
+#    
+#    # ------------------------------业务Bundle ------------------------------------------ #
+#    # webview @隐风
+#    
+#    pod  'TBWebViewBundle',     '2.9.0.25'
+#    
+#    
+#    # 旺旺 @星风
+#    pod  'TBWangwang',     '2.16.3.3'
+#    
+#    # 首页 @兮瓜
+#    pod  'TBHomePage',     '3.2.2.3'
+#    pod  'PageKit',     '1.5.1.3'
+#    
+#    # #登录  @寻弦
+#    pod  'AlipaySDK',     '2.5.2'
+#    pod  'AliSSOSDK',     '1.1.0-build-2'
+#    pod  'AliUniversalAccount',     '1.7.1.0'
+#    
+#    pod  'TBLogin_Framework',     '1.13.0.3'
+#    
+#    
+#    # # 购物车 @伊耆, 依赖了webview
+#    pod  'TBCart',     '1.10.0.5'
+#    pod  'TBCartSDK',     '1.5.0.2'
+#    pod  'TBCartUI',     '1.5.0.2'
+#    pod  'TBTradeDebug',     '1.0.1.2', :configurations => ['Debug']
+#    pod  'TBTradeLogger',     '1.0.0.18'
+#    
+#    # # 我的淘宝 @九米
+#    pod  'TBMyTaobao',     '3.0.0.6'
+#    
+#    # #扫码  @子泰
+#    pod  'HuoYan',     '4.5.0.16'
+#    pod  'TBScanCode',     '1.17.0.4'
+#    pod  'TBDecodeSDK',    '0.2.0.4'
+#    
+#    # #AR  @虬枝
+#    pod  'TBARContainer',    '1.0.0'
+#    
+#    # 音频上传 @子泰
+#    pod  'TBAudio',     '1.3.0.1'
+#    
+#    # #点点 @九旋
+#    pod  'TBCity',     '3.8.1.1'
+#    
+#    # #聚划算 @敛心
+#    pod  'TBJuhuasuan',     '4.0.0.7'
+#    
+#    # #tmall @宵练
+#    pod  'AliAdapter',     '1.0.0.4'
+#    pod  'tmallplugin4taobao',     '2.0.0.6'
+#    
+#    # # 抢购 @玄叶
+#    pod  'TBQiangGou',     '2.5.0.4'
+#    
+#    # # 附近 @闻西，
+#    pod  'PinYin4Objc',     '1.1.1'
+#    pod  'TBNearBy',     '1.15.0.3'
+#    
+#    # # @闻西，导购业务
+#    pod  'TBGuide',     '1.7.1.1'
+#    
+#    # #微淘 @淘云, 依赖了webview
+#    pod  'TBWeSDK',     '1.8.1.3'
+#    pod  'TBWeApp',     '3.7.0.2'
+#    
+#    pod  'WeAppSDK',     '3.7.0.16'
+#    
+#    pod  'SocializeSDK',     '1.14.0.7'
+#    pod  'TBWeiTao',     '2.17.2.11'
+#    
+#    # # 店铺 @凌言, 依赖了weapp
+#    pod  'TBShopSDK',     '0.0.1.5'
+#    pod  'TBShop',     '3.7.0.10'
+#    
+#    # # 详情 @息衍, 依赖了weitao，无法单独编译通过
+#    pod  'TBDetailSDK',     '2.4.0.6'
+#    pod  'TBTradeDetail',     '2.9.0.15'
+#    pod  'TBDetailCore',     '0.4.0.5'
+#    pod  'tbtradeskusdk',     '0.6.0.2'
+#    # # 下单，@学诚
+#    pod  'TBJoinerKit',     '1.0.0.1'
+#    pod  'TBBuy',     '2.4.0.4'
+#    pod  'TBBuySDK',     '2.0.0.4'
+#    pod  'TBBuyCore',     '1.4.0.1'
+#    pod  'TBTradeSDK',     '1.4.0.2'
+#    
+#    
+#    # # 搜索&图搜 @桃子，@龙冥
+#    
+#    pod  'TBSearch',     '4.0.0.7'
+#    pod  'TBPhotoSearch',     '1.5.0.7'
+#    
+#    pod  'Rainbow',     '1.5.0.2'
+#    
+#    # # 头条    @冥水,依赖了 PSTCollectionView及SocializSDK， 无法单独编译通过
+#    pod  'TBHeadlines',     '3.0.1.3'
+#    
+#    # # 卡券 @玄聪
+#    pod  'TBActivitys',     '2.10.0.9'
+#    
+#    # # 吧啦, @赤壁,   依赖了weitao，单独编译无法通过
+#    
+#    pod  'TBOcean',     '1.0.1.12'
+#    pod  'UIStyleSheetLib',     '1.0.0.35'
+#    # # 振屏 @电魂
+#    pod  'TBLol',     '1.4.0.12'
+#    
+#    # # 订单 @婉谦
+#    pod  'TBOrderSDK',  '1.0.0.11'
+#    pod  'TBOrder',     '1.9.0.16'
+#    
+#    # # 物流 @武鳞
+#    pod  'logisticsdetail',     '2.3.1.0'
+#    
+#    # # big @磐若
+#    pod  'TBBig',     '1.13.0.15'
+#    
+#    # # 淘日历    @逸书
+#    pod  'TBCalendar',     '1.0.1.4'
+#    
+#    # # 站外授权， @寻弦
+#    pod  'TBOpenKit',     '1.2.0.3'
+#    
+#    # #  ISV开放授权，@诺夏
+#    pod  'tbwopc',     '2.6.0.4'
+#    pod  'WopcSDK',     '1.5.0.2'
+#    
+#    # # 营销 @诺夏
+#    pod  'TBMarketingBundle',     '2.0.0-build-1'
+#    
+#    # #  彩蛋显示、页面拦截引擎 @诺夏
+#    pod  'PirateEngineSDK',     '1.0.1.2'
+#    pod  'TBPirateEngine',     '1.3.0.4'
+#    
+#    # 通讯录分享 @九米
+#    pod  'TBContact',     '2.0.0.5'
+#    
+#    #微淘 @逸行
+#    pod  'TBWeAppAdapter',     '3.7.0.3'
+#    
+#    
+#    #视频拍摄   @婉谦 来往的GPUImage 趣拍必须要依赖这个
+#    pod  'LWGPUImage',  '0.1.2'
+#    pod  'QupaiSDK',     '0.0.5'
+#    pod  'TBMultimedia',     '1.0.0.11'
+#    
+#    #abtest sdk @容隽
+#    pod  'TBABTest',     '1.3.0.1'
+#    #mtopext是一个全新的sdk，提供新的mtop调用接口，也兼容老的接口，该sdk新增拉起登入页，缓存mtop请求等功能
+#    #@江滔
+#    
+#    pod  'mtopext',     '1.3.0.58'
+#    #性能监控   @吕行
+#    pod  'TBAppStatusMonitor',     '1.1.0.3'
+#    # @萧先
+#    pod  'TBChannel',     '1.2.1.2'
+#    
+#    #分享组件 @诺夏
+#    pod  'TBShareModule',     '1.3.1.1'
+#    
+#    #达人导购 @南知
+#    pod  'TBGuideMan',     '1.5.0.6'
+#    
+#    #互动SDK，互动相关组件统一的接口 @淘路
+#    pod  'interactsdk_core',     '1.4.0.4'
+#    
+#    pod  'interactsdk_publish',     '1.4.0.5'
+#    
+#    #bala @赤壁
+#    pod 'TBGifView', '~> 0.0.1'
+#    
+#    #庐轩
+#    pod  'TBShake',     '1.3.1.4'
+#    
+#    #无线染色平台 洋大,琚雪
+#    pod  'TRemoteDebugger',     '1.1.0.8'
+#    
+#    #收集用户反馈信息 二虎
+#    pod 'TBDiagnose', '1.0.0.1'
+#    pod  'TBInformation',     '1.0.0.4'
+#    
+#    #TBUDPSDK @宗豪
+#    pod  'TBUDPSDK',     '1.1.0.2'
+#    #ACDS @颜垣 @伊耆
+#    pod  'ACDS', IPADemoViewController    '1.2.0.16'
+#    
+#    #优化iOS弱网图片浏览体验 篱悠
+#    pod 'TBSBCDecode' , '1.0.0.1'
+#    
+#    #鹏辉
+#    #pod  'TBMirror',     '0.2.0.3'
+#    #曦宸
+#    pod  'TBPopLayer',     '1.2.0.1'
+#    #庐轩
+#    pod  'NFDiscoverSDK',     '1.0.0.3'
+#    pod 'TBMainClientFramework', '3.14.0-SNAPSHOT'
+#
+#end
+
+#target 'MirrorSDK' do
+    platform:ios, '6.0'
+#    link_with 'Dummy'
+#    pod  'OpenSSL'
+#    pod 'TBSDK_Framework'
+#    pod 'mtopext'
+#    pod 'NetworkSDK'
+#    pod 'MtopSDK'
+#    pod 'MtopWVPlugin'
+#    pod 'WindVane'
+    pod 'ZipArchive'
+    pod 'SDWebImage'
+
+
+#end
