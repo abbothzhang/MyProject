@@ -7,22 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		50576F281B915C50003649B8 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50576F271B915C50003649B8 /* MainViewController.m */; };
 		50576F301B915F56003649B8 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50576F2F1B915F56003649B8 /* AVFoundation.framework */; };
-		50576F3C1B91E326003649B8 /* TBMirrorPhotoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 50576F361B91E326003649B8 /* TBMirrorPhotoViewController.mm */; };
-		50576F3D1B91E326003649B8 /* TBMirrorVideoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 50576F381B91E326003649B8 /* TBMirrorVideoViewController.mm */; };
-		50576F3E1B91E326003649B8 /* TBMirrorViewControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 50576F3B1B91E326003649B8 /* TBMirrorViewControllerFactory.m */; };
-		50576F421B91E34F003649B8 /* TBMirrorCameraOpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50576F411B91E34F003649B8 /* TBMirrorCameraOpenGLView.m */; };
-		50576F451B91E38B003649B8 /* TBMirrorViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 50576F441B91E38B003649B8 /* TBMirrorViewController.mm */; };
-		50576F4B1B91E3B9003649B8 /* TBMirrorMakeUpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50576F481B91E3B9003649B8 /* TBMirrorMakeUpModel.m */; };
-		50576F4C1B91E3B9003649B8 /* TBMirrorBeautyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50576F4A1B91E3B9003649B8 /* TBMirrorBeautyModel.m */; };
-		50576F501B91E51F003649B8 /* TBMirrorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 50576F4F1B91E51F003649B8 /* TBMirrorUtils.m */; };
-		50576F561B91E614003649B8 /* libCosmeticSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50576F541B91E614003649B8 /* libCosmeticSDK.a */; };
-		50576F571B91E614003649B8 /* libglass_release.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50576F551B91E614003649B8 /* libglass_release.a */; };
-		50576F5A1B91E69C003649B8 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50576F591B91E69C003649B8 /* DemoViewController.m */; };
-		50576F5D1B91FB88003649B8 /* saihong.dat in Resources */ = {isa = PBXBuildFile; fileRef = 50576F5C1B91FB58003649B8 /* saihong.dat */; };
-		50576F5E1B91FBB9003649B8 /* face_all_data_100.dat in Resources */ = {isa = PBXBuildFile; fileRef = 50576F5B1B91FB3E003649B8 /* face_all_data_100.dat */; };
-		50576F611B91FD8E003649B8 /* TBMirrorDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 50576F601B91FD8E003649B8 /* TBMirrorDiskCache.m */; };
+		50576FCF1B92081F003649B8 /* TBMirrorBeautyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50576FAE1B92081F003649B8 /* TBMirrorBeautyModel.m */; };
+		50576FD01B92081F003649B8 /* TBMirrorMakeUpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50576FB01B92081F003649B8 /* TBMirrorMakeUpModel.m */; };
+		50576FD11B92081F003649B8 /* face_all_data_100.dat in Resources */ = {isa = PBXBuildFile; fileRef = 50576FB31B92081F003649B8 /* face_all_data_100.dat */; };
+		50576FD21B92081F003649B8 /* libCosmeticSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50576FB51B92081F003649B8 /* libCosmeticSDK.a */; };
+		50576FD31B92081F003649B8 /* libglass_release.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50576FB61B92081F003649B8 /* libglass_release.a */; };
+		50576FD41B92081F003649B8 /* saihong.dat in Resources */ = {isa = PBXBuildFile; fileRef = 50576FB71B92081F003649B8 /* saihong.dat */; };
+		50576FD51B92081F003649B8 /* TBMirrorDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 50576FBA1B92081F003649B8 /* TBMirrorDiskCache.m */; };
+		50576FD61B92081F003649B8 /* TBMirrorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 50576FBC1B92081F003649B8 /* TBMirrorUtils.m */; };
+		50576FD71B92081F003649B8 /* TBMirrorCameraOpenGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50576FBF1B92081F003649B8 /* TBMirrorCameraOpenGLView.m */; };
+		50576FD81B92081F003649B8 /* TBMirrorPhotoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 50576FC31B92081F003649B8 /* TBMirrorPhotoViewController.mm */; };
+		50576FD91B92081F003649B8 /* TBMirrorVideoViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 50576FC51B92081F003649B8 /* TBMirrorVideoViewController.mm */; };
+		50576FDA1B92081F003649B8 /* TBMirrorViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 50576FC71B92081F003649B8 /* TBMirrorViewController.mm */; };
+		50576FDB1B92081F003649B8 /* TBMirrorViewControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 50576FCA1B92081F003649B8 /* TBMirrorViewControllerFactory.m */; };
+		50576FDC1B92081F003649B8 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50576FCC1B92081F003649B8 /* DemoViewController.m */; };
+		50576FDF1B9208AC003649B8 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50576FDE1B9208AC003649B8 /* CoreMedia.framework */; };
 		50FD338B1B9156D8001B9B6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD338A1B9156D8001B9B6B /* main.m */; };
 		50FD338E1B9156D8001B9B6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD338D1B9156D8001B9B6B /* AppDelegate.m */; };
 		50FD33911B9156D8001B9B6B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD33901B9156D8001B9B6B /* ViewController.m */; };
@@ -43,36 +43,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		50576F261B915C50003649B8 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = ViewController/MainViewController.h; sourceTree = "<group>"; };
-		50576F271B915C50003649B8 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ViewController/MainViewController.m; sourceTree = "<group>"; };
 		50576F2F1B915F56003649B8 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		50576F351B91E326003649B8 /* TBMirrorPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMirrorPhotoViewController.h; sourceTree = "<group>"; };
-		50576F361B91E326003649B8 /* TBMirrorPhotoViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TBMirrorPhotoViewController.mm; sourceTree = "<group>"; };
-		50576F371B91E326003649B8 /* TBMirrorVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMirrorVideoViewController.h; sourceTree = "<group>"; };
-		50576F381B91E326003649B8 /* TBMirrorVideoViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TBMirrorVideoViewController.mm; sourceTree = "<group>"; };
-		50576F391B91E326003649B8 /* TBMirrorViewController_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMirrorViewController_Private.h; sourceTree = "<group>"; };
-		50576F3A1B91E326003649B8 /* TBMirrorViewControllerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMirrorViewControllerFactory.h; sourceTree = "<group>"; };
-		50576F3B1B91E326003649B8 /* TBMirrorViewControllerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBMirrorViewControllerFactory.m; sourceTree = "<group>"; };
-		50576F401B91E34F003649B8 /* TBMirrorCameraOpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMirrorCameraOpenGLView.h; sourceTree = "<group>"; };
-		50576F411B91E34F003649B8 /* TBMirrorCameraOpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBMirrorCameraOpenGLView.m; sourceTree = "<group>"; };
-		50576F431B91E38B003649B8 /* TBMirrorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMirrorViewController.h; sourceTree = "<group>"; };
-		50576F441B91E38B003649B8 /* TBMirrorViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TBMirrorViewController.mm; sourceTree = "<group>"; };
-		50576F471B91E3B9003649B8 /* TBMirrorMakeUpModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMirrorMakeUpModel.h; sourceTree = "<group>"; };
-		50576F481B91E3B9003649B8 /* TBMirrorMakeUpModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBMirrorMakeUpModel.m; sourceTree = "<group>"; };
-		50576F491B91E3B9003649B8 /* TBMirrorBeautyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMirrorBeautyModel.h; sourceTree = "<group>"; };
-		50576F4A1B91E3B9003649B8 /* TBMirrorBeautyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBMirrorBeautyModel.m; sourceTree = "<group>"; };
-		50576F4E1B91E51F003649B8 /* TBMirrorUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMirrorUtils.h; sourceTree = "<group>"; };
-		50576F4F1B91E51F003649B8 /* TBMirrorUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBMirrorUtils.m; sourceTree = "<group>"; };
-		50576F521B91E5E4003649B8 /* CosmeticEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CosmeticEngine.h; sourceTree = "<group>"; };
-		50576F531B91E5E4003649B8 /* GlassFittingEngineAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GlassFittingEngineAPI.h; sourceTree = "<group>"; };
-		50576F541B91E614003649B8 /* libCosmeticSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCosmeticSDK.a; sourceTree = "<group>"; };
-		50576F551B91E614003649B8 /* libglass_release.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libglass_release.a; sourceTree = "<group>"; };
-		50576F581B91E69C003649B8 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DemoViewController.h; path = ViewController/DemoViewController.h; sourceTree = "<group>"; };
-		50576F591B91E69C003649B8 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DemoViewController.m; path = ViewController/DemoViewController.m; sourceTree = "<group>"; };
-		50576F5B1B91FB3E003649B8 /* face_all_data_100.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = face_all_data_100.dat; sourceTree = "<group>"; };
-		50576F5C1B91FB58003649B8 /* saihong.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = saihong.dat; sourceTree = "<group>"; };
-		50576F5F1B91FD8E003649B8 /* TBMirrorDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMirrorDiskCache.h; sourceTree = "<group>"; };
-		50576F601B91FD8E003649B8 /* TBMirrorDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBMirrorDiskCache.m; sourceTree = "<group>"; };
+		50576FAD1B92081F003649B8 /* TBMirrorBeautyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMirrorBeautyModel.h; sourceTree = "<group>"; };
+		50576FAE1B92081F003649B8 /* TBMirrorBeautyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBMirrorBeautyModel.m; sourceTree = "<group>"; };
+		50576FAF1B92081F003649B8 /* TBMirrorMakeUpModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMirrorMakeUpModel.h; sourceTree = "<group>"; };
+		50576FB01B92081F003649B8 /* TBMirrorMakeUpModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBMirrorMakeUpModel.m; sourceTree = "<group>"; };
+		50576FB21B92081F003649B8 /* CosmeticEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CosmeticEngine.h; sourceTree = "<group>"; };
+		50576FB31B92081F003649B8 /* face_all_data_100.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = face_all_data_100.dat; sourceTree = "<group>"; };
+		50576FB41B92081F003649B8 /* GlassFittingEngineAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlassFittingEngineAPI.h; sourceTree = "<group>"; };
+		50576FB51B92081F003649B8 /* libCosmeticSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCosmeticSDK.a; sourceTree = "<group>"; };
+		50576FB61B92081F003649B8 /* libglass_release.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libglass_release.a; sourceTree = "<group>"; };
+		50576FB71B92081F003649B8 /* saihong.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = saihong.dat; sourceTree = "<group>"; };
+		50576FB91B92081F003649B8 /* TBMirrorDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMirrorDiskCache.h; sourceTree = "<group>"; };
+		50576FBA1B92081F003649B8 /* TBMirrorDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBMirrorDiskCache.m; sourceTree = "<group>"; };
+		50576FBB1B92081F003649B8 /* TBMirrorUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMirrorUtils.h; sourceTree = "<group>"; };
+		50576FBC1B92081F003649B8 /* TBMirrorUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBMirrorUtils.m; sourceTree = "<group>"; };
+		50576FBE1B92081F003649B8 /* TBMirrorCameraOpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMirrorCameraOpenGLView.h; sourceTree = "<group>"; };
+		50576FBF1B92081F003649B8 /* TBMirrorCameraOpenGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBMirrorCameraOpenGLView.m; sourceTree = "<group>"; };
+		50576FC21B92081F003649B8 /* TBMirrorPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMirrorPhotoViewController.h; sourceTree = "<group>"; };
+		50576FC31B92081F003649B8 /* TBMirrorPhotoViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TBMirrorPhotoViewController.mm; sourceTree = "<group>"; };
+		50576FC41B92081F003649B8 /* TBMirrorVideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMirrorVideoViewController.h; sourceTree = "<group>"; };
+		50576FC51B92081F003649B8 /* TBMirrorVideoViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TBMirrorVideoViewController.mm; sourceTree = "<group>"; };
+		50576FC61B92081F003649B8 /* TBMirrorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMirrorViewController.h; sourceTree = "<group>"; };
+		50576FC71B92081F003649B8 /* TBMirrorViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TBMirrorViewController.mm; sourceTree = "<group>"; };
+		50576FC81B92081F003649B8 /* TBMirrorViewController_Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMirrorViewController_Private.h; sourceTree = "<group>"; };
+		50576FC91B92081F003649B8 /* TBMirrorViewControllerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBMirrorViewControllerFactory.h; sourceTree = "<group>"; };
+		50576FCA1B92081F003649B8 /* TBMirrorViewControllerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBMirrorViewControllerFactory.m; sourceTree = "<group>"; };
+		50576FCB1B92081F003649B8 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoViewController.h; sourceTree = "<group>"; };
+		50576FCC1B92081F003649B8 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoViewController.m; sourceTree = "<group>"; };
+		50576FDE1B9208AC003649B8 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		50FD33851B9156D8001B9B6B /* CameraDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CameraDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		50FD33891B9156D8001B9B6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		50FD338A1B9156D8001B9B6B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -93,9 +92,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50576F571B91E614003649B8 /* libglass_release.a in Frameworks */,
+				50576FDF1B9208AC003649B8 /* CoreMedia.framework in Frameworks */,
+				50576FD31B92081F003649B8 /* libglass_release.a in Frameworks */,
 				50576F301B915F56003649B8 /* AVFoundation.framework in Frameworks */,
-				50576F561B91E614003649B8 /* libCosmeticSDK.a in Frameworks */,
+				50576FD21B92081F003649B8 /* libCosmeticSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,76 +109,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		50576F251B915C12003649B8 /* ViewController */ = {
+		50576FAC1B92081F003649B8 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				50576F261B915C50003649B8 /* MainViewController.h */,
-				50576F271B915C50003649B8 /* MainViewController.m */,
-				50576F581B91E69C003649B8 /* DemoViewController.h */,
-				50576F591B91E69C003649B8 /* DemoViewController.m */,
-				50576F341B91E313003649B8 /* Core */,
+				50576FAD1B92081F003649B8 /* TBMirrorBeautyModel.h */,
+				50576FAE1B92081F003649B8 /* TBMirrorBeautyModel.m */,
+				50576FAF1B92081F003649B8 /* TBMirrorMakeUpModel.h */,
+				50576FB01B92081F003649B8 /* TBMirrorMakeUpModel.m */,
 			);
-			name = ViewController;
+			path = Model;
 			sourceTree = "<group>";
 		};
-		50576F341B91E313003649B8 /* Core */ = {
+		50576FB11B92081F003649B8 /* Render */ = {
 			isa = PBXGroup;
 			children = (
-				50576F431B91E38B003649B8 /* TBMirrorViewController.h */,
-				50576F441B91E38B003649B8 /* TBMirrorViewController.mm */,
-				50576F351B91E326003649B8 /* TBMirrorPhotoViewController.h */,
-				50576F361B91E326003649B8 /* TBMirrorPhotoViewController.mm */,
-				50576F371B91E326003649B8 /* TBMirrorVideoViewController.h */,
-				50576F381B91E326003649B8 /* TBMirrorVideoViewController.mm */,
-				50576F391B91E326003649B8 /* TBMirrorViewController_Private.h */,
-				50576F3A1B91E326003649B8 /* TBMirrorViewControllerFactory.h */,
-				50576F3B1B91E326003649B8 /* TBMirrorViewControllerFactory.m */,
+				50576FB21B92081F003649B8 /* CosmeticEngine.h */,
+				50576FB31B92081F003649B8 /* face_all_data_100.dat */,
+				50576FB41B92081F003649B8 /* GlassFittingEngineAPI.h */,
+				50576FB51B92081F003649B8 /* libCosmeticSDK.a */,
+				50576FB61B92081F003649B8 /* libglass_release.a */,
+				50576FB71B92081F003649B8 /* saihong.dat */,
 			);
-			name = Core;
+			path = Render;
 			sourceTree = "<group>";
 		};
-		50576F3F1B91E345003649B8 /* View */ = {
+		50576FB81B92081F003649B8 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				50576F401B91E34F003649B8 /* TBMirrorCameraOpenGLView.h */,
-				50576F411B91E34F003649B8 /* TBMirrorCameraOpenGLView.m */,
+				50576FB91B92081F003649B8 /* TBMirrorDiskCache.h */,
+				50576FBA1B92081F003649B8 /* TBMirrorDiskCache.m */,
+				50576FBB1B92081F003649B8 /* TBMirrorUtils.h */,
+				50576FBC1B92081F003649B8 /* TBMirrorUtils.m */,
 			);
-			name = View;
+			path = Utils;
 			sourceTree = "<group>";
 		};
-		50576F461B91E3A5003649B8 /* Model */ = {
+		50576FBD1B92081F003649B8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				50576F471B91E3B9003649B8 /* TBMirrorMakeUpModel.h */,
-				50576F481B91E3B9003649B8 /* TBMirrorMakeUpModel.m */,
-				50576F491B91E3B9003649B8 /* TBMirrorBeautyModel.h */,
-				50576F4A1B91E3B9003649B8 /* TBMirrorBeautyModel.m */,
+				50576FBE1B92081F003649B8 /* TBMirrorCameraOpenGLView.h */,
+				50576FBF1B92081F003649B8 /* TBMirrorCameraOpenGLView.m */,
 			);
-			name = Model;
+			path = View;
 			sourceTree = "<group>";
 		};
-		50576F4D1B91E50D003649B8 /* Utils */ = {
+		50576FC01B92081F003649B8 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				50576F5F1B91FD8E003649B8 /* TBMirrorDiskCache.h */,
-				50576F601B91FD8E003649B8 /* TBMirrorDiskCache.m */,
-				50576F4E1B91E51F003649B8 /* TBMirrorUtils.h */,
-				50576F4F1B91E51F003649B8 /* TBMirrorUtils.m */,
+				50576FCB1B92081F003649B8 /* DemoViewController.h */,
+				50576FCC1B92081F003649B8 /* DemoViewController.m */,
+				50576FC11B92081F003649B8 /* Core */,
 			);
-			name = Utils;
+			path = ViewController;
 			sourceTree = "<group>";
 		};
-		50576F511B91E5B4003649B8 /* Render */ = {
+		50576FC11B92081F003649B8 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				50576F5C1B91FB58003649B8 /* saihong.dat */,
-				50576F5B1B91FB3E003649B8 /* face_all_data_100.dat */,
-				50576F521B91E5E4003649B8 /* CosmeticEngine.h */,
-				50576F531B91E5E4003649B8 /* GlassFittingEngineAPI.h */,
-				50576F541B91E614003649B8 /* libCosmeticSDK.a */,
-				50576F551B91E614003649B8 /* libglass_release.a */,
+				50576FC21B92081F003649B8 /* TBMirrorPhotoViewController.h */,
+				50576FC31B92081F003649B8 /* TBMirrorPhotoViewController.mm */,
+				50576FC41B92081F003649B8 /* TBMirrorVideoViewController.h */,
+				50576FC51B92081F003649B8 /* TBMirrorVideoViewController.mm */,
+				50576FC61B92081F003649B8 /* TBMirrorViewController.h */,
+				50576FC71B92081F003649B8 /* TBMirrorViewController.mm */,
+				50576FC81B92081F003649B8 /* TBMirrorViewController_Private.h */,
+				50576FC91B92081F003649B8 /* TBMirrorViewControllerFactory.h */,
+				50576FCA1B92081F003649B8 /* TBMirrorViewControllerFactory.m */,
 			);
-			name = Render;
+			path = Core;
 			sourceTree = "<group>";
 		};
 		50FD337C1B9156D8001B9B6B = {
@@ -202,11 +200,11 @@
 		50FD33871B9156D8001B9B6B /* CameraDemo */ = {
 			isa = PBXGroup;
 			children = (
-				50576F461B91E3A5003649B8 /* Model */,
-				50576F3F1B91E345003649B8 /* View */,
-				50576F251B915C12003649B8 /* ViewController */,
-				50576F511B91E5B4003649B8 /* Render */,
-				50576F4D1B91E50D003649B8 /* Utils */,
+				50576FAC1B92081F003649B8 /* Model */,
+				50576FB11B92081F003649B8 /* Render */,
+				50576FB81B92081F003649B8 /* Utils */,
+				50576FBD1B92081F003649B8 /* View */,
+				50576FC01B92081F003649B8 /* ViewController */,
 				50FD33881B9156D8001B9B6B /* Supporting Files */,
 			);
 			path = CameraDemo;
@@ -215,6 +213,7 @@
 		50FD33881B9156D8001B9B6B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				50576FDE1B9208AC003649B8 /* CoreMedia.framework */,
 				50576F2F1B915F56003649B8 /* AVFoundation.framework */,
 				50FD338C1B9156D8001B9B6B /* AppDelegate.h */,
 				50FD338D1B9156D8001B9B6B /* AppDelegate.m */,
@@ -326,9 +325,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50576F5E1B91FBB9003649B8 /* face_all_data_100.dat in Resources */,
-				50576F5D1B91FB88003649B8 /* saihong.dat in Resources */,
+				50576FD11B92081F003649B8 /* face_all_data_100.dat in Resources */,
 				50FD33941B9156D8001B9B6B /* Main.storyboard in Resources */,
+				50576FD41B92081F003649B8 /* saihong.dat in Resources */,
 				50FD33991B9156D8001B9B6B /* LaunchScreen.xib in Resources */,
 				50FD33961B9156D8001B9B6B /* Images.xcassets in Resources */,
 			);
@@ -348,20 +347,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50576F501B91E51F003649B8 /* TBMirrorUtils.m in Sources */,
-				50576F3C1B91E326003649B8 /* TBMirrorPhotoViewController.mm in Sources */,
-				50576F451B91E38B003649B8 /* TBMirrorViewController.mm in Sources */,
-				50576F4C1B91E3B9003649B8 /* TBMirrorBeautyModel.m in Sources */,
-				50576F5A1B91E69C003649B8 /* DemoViewController.m in Sources */,
-				50576F3D1B91E326003649B8 /* TBMirrorVideoViewController.mm in Sources */,
-				50576F3E1B91E326003649B8 /* TBMirrorViewControllerFactory.m in Sources */,
+				50576FCF1B92081F003649B8 /* TBMirrorBeautyModel.m in Sources */,
+				50576FD61B92081F003649B8 /* TBMirrorUtils.m in Sources */,
 				50FD33911B9156D8001B9B6B /* ViewController.m in Sources */,
+				50576FD51B92081F003649B8 /* TBMirrorDiskCache.m in Sources */,
+				50576FDC1B92081F003649B8 /* DemoViewController.m in Sources */,
 				50FD338E1B9156D8001B9B6B /* AppDelegate.m in Sources */,
+				50576FD81B92081F003649B8 /* TBMirrorPhotoViewController.mm in Sources */,
+				50576FDB1B92081F003649B8 /* TBMirrorViewControllerFactory.m in Sources */,
 				50FD338B1B9156D8001B9B6B /* main.m in Sources */,
-				50576F281B915C50003649B8 /* MainViewController.m in Sources */,
-				50576F421B91E34F003649B8 /* TBMirrorCameraOpenGLView.m in Sources */,
-				50576F611B91FD8E003649B8 /* TBMirrorDiskCache.m in Sources */,
-				50576F4B1B91E3B9003649B8 /* TBMirrorMakeUpModel.m in Sources */,
+				50576FD91B92081F003649B8 /* TBMirrorVideoViewController.mm in Sources */,
+				50576FD01B92081F003649B8 /* TBMirrorMakeUpModel.m in Sources */,
+				50576FD71B92081F003649B8 /* TBMirrorCameraOpenGLView.m in Sources */,
+				50576FDA1B92081F003649B8 /* TBMirrorViewController.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -493,6 +491,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CameraDemo",
+					"$(PROJECT_DIR)/CameraDemo/Render",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -508,6 +507,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/CameraDemo",
+					"$(PROJECT_DIR)/CameraDemo/Render",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
