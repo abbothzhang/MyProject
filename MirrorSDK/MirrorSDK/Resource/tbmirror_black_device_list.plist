@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>black_device_list</key>
+	<array>
+		<string>iPhone1,1</string>
+		<string>iPhone1,2</string>
+		<string>iPhone2,1</string>
+		<string>iPhone3,1</string>
+		<string>iPhone3,2</string>
+		<string>iPhone3,3</string>
+		<string>iPod1,1</string>
+		<string>iPod2,1</string>
+		<string>iPod3,1</string>
+		<string>iPod4,1</string>
+	</array>
+</dict>
+</plist>

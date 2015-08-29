@@ -1,0 +1,20 @@
+# coding: utf-8
+require 'cocoapods-timeconsuming'
+require 'cocoapods-multithread-installpod'
+require 'cocoapods-podtarget-optimize'
+
+source "http://gitlab.alibaba-inc.com/wireless/tbmainclientspecs.git"
+source "http://gitlab.alibaba-inc.com/alipods/specs.git"
+source "git@gitlab.alibaba-inc.com:alipods/specs-mirror.git"
+
+platform :ios
+
+
+target 'MirrorSDK' do
+    platform:ios, '6.0'
+    
+    pod 'ZipArchive'
+    pod 'SDWebImage'
+    pod 'Reachability','3.1.1'
+
+end
