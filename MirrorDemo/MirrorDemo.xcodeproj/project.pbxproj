@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		50FD334A1B905590001B9B6B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD32E31B905590001B9B6B /* AppDelegate.m */; };
+		50FD334B1B905590001B9B6B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50FD32E41B905590001B9B6B /* LaunchScreen.xib */; };
+		50FD334C1B905590001B9B6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50FD32E61B905590001B9B6B /* Main.storyboard */; };
+		50FD334D1B905590001B9B6B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50FD32E81B905590001B9B6B /* Images.xcassets */; };
+		50FD334E1B905590001B9B6B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50FD32E91B905590001B9B6B /* Info.plist */; };
+		50FD334F1B905590001B9B6B /* IPADemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD32EB1B905590001B9B6B /* IPADemoViewController.m */; };
+		50FD33501B905590001B9B6B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD32EC1B905590001B9B6B /* main.m */; };
+		50FD33511B905590001B9B6B /* eyeglass_01.dat in Resources */ = {isa = PBXBuildFile; fileRef = 50FD32EE1B905590001B9B6B /* eyeglass_01.dat */; };
+		50FD33521B905590001B9B6B /* mirror_face_model.dat in Resources */ = {isa = PBXBuildFile; fileRef = 50FD32EF1B905590001B9B6B /* mirror_face_model.dat */; };
+		50FD33531B905590001B9B6B /* reflect_image_01.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 50FD32F01B905590001B9B6B /* reflect_image_01.bmp */; };
+		50FD33541B905590001B9B6B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD32F31B905590001B9B6B /* ViewController.m */; };
+		50FD33551B905590001B9B6B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50FD32F51B905590001B9B6B /* Info.plist */; };
+		50FD33571B905590001B9B6B /* libCosmeticSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50FD32F81B905590001B9B6B /* libCosmeticSDK.a */; };
+		50FD33581B905590001B9B6B /* libglass_release.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50FD32F91B905590001B9B6B /* libglass_release.a */; };
+		50FD33591B905590001B9B6B /* MirrorSDK.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 50FD32FA1B905590001B9B6B /* MirrorSDK.bundle */; };
+		50FD335A1B905590001B9B6B /* tbmirror_black_device_list.plist in Resources */ = {isa = PBXBuildFile; fileRef = 50FD32FB1B905590001B9B6B /* tbmirror_black_device_list.plist */; };
+		50FD335B1B905590001B9B6B /* MirrorAdapterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD32FF1B905590001B9B6B /* MirrorAdapterManager.m */; };
+		50FD335C1B905590001B9B6B /* MirrorBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD33021B905590001B9B6B /* MirrorBaseViewController.m */; };
+		50FD335D1B905590001B9B6B /* MirrorDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD33041B905590001B9B6B /* MirrorDemoViewController.m */; };
+		50FD335E1B905590001B9B6B /* MirrorViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 50FD33061B905590001B9B6B /* MirrorViewController.mm */; };
+		50FD335F1B905590001B9B6B /* MirrorMaterialManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD33091B905590001B9B6B /* MirrorMaterialManager.m */; };
+		50FD33601B905590001B9B6B /* MirrorMaterialUnUseCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD330B1B905590001B9B6B /* MirrorMaterialUnUseCacheManager.m */; };
+		50FD33611B905590001B9B6B /* MirrorCameraInput.mm in Sources */ = {isa = PBXBuildFile; fileRef = 50FD330E1B905590001B9B6B /* MirrorCameraInput.mm */; };
+		50FD33621B905590001B9B6B /* MirrorMakeUpInput.mm in Sources */ = {isa = PBXBuildFile; fileRef = 50FD33101B905590001B9B6B /* MirrorMakeUpInput.mm */; };
+		50FD33631B905590001B9B6B /* MirrorMakeUpManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD33121B905590001B9B6B /* MirrorMakeUpManager.m */; };
+		50FD33651B905590001B9B6B /* MirrorBeautyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD33171B905590001B9B6B /* MirrorBeautyModel.m */; };
+		50FD33661B905590001B9B6B /* MirrorMakeUpModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD33191B905590001B9B6B /* MirrorMakeUpModel.m */; };
+		50FD33671B905590001B9B6B /* MirrorResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD331B1B905590001B9B6B /* MirrorResult.m */; };
+		50FD33681B905590001B9B6B /* MirrorOpenGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 50FD331E1B905590001B9B6B /* MirrorOpenGLView.mm */; };
+		50FD33691B905590001B9B6B /* functions.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50FD33221B905590001B9B6B /* functions.cpp */; };
+		50FD336A1B905590001B9B6B /* MirrorGLKAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD33271B905590001B9B6B /* MirrorGLKAttribute.m */; };
+		50FD336B1B905590001B9B6B /* MirrorGLKProgram.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD33291B905590001B9B6B /* MirrorGLKProgram.m */; };
+		50FD336C1B905590001B9B6B /* MirrorGLKShaderVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD332B1B905590001B9B6B /* MirrorGLKShaderVariable.m */; };
+		50FD336D1B905590001B9B6B /* MirrorGLKTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD332D1B905590001B9B6B /* MirrorGLKTexture.m */; };
+		50FD336E1B905590001B9B6B /* MirrorGLKTextureInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD332F1B905590001B9B6B /* MirrorGLKTextureInfo.m */; };
+		50FD336F1B905590001B9B6B /* MirrorGLKUniform.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD33311B905590001B9B6B /* MirrorGLKUniform.m */; };
+		50FD33701B905590001B9B6B /* MirrorMakeUpCenter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 50FD33331B905590001B9B6B /* MirrorMakeUpCenter.mm */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		50FD33711B905590001B9B6B /* MirrorOpenGLContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD33351B905590001B9B6B /* MirrorOpenGLContext.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		50FD33721B905590001B9B6B /* MirrorOpenGLFrameBuffer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 50FD33371B905590001B9B6B /* MirrorOpenGLFrameBuffer.mm */; };
+		50FD33731B905590001B9B6B /* MirrorOpenGLFrameBufferCache.mm in Sources */ = {isa = PBXBuildFile; fileRef = 50FD33391B905590001B9B6B /* MirrorOpenGLFrameBufferCache.mm */; };
+		50FD33741B905590001B9B6B /* MirrorOpenGLNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 50FD333B1B905590001B9B6B /* MirrorOpenGLNode.mm */; };
+		50FD33751B905590001B9B6B /* MirrorDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD333F1B905590001B9B6B /* MirrorDiskCache.m */; };
+		50FD33761B905590001B9B6B /* MirrorDownload.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD33411B905590001B9B6B /* MirrorDownload.m */; };
+		50FD33771B905590001B9B6B /* MirrorFileUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD33431B905590001B9B6B /* MirrorFileUtil.m */; };
+		50FD33781B905590001B9B6B /* MirrorMulticastDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD33451B905590001B9B6B /* MirrorMulticastDelegate.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		50FD33791B905590001B9B6B /* MirrorTextUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD33471B905590001B9B6B /* MirrorTextUtils.m */; };
+		50FD337A1B905590001B9B6B /* MirrorUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 50FD33491B905590001B9B6B /* MirrorUtils.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50FD32D21B905556001B9B6B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 50FD32B01B905556001B9B6B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 50FD32B71B905556001B9B6B;
+			remoteInfo = MirrorDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		50FD32B81B905556001B9B6B /* MirrorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MirrorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		50FD32D11B905556001B9B6B /* MirrorDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MirrorDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		50FD32E21B905590001B9B6B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		50FD32E31B905590001B9B6B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		50FD32E51B905590001B9B6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		50FD32E71B905590001B9B6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		50FD32E81B905590001B9B6B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		50FD32E91B905590001B9B6B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50FD32EA1B905590001B9B6B /* IPADemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPADemoViewController.h; sourceTree = "<group>"; };
+		50FD32EB1B905590001B9B6B /* IPADemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPADemoViewController.m; sourceTree = "<group>"; };
+		50FD32EC1B905590001B9B6B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		50FD32EE1B905590001B9B6B /* eyeglass_01.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = eyeglass_01.dat; sourceTree = "<group>"; };
+		50FD32EF1B905590001B9B6B /* mirror_face_model.dat */ = {isa = PBXFileReference; lastKnownFileType = file; path = mirror_face_model.dat; sourceTree = "<group>"; };
+		50FD32F01B905590001B9B6B /* reflect_image_01.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = reflect_image_01.bmp; sourceTree = "<group>"; };
+		50FD32F21B905590001B9B6B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		50FD32F31B905590001B9B6B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		50FD32F51B905590001B9B6B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		50FD32F81B905590001B9B6B /* libCosmeticSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libCosmeticSDK.a; sourceTree = "<group>"; };
+		50FD32F91B905590001B9B6B /* libglass_release.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libglass_release.a; sourceTree = "<group>"; };
+		50FD32FA1B905590001B9B6B /* MirrorSDK.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MirrorSDK.bundle; sourceTree = "<group>"; };
+		50FD32FB1B905590001B9B6B /* tbmirror_black_device_list.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tbmirror_black_device_list.plist; sourceTree = "<group>"; };
+		50FD32FE1B905590001B9B6B /* MirrorAdapterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirrorAdapterManager.h; sourceTree = "<group>"; };
+		50FD32FF1B905590001B9B6B /* MirrorAdapterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MirrorAdapterManager.m; sourceTree = "<group>"; };
+		50FD33011B905590001B9B6B /* MirrorBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirrorBaseViewController.h; sourceTree = "<group>"; };
+		50FD33021B905590001B9B6B /* MirrorBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MirrorBaseViewController.m; sourceTree = "<group>"; };
+		50FD33031B905590001B9B6B /* MirrorDemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirrorDemoViewController.h; sourceTree = "<group>"; };
+		50FD33041B905590001B9B6B /* MirrorDemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MirrorDemoViewController.m; sourceTree = "<group>"; };
+		50FD33051B905590001B9B6B /* MirrorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirrorViewController.h; sourceTree = "<group>"; };
+		50FD33061B905590001B9B6B /* MirrorViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MirrorViewController.mm; sourceTree = "<group>"; };
+		50FD33081B905590001B9B6B /* MirrorMaterialManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirrorMaterialManager.h; sourceTree = "<group>"; };
+		50FD33091B905590001B9B6B /* MirrorMaterialManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MirrorMaterialManager.m; sourceTree = "<group>"; };
+		50FD330A1B905590001B9B6B /* MirrorMaterialUnUseCacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirrorMaterialUnUseCacheManager.h; sourceTree = "<group>"; };
+		50FD330B1B905590001B9B6B /* MirrorMaterialUnUseCacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MirrorMaterialUnUseCacheManager.m; sourceTree = "<group>"; };
+		50FD330D1B905590001B9B6B /* MirrorCameraInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirrorCameraInput.h; sourceTree = "<group>"; };
+		50FD330E1B905590001B9B6B /* MirrorCameraInput.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MirrorCameraInput.mm; sourceTree = "<group>"; };
+		50FD330F1B905590001B9B6B /* MirrorMakeUpInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirrorMakeUpInput.h; sourceTree = "<group>"; };
+		50FD33101B905590001B9B6B /* MirrorMakeUpInput.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MirrorMakeUpInput.mm; sourceTree = "<group>"; };
+		50FD33111B905590001B9B6B /* MirrorMakeUpManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirrorMakeUpManager.h; sourceTree = "<group>"; };
+		50FD33121B905590001B9B6B /* MirrorMakeUpManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MirrorMakeUpManager.m; sourceTree = "<group>"; };
+		50FD33161B905590001B9B6B /* MirrorBeautyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirrorBeautyModel.h; sourceTree = "<group>"; };
+		50FD33171B905590001B9B6B /* MirrorBeautyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MirrorBeautyModel.m; sourceTree = "<group>"; };
+		50FD33181B905590001B9B6B /* MirrorMakeUpModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirrorMakeUpModel.h; sourceTree = "<group>"; };
+		50FD33191B905590001B9B6B /* MirrorMakeUpModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MirrorMakeUpModel.m; sourceTree = "<group>"; };
+		50FD331A1B905590001B9B6B /* MirrorResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirrorResult.h; sourceTree = "<group>"; };
+		50FD331B1B905590001B9B6B /* MirrorResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MirrorResult.m; sourceTree = "<group>"; };
+		50FD331D1B905590001B9B6B /* MirrorOpenGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirrorOpenGLView.h; sourceTree = "<group>"; };
+		50FD331E1B905590001B9B6B /* MirrorOpenGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MirrorOpenGLView.mm; sourceTree = "<group>"; };
+		50FD33211B905590001B9B6B /* CosmeticEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CosmeticEngine.h; sourceTree = "<group>"; };
+		50FD33221B905590001B9B6B /* functions.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = functions.cpp; sourceTree = "<group>"; };
+		50FD33231B905590001B9B6B /* functions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = functions.h; sourceTree = "<group>"; };
+		50FD33241B905590001B9B6B /* GlassFittingEngineAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlassFittingEngineAPI.h; sourceTree = "<group>"; };
+		50FD33261B905590001B9B6B /* MirrorGLKAttribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirrorGLKAttribute.h; sourceTree = "<group>"; };
+		50FD33271B905590001B9B6B /* MirrorGLKAttribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MirrorGLKAttribute.m; sourceTree = "<group>"; };
+		50FD33281B905590001B9B6B /* MirrorGLKProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirrorGLKProgram.h; sourceTree = "<group>"; };
+		50FD33291B905590001B9B6B /* MirrorGLKProgram.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MirrorGLKProgram.m; sourceTree = "<group>"; };
+		50FD332A1B905590001B9B6B /* MirrorGLKShaderVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirrorGLKShaderVariable.h; sourceTree = "<group>"; };
+		50FD332B1B905590001B9B6B /* MirrorGLKShaderVariable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MirrorGLKShaderVariable.m; sourceTree = "<group>"; };
+		50FD332C1B905590001B9B6B /* MirrorGLKTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirrorGLKTexture.h; sourceTree = "<group>"; };
+		50FD332D1B905590001B9B6B /* MirrorGLKTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MirrorGLKTexture.m; sourceTree = "<group>"; };
+		50FD332E1B905590001B9B6B /* MirrorGLKTextureInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirrorGLKTextureInfo.h; sourceTree = "<group>"; };
+		50FD332F1B905590001B9B6B /* MirrorGLKTextureInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MirrorGLKTextureInfo.m; sourceTree = "<group>"; };
+		50FD33301B905590001B9B6B /* MirrorGLKUniform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirrorGLKUniform.h; sourceTree = "<group>"; };
+		50FD33311B905590001B9B6B /* MirrorGLKUniform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MirrorGLKUniform.m; sourceTree = "<group>"; };
+		50FD33321B905590001B9B6B /* MirrorMakeUpCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirrorMakeUpCenter.h; sourceTree = "<group>"; };
+		50FD33331B905590001B9B6B /* MirrorMakeUpCenter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MirrorMakeUpCenter.mm; sourceTree = "<group>"; };
+		50FD33341B905590001B9B6B /* MirrorOpenGLContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirrorOpenGLContext.h; sourceTree = "<group>"; };
+		50FD33351B905590001B9B6B /* MirrorOpenGLContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MirrorOpenGLContext.m; sourceTree = "<group>"; };
+		50FD33361B905590001B9B6B /* MirrorOpenGLFrameBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirrorOpenGLFrameBuffer.h; sourceTree = "<group>"; };
+		50FD33371B905590001B9B6B /* MirrorOpenGLFrameBuffer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MirrorOpenGLFrameBuffer.mm; sourceTree = "<group>"; };
+		50FD33381B905590001B9B6B /* MirrorOpenGLFrameBufferCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirrorOpenGLFrameBufferCache.h; sourceTree = "<group>"; };
+		50FD33391B905590001B9B6B /* MirrorOpenGLFrameBufferCache.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MirrorOpenGLFrameBufferCache.mm; sourceTree = "<group>"; };
+		50FD333A1B905590001B9B6B /* MirrorOpenGLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirrorOpenGLNode.h; sourceTree = "<group>"; };
+		50FD333B1B905590001B9B6B /* MirrorOpenGLNode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MirrorOpenGLNode.mm; sourceTree = "<group>"; };
+		50FD333C1B905590001B9B6B /* SynthesizeSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SynthesizeSingleton.h; sourceTree = "<group>"; };
+		50FD333E1B905590001B9B6B /* MirrorDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirrorDiskCache.h; sourceTree = "<group>"; };
+		50FD333F1B905590001B9B6B /* MirrorDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MirrorDiskCache.m; sourceTree = "<group>"; };
+		50FD33401B905590001B9B6B /* MirrorDownload.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirrorDownload.h; sourceTree = "<group>"; };
+		50FD33411B905590001B9B6B /* MirrorDownload.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MirrorDownload.m; sourceTree = "<group>"; };
+		50FD33421B905590001B9B6B /* MirrorFileUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirrorFileUtil.h; sourceTree = "<group>"; };
+		50FD33431B905590001B9B6B /* MirrorFileUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MirrorFileUtil.m; sourceTree = "<group>"; };
+		50FD33441B905590001B9B6B /* MirrorMulticastDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirrorMulticastDelegate.h; sourceTree = "<group>"; };
+		50FD33451B905590001B9B6B /* MirrorMulticastDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MirrorMulticastDelegate.m; sourceTree = "<group>"; };
+		50FD33461B905590001B9B6B /* MirrorTextUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirrorTextUtils.h; sourceTree = "<group>"; };
+		50FD33471B905590001B9B6B /* MirrorTextUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MirrorTextUtils.m; sourceTree = "<group>"; };
+		50FD33481B905590001B9B6B /* MirrorUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MirrorUtils.h; sourceTree = "<group>"; };
+		50FD33491B905590001B9B6B /* MirrorUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MirrorUtils.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		50FD32B51B905556001B9B6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50FD33581B905590001B9B6B /* libglass_release.a in Frameworks */,
+				50FD33571B905590001B9B6B /* libCosmeticSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50FD32CE1B905556001B9B6B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		50FD32AF1B905556001B9B6B = {
+			isa = PBXGroup;
+			children = (
+				50FD32E11B905590001B9B6B /* MirrorDemo */,
+				50FD32F41B905590001B9B6B /* MirrorSDK */,
+				50FD32B91B905556001B9B6B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		50FD32B91B905556001B9B6B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50FD32B81B905556001B9B6B /* MirrorDemo.app */,
+				50FD32D11B905556001B9B6B /* MirrorDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50FD32E11B905590001B9B6B /* MirrorDemo */ = {
+			isa = PBXGroup;
+			children = (
+				50FD32EA1B905590001B9B6B /* IPADemoViewController.h */,
+				50FD32EB1B905590001B9B6B /* IPADemoViewController.m */,
+				50FD337B1B90579D001B9B6B /* SupportFile */,
+				50FD32ED1B905590001B9B6B /* Resource */,
+				50FD32F11B905590001B9B6B /* Source */,
+			);
+			path = MirrorDemo;
+			sourceTree = "<group>";
+		};
+		50FD32ED1B905590001B9B6B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				50FD32EE1B905590001B9B6B /* eyeglass_01.dat */,
+				50FD32EF1B905590001B9B6B /* mirror_face_model.dat */,
+				50FD32F01B905590001B9B6B /* reflect_image_01.bmp */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		50FD32F11B905590001B9B6B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		50FD32F41B905590001B9B6B /* MirrorSDK */ = {
+			isa = PBXGroup;
+			children = (
+				50FD32FC1B905590001B9B6B /* Source */,
+				50FD32F61B905590001B9B6B /* Resource */,
+			);
+			path = MirrorSDK;
+			sourceTree = "<group>";
+		};
+		50FD32F61B905590001B9B6B /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				50FD32F51B905590001B9B6B /* Info.plist */,
+				50FD32F81B905590001B9B6B /* libCosmeticSDK.a */,
+				50FD32F91B905590001B9B6B /* libglass_release.a */,
+				50FD32FA1B905590001B9B6B /* MirrorSDK.bundle */,
+				50FD32FB1B905590001B9B6B /* tbmirror_black_device_list.plist */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		50FD32FC1B905590001B9B6B /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				50FD32FD1B905590001B9B6B /* Adapter */,
+				50FD33001B905590001B9B6B /* Controller */,
+				50FD33071B905590001B9B6B /* Data */,
+				50FD330C1B905590001B9B6B /* Input */,
+				50FD33111B905590001B9B6B /* MirrorMakeUpManager.h */,
+				50FD33121B905590001B9B6B /* MirrorMakeUpManager.m */,
+				50FD33151B905590001B9B6B /* Model */,
+				50FD331C1B905590001B9B6B /* Output */,
+				50FD331F1B905590001B9B6B /* Render */,
+				50FD333D1B905590001B9B6B /* Utils */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		50FD32FD1B905590001B9B6B /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				50FD32FE1B905590001B9B6B /* MirrorAdapterManager.h */,
+				50FD32FF1B905590001B9B6B /* MirrorAdapterManager.m */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
+		50FD33001B905590001B9B6B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				50FD33011B905590001B9B6B /* MirrorBaseViewController.h */,
+				50FD33021B905590001B9B6B /* MirrorBaseViewController.m */,
+				50FD33031B905590001B9B6B /* MirrorDemoViewController.h */,
+				50FD33041B905590001B9B6B /* MirrorDemoViewController.m */,
+				50FD33051B905590001B9B6B /* MirrorViewController.h */,
+				50FD33061B905590001B9B6B /* MirrorViewController.mm */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		50FD33071B905590001B9B6B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				50FD33081B905590001B9B6B /* MirrorMaterialManager.h */,
+				50FD33091B905590001B9B6B /* MirrorMaterialManager.m */,
+				50FD330A1B905590001B9B6B /* MirrorMaterialUnUseCacheManager.h */,
+				50FD330B1B905590001B9B6B /* MirrorMaterialUnUseCacheManager.m */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		50FD330C1B905590001B9B6B /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				50FD330D1B905590001B9B6B /* MirrorCameraInput.h */,
+				50FD330E1B905590001B9B6B /* MirrorCameraInput.mm */,
+				50FD330F1B905590001B9B6B /* MirrorMakeUpInput.h */,
+				50FD33101B905590001B9B6B /* MirrorMakeUpInput.mm */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		50FD33151B905590001B9B6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				50FD33161B905590001B9B6B /* MirrorBeautyModel.h */,
+				50FD33171B905590001B9B6B /* MirrorBeautyModel.m */,
+				50FD33181B905590001B9B6B /* MirrorMakeUpModel.h */,
+				50FD33191B905590001B9B6B /* MirrorMakeUpModel.m */,
+				50FD331A1B905590001B9B6B /* MirrorResult.h */,
+				50FD331B1B905590001B9B6B /* MirrorResult.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		50FD331C1B905590001B9B6B /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				50FD331D1B905590001B9B6B /* MirrorOpenGLView.h */,
+				50FD331E1B905590001B9B6B /* MirrorOpenGLView.mm */,
+			);
+			path = Output;
+			sourceTree = "<group>";
+		};
+		50FD331F1B905590001B9B6B /* Render */ = {
+			isa = PBXGroup;
+			children = (
+				50FD33211B905590001B9B6B /* CosmeticEngine.h */,
+				50FD33221B905590001B9B6B /* functions.cpp */,
+				50FD33231B905590001B9B6B /* functions.h */,
+				50FD33241B905590001B9B6B /* GlassFittingEngineAPI.h */,
+				50FD33251B905590001B9B6B /* GLKitAdditions */,
+				50FD33321B905590001B9B6B /* MirrorMakeUpCenter.h */,
+				50FD33331B905590001B9B6B /* MirrorMakeUpCenter.mm */,
+				50FD33341B905590001B9B6B /* MirrorOpenGLContext.h */,
+				50FD33351B905590001B9B6B /* MirrorOpenGLContext.m */,
+				50FD33371B905590001B9B6B /* MirrorOpenGLFrameBuffer.mm */,
+				50FD33361B905590001B9B6B /* MirrorOpenGLFrameBuffer.h */,
+				50FD33381B905590001B9B6B /* MirrorOpenGLFrameBufferCache.h */,
+				50FD33391B905590001B9B6B /* MirrorOpenGLFrameBufferCache.mm */,
+				50FD333A1B905590001B9B6B /* MirrorOpenGLNode.h */,
+				50FD333B1B905590001B9B6B /* MirrorOpenGLNode.mm */,
+				50FD333C1B905590001B9B6B /* SynthesizeSingleton.h */,
+			);
+			path = Render;
+			sourceTree = "<group>";
+		};
+		50FD33251B905590001B9B6B /* GLKitAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				50FD33261B905590001B9B6B /* MirrorGLKAttribute.h */,
+				50FD33271B905590001B9B6B /* MirrorGLKAttribute.m */,
+				50FD33281B905590001B9B6B /* MirrorGLKProgram.h */,
+				50FD33291B905590001B9B6B /* MirrorGLKProgram.m */,
+				50FD332A1B905590001B9B6B /* MirrorGLKShaderVariable.h */,
+				50FD332B1B905590001B9B6B /* MirrorGLKShaderVariable.m */,
+				50FD332C1B905590001B9B6B /* MirrorGLKTexture.h */,
+				50FD332D1B905590001B9B6B /* MirrorGLKTexture.m */,
+				50FD332E1B905590001B9B6B /* MirrorGLKTextureInfo.h */,
+				50FD332F1B905590001B9B6B /* MirrorGLKTextureInfo.m */,
+				50FD33301B905590001B9B6B /* MirrorGLKUniform.h */,
+				50FD33311B905590001B9B6B /* MirrorGLKUniform.m */,
+			);
+			path = GLKitAdditions;
+			sourceTree = "<group>";
+		};
+		50FD333D1B905590001B9B6B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				50FD333E1B905590001B9B6B /* MirrorDiskCache.h */,
+				50FD333F1B905590001B9B6B /* MirrorDiskCache.m */,
+				50FD33401B905590001B9B6B /* MirrorDownload.h */,
+				50FD33411B905590001B9B6B /* MirrorDownload.m */,
+				50FD33421B905590001B9B6B /* MirrorFileUtil.h */,
+				50FD33431B905590001B9B6B /* MirrorFileUtil.m */,
+				50FD33441B905590001B9B6B /* MirrorMulticastDelegate.h */,
+				50FD33451B905590001B9B6B /* MirrorMulticastDelegate.m */,
+				50FD33461B905590001B9B6B /* MirrorTextUtils.h */,
+				50FD33471B905590001B9B6B /* MirrorTextUtils.m */,
+				50FD33481B905590001B9B6B /* MirrorUtils.h */,
+				50FD33491B905590001B9B6B /* MirrorUtils.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		50FD337B1B90579D001B9B6B /* SupportFile */ = {
+			isa = PBXGroup;
+			children = (
+				50FD32F21B905590001B9B6B /* ViewController.h */,
+				50FD32F31B905590001B9B6B /* ViewController.m */,
+				50FD32EC1B905590001B9B6B /* main.m */,
+				50FD32E21B905590001B9B6B /* AppDelegate.h */,
+				50FD32E31B905590001B9B6B /* AppDelegate.m */,
+				50FD32E41B905590001B9B6B /* LaunchScreen.xib */,
+				50FD32E61B905590001B9B6B /* Main.storyboard */,
+				50FD32E81B905590001B9B6B /* Images.xcassets */,
+				50FD32E91B905590001B9B6B /* Info.plist */,
+			);
+			name = SupportFile;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		50FD32B71B905556001B9B6B /* MirrorDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50FD32DB1B905556001B9B6B /* Build configuration list for PBXNativeTarget "MirrorDemo" */;
+			buildPhases = (
+				50FD32B41B905556001B9B6B /* Sources */,
+				50FD32B51B905556001B9B6B /* Frameworks */,
+				50FD32B61B905556001B9B6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MirrorDemo;
+			productName = MirrorDemo;
+			productReference = 50FD32B81B905556001B9B6B /* MirrorDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		50FD32D01B905556001B9B6B /* MirrorDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 50FD32DE1B905556001B9B6B /* Build configuration list for PBXNativeTarget "MirrorDemoTests" */;
+			buildPhases = (
+				50FD32CD1B905556001B9B6B /* Sources */,
+				50FD32CE1B905556001B9B6B /* Frameworks */,
+				50FD32CF1B905556001B9B6B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				50FD32D31B905556001B9B6B /* PBXTargetDependency */,
+			);
+			name = MirrorDemoTests;
+			productName = MirrorDemoTests;
+			productReference = 50FD32D11B905556001B9B6B /* MirrorDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		50FD32B01B905556001B9B6B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = alibaba;
+				TargetAttributes = {
+					50FD32B71B905556001B9B6B = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					50FD32D01B905556001B9B6B = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 50FD32B71B905556001B9B6B;
+					};
+				};
+			};
+			buildConfigurationList = 50FD32B31B905556001B9B6B /* Build configuration list for PBXProject "MirrorDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 50FD32AF1B905556001B9B6B;
+			productRefGroup = 50FD32B91B905556001B9B6B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				50FD32B71B905556001B9B6B /* MirrorDemo */,
+				50FD32D01B905556001B9B6B /* MirrorDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		50FD32B61B905556001B9B6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50FD33551B905590001B9B6B /* Info.plist in Resources */,
+				50FD334E1B905590001B9B6B /* Info.plist in Resources */,
+				50FD33531B905590001B9B6B /* reflect_image_01.bmp in Resources */,
+				50FD334D1B905590001B9B6B /* Images.xcassets in Resources */,
+				50FD33511B905590001B9B6B /* eyeglass_01.dat in Resources */,
+				50FD33521B905590001B9B6B /* mirror_face_model.dat in Resources */,
+				50FD334B1B905590001B9B6B /* LaunchScreen.xib in Resources */,
+				50FD334C1B905590001B9B6B /* Main.storyboard in Resources */,
+				50FD335A1B905590001B9B6B /* tbmirror_black_device_list.plist in Resources */,
+				50FD33591B905590001B9B6B /* MirrorSDK.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50FD32CF1B905556001B9B6B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		50FD32B41B905556001B9B6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50FD335D1B905590001B9B6B /* MirrorDemoViewController.m in Sources */,
+				50FD33671B905590001B9B6B /* MirrorResult.m in Sources */,
+				50FD336C1B905590001B9B6B /* MirrorGLKShaderVariable.m in Sources */,
+				50FD33691B905590001B9B6B /* functions.cpp in Sources */,
+				50FD33611B905590001B9B6B /* MirrorCameraInput.mm in Sources */,
+				50FD33741B905590001B9B6B /* MirrorOpenGLNode.mm in Sources */,
+				50FD33651B905590001B9B6B /* MirrorBeautyModel.m in Sources */,
+				50FD33771B905590001B9B6B /* MirrorFileUtil.m in Sources */,
+				50FD336B1B905590001B9B6B /* MirrorGLKProgram.m in Sources */,
+				50FD336E1B905590001B9B6B /* MirrorGLKTextureInfo.m in Sources */,
+				50FD33791B905590001B9B6B /* MirrorTextUtils.m in Sources */,
+				50FD33711B905590001B9B6B /* MirrorOpenGLContext.m in Sources */,
+				50FD33751B905590001B9B6B /* MirrorDiskCache.m in Sources */,
+				50FD335E1B905590001B9B6B /* MirrorViewController.mm in Sources */,
+				50FD334F1B905590001B9B6B /* IPADemoViewController.m in Sources */,
+				50FD33631B905590001B9B6B /* MirrorMakeUpManager.m in Sources */,
+				50FD33601B905590001B9B6B /* MirrorMaterialUnUseCacheManager.m in Sources */,
+				50FD33501B905590001B9B6B /* main.m in Sources */,
+				50FD335C1B905590001B9B6B /* MirrorBaseViewController.m in Sources */,
+				50FD33541B905590001B9B6B /* ViewController.m in Sources */,
+				50FD33681B905590001B9B6B /* MirrorOpenGLView.mm in Sources */,
+				50FD335B1B905590001B9B6B /* MirrorAdapterManager.m in Sources */,
+				50FD33721B905590001B9B6B /* MirrorOpenGLFrameBuffer.mm in Sources */,
+				50FD335F1B905590001B9B6B /* MirrorMaterialManager.m in Sources */,
+				50FD33781B905590001B9B6B /* MirrorMulticastDelegate.m in Sources */,
+				50FD336A1B905590001B9B6B /* MirrorGLKAttribute.m in Sources */,
+				50FD336F1B905590001B9B6B /* MirrorGLKUniform.m in Sources */,
+				50FD337A1B905590001B9B6B /* MirrorUtils.m in Sources */,
+				50FD33661B905590001B9B6B /* MirrorMakeUpModel.m in Sources */,
+				50FD33731B905590001B9B6B /* MirrorOpenGLFrameBufferCache.mm in Sources */,
+				50FD33701B905590001B9B6B /* MirrorMakeUpCenter.mm in Sources */,
+				50FD336D1B905590001B9B6B /* MirrorGLKTexture.m in Sources */,
+				50FD33621B905590001B9B6B /* MirrorMakeUpInput.mm in Sources */,
+				50FD33761B905590001B9B6B /* MirrorDownload.m in Sources */,
+				50FD334A1B905590001B9B6B /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		50FD32CD1B905556001B9B6B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		50FD32D31B905556001B9B6B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 50FD32B71B905556001B9B6B /* MirrorDemo */;
+			targetProxy = 50FD32D21B905556001B9B6B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		50FD32E41B905590001B9B6B /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50FD32E51B905590001B9B6B /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		50FD32E61B905590001B9B6B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				50FD32E71B905590001B9B6B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		50FD32D91B905556001B9B6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		50FD32DA1B905556001B9B6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		50FD32DC1B905556001B9B6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MirrorDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MirrorSDK/Resource",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		50FD32DD1B905556001B9B6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = MirrorDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/MirrorSDK/Resource",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		50FD32DF1B905556001B9B6B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MirrorDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MirrorDemo.app/MirrorDemo";
+			};
+			name = Debug;
+		};
+		50FD32E01B905556001B9B6B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MirrorDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MirrorDemo.app/MirrorDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		50FD32B31B905556001B9B6B /* Build configuration list for PBXProject "MirrorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50FD32D91B905556001B9B6B /* Debug */,
+				50FD32DA1B905556001B9B6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50FD32DB1B905556001B9B6B /* Build configuration list for PBXNativeTarget "MirrorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50FD32DC1B905556001B9B6B /* Debug */,
+				50FD32DD1B905556001B9B6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		50FD32DE1B905556001B9B6B /* Build configuration list for PBXNativeTarget "MirrorDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				50FD32DF1B905556001B9B6B /* Debug */,
+				50FD32E01B905556001B9B6B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 50FD32B01B905556001B9B6B /* Project object */;
+}
