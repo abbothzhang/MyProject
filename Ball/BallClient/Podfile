@@ -1,0 +1,10 @@
+
+platform :ios, '7.0'
+
+#AFNetworking 2.x要求ios6及以上，1.x要求ios5及以上
+pod 'AFNetworking', '~> 2.5.4'
+pod 'SDWebImage', '~>3.6'
+pod 'MBProgressHUD', '~>0.8'
+
+
+
