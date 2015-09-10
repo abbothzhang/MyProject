@@ -1,0 +1,561 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1842F47C18FE615300A68403 /* SUNTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842F47B18FE615300A68403 /* SUNTextField.m */; };
+		1842F48118FE628700A68403 /* QCLeftMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842F48018FE628700A68403 /* QCLeftMenuViewController.m */; };
+		1842F48318FE634200A68403 /* QCSlideViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1842F48218FE634200A68403 /* QCSlideViewController.xib */; };
+		1842F48518FE639000A68403 /* QCLeftMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1842F48418FE639000A68403 /* QCLeftMenuViewController.xib */; };
+		1842F48818FE63D100A68403 /* QCListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1842F48718FE63D100A68403 /* QCListViewController.m */; };
+		1842F48A18FE641C00A68403 /* QCListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1842F48918FE641C00A68403 /* QCListViewController.xib */; };
+		18B5E4B818FE669400159EED /* QCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B5E4B718FE669400159EED /* QCViewController.m */; };
+		18CDE21C18FE543E00095132 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CDE21B18FE543E00095132 /* Foundation.framework */; };
+		18CDE21E18FE543E00095132 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CDE21D18FE543E00095132 /* CoreGraphics.framework */; };
+		18CDE22018FE543E00095132 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CDE21F18FE543E00095132 /* UIKit.framework */; };
+		18CDE22618FE543E00095132 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18CDE22418FE543E00095132 /* InfoPlist.strings */; };
+		18CDE22818FE543E00095132 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CDE22718FE543E00095132 /* main.m */; };
+		18CDE22C18FE543E00095132 /* QCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CDE22B18FE543E00095132 /* QCAppDelegate.m */; };
+		18CDE22E18FE543E00095132 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18CDE22D18FE543E00095132 /* Images.xcassets */; };
+		18CDE23518FE543E00095132 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CDE23418FE543E00095132 /* XCTest.framework */; };
+		18CDE23618FE543E00095132 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CDE21B18FE543E00095132 /* Foundation.framework */; };
+		18CDE23718FE543E00095132 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CDE21F18FE543E00095132 /* UIKit.framework */; };
+		18CDE23F18FE543E00095132 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18CDE23D18FE543E00095132 /* InfoPlist.strings */; };
+		18CDE24118FE543E00095132 /* QCSliderTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CDE24018FE543E00095132 /* QCSliderTableViewTests.m */; };
+		18CDE24C18FE548E00095132 /* QCSlideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CDE24B18FE548E00095132 /* QCSlideViewController.m */; };
+		18CDE25918FE550000095132 /* icon_rightarrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 18CDE25618FE550000095132 /* icon_rightarrow.png */; };
+		18CDE25A18FE550000095132 /* icon_rightarrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18CDE25718FE550000095132 /* icon_rightarrow@2x.png */; };
+		18CDE25B18FE550000095132 /* red_line_and_shadow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18CDE25818FE550000095132 /* red_line_and_shadow@2x.png */; };
+		18CDE26918FE561F00095132 /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CDE26118FE561F00095132 /* MMDrawerBarButtonItem.m */; };
+		18CDE26A18FE561F00095132 /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CDE26318FE561F00095132 /* MMDrawerController.m */; };
+		18CDE26B18FE561F00095132 /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CDE26618FE561F00095132 /* MMDrawerVisualState.m */; };
+		18CDE26C18FE561F00095132 /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CDE26818FE561F00095132 /* UIViewController+MMDrawerController.m */; };
+		18CDE26F18FE565400095132 /* QCSlideSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CDE26E18FE565400095132 /* QCSlideSwitchView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18CDE23818FE543E00095132 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18CDE21018FE543D00095132 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18CDE21718FE543E00095132;
+			remoteInfo = QCSliderTableView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1842F47A18FE615300A68403 /* SUNTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SUNTextField.h; sourceTree = "<group>"; };
+		1842F47B18FE615300A68403 /* SUNTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SUNTextField.m; sourceTree = "<group>"; };
+		1842F47F18FE628700A68403 /* QCLeftMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCLeftMenuViewController.h; sourceTree = "<group>"; };
+		1842F48018FE628700A68403 /* QCLeftMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCLeftMenuViewController.m; sourceTree = "<group>"; };
+		1842F48218FE634200A68403 /* QCSlideViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QCSlideViewController.xib; sourceTree = "<group>"; };
+		1842F48418FE639000A68403 /* QCLeftMenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QCLeftMenuViewController.xib; sourceTree = "<group>"; };
+		1842F48618FE63D100A68403 /* QCListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCListViewController.h; sourceTree = "<group>"; };
+		1842F48718FE63D100A68403 /* QCListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCListViewController.m; sourceTree = "<group>"; };
+		1842F48918FE641C00A68403 /* QCListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QCListViewController.xib; sourceTree = "<group>"; };
+		18B5E4B618FE669400159EED /* QCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = QCViewController.h; path = Lib/QCViewController.h; sourceTree = "<group>"; };
+		18B5E4B718FE669400159EED /* QCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = QCViewController.m; path = Lib/QCViewController.m; sourceTree = "<group>"; };
+		18CDE21818FE543E00095132 /* QCSliderTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QCSliderTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18CDE21B18FE543E00095132 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		18CDE21D18FE543E00095132 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		18CDE21F18FE543E00095132 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		18CDE22318FE543E00095132 /* QCSliderTableView-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QCSliderTableView-Info.plist"; sourceTree = "<group>"; };
+		18CDE22518FE543E00095132 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18CDE22718FE543E00095132 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		18CDE22918FE543E00095132 /* QCSliderTableView-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QCSliderTableView-Prefix.pch"; sourceTree = "<group>"; };
+		18CDE22A18FE543E00095132 /* QCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QCAppDelegate.h; sourceTree = "<group>"; };
+		18CDE22B18FE543E00095132 /* QCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QCAppDelegate.m; sourceTree = "<group>"; };
+		18CDE22D18FE543E00095132 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		18CDE23318FE543E00095132 /* QCSliderTableViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QCSliderTableViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18CDE23418FE543E00095132 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		18CDE23C18FE543E00095132 /* QCSliderTableViewTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QCSliderTableViewTests-Info.plist"; sourceTree = "<group>"; };
+		18CDE23E18FE543E00095132 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		18CDE24018FE543E00095132 /* QCSliderTableViewTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QCSliderTableViewTests.m; sourceTree = "<group>"; };
+		18CDE24A18FE548E00095132 /* QCSlideViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCSlideViewController.h; sourceTree = "<group>"; };
+		18CDE24B18FE548E00095132 /* QCSlideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCSlideViewController.m; sourceTree = "<group>"; };
+		18CDE25618FE550000095132 /* icon_rightarrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_rightarrow.png; sourceTree = "<group>"; };
+		18CDE25718FE550000095132 /* icon_rightarrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_rightarrow@2x.png"; sourceTree = "<group>"; };
+		18CDE25818FE550000095132 /* red_line_and_shadow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "red_line_and_shadow@2x.png"; sourceTree = "<group>"; };
+		18CDE26018FE561F00095132 /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		18CDE26118FE561F00095132 /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		18CDE26218FE561F00095132 /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		18CDE26318FE561F00095132 /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		18CDE26418FE561F00095132 /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		18CDE26518FE561F00095132 /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		18CDE26618FE561F00095132 /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		18CDE26718FE561F00095132 /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		18CDE26818FE561F00095132 /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
+		18CDE26D18FE565400095132 /* QCSlideSwitchView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QCSlideSwitchView.h; sourceTree = "<group>"; };
+		18CDE26E18FE565400095132 /* QCSlideSwitchView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QCSlideSwitchView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18CDE21518FE543E00095132 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18CDE21E18FE543E00095132 /* CoreGraphics.framework in Frameworks */,
+				18CDE22018FE543E00095132 /* UIKit.framework in Frameworks */,
+				18CDE21C18FE543E00095132 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CDE23018FE543E00095132 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18CDE23518FE543E00095132 /* XCTest.framework in Frameworks */,
+				18CDE23718FE543E00095132 /* UIKit.framework in Frameworks */,
+				18CDE23618FE543E00095132 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18CDE20F18FE543D00095132 = {
+			isa = PBXGroup;
+			children = (
+				18CDE22118FE543E00095132 /* QCSliderTableView */,
+				18CDE23A18FE543E00095132 /* QCSliderTableViewTests */,
+				18CDE21A18FE543E00095132 /* Frameworks */,
+				18CDE21918FE543E00095132 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18CDE21918FE543E00095132 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18CDE21818FE543E00095132 /* QCSliderTableView.app */,
+				18CDE23318FE543E00095132 /* QCSliderTableViewTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18CDE21A18FE543E00095132 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18CDE21B18FE543E00095132 /* Foundation.framework */,
+				18CDE21D18FE543E00095132 /* CoreGraphics.framework */,
+				18CDE21F18FE543E00095132 /* UIKit.framework */,
+				18CDE23418FE543E00095132 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18CDE22118FE543E00095132 /* QCSliderTableView */ = {
+			isa = PBXGroup;
+			children = (
+				18CDE25518FE550000095132 /* Pic */,
+				18CDE25418FE54FB00095132 /* Lib */,
+				18CDE22A18FE543E00095132 /* QCAppDelegate.h */,
+				18CDE22B18FE543E00095132 /* QCAppDelegate.m */,
+				18B5E4B618FE669400159EED /* QCViewController.h */,
+				18B5E4B718FE669400159EED /* QCViewController.m */,
+				18CDE24A18FE548E00095132 /* QCSlideViewController.h */,
+				18CDE24B18FE548E00095132 /* QCSlideViewController.m */,
+				1842F48218FE634200A68403 /* QCSlideViewController.xib */,
+				18CDE26D18FE565400095132 /* QCSlideSwitchView.h */,
+				18CDE26E18FE565400095132 /* QCSlideSwitchView.m */,
+				1842F47F18FE628700A68403 /* QCLeftMenuViewController.h */,
+				1842F48018FE628700A68403 /* QCLeftMenuViewController.m */,
+				1842F48418FE639000A68403 /* QCLeftMenuViewController.xib */,
+				1842F48618FE63D100A68403 /* QCListViewController.h */,
+				1842F48718FE63D100A68403 /* QCListViewController.m */,
+				1842F48918FE641C00A68403 /* QCListViewController.xib */,
+				18CDE22D18FE543E00095132 /* Images.xcassets */,
+				18CDE22218FE543E00095132 /* Supporting Files */,
+			);
+			path = QCSliderTableView;
+			sourceTree = "<group>";
+		};
+		18CDE22218FE543E00095132 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18CDE22318FE543E00095132 /* QCSliderTableView-Info.plist */,
+				18CDE22418FE543E00095132 /* InfoPlist.strings */,
+				18CDE22718FE543E00095132 /* main.m */,
+				18CDE22918FE543E00095132 /* QCSliderTableView-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18CDE23A18FE543E00095132 /* QCSliderTableViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				18CDE24018FE543E00095132 /* QCSliderTableViewTests.m */,
+				18CDE23B18FE543E00095132 /* Supporting Files */,
+			);
+			path = QCSliderTableViewTests;
+			sourceTree = "<group>";
+		};
+		18CDE23B18FE543E00095132 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				18CDE23C18FE543E00095132 /* QCSliderTableViewTests-Info.plist */,
+				18CDE23D18FE543E00095132 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		18CDE25418FE54FB00095132 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				1842F47A18FE615300A68403 /* SUNTextField.h */,
+				1842F47B18FE615300A68403 /* SUNTextField.m */,
+				18CDE26018FE561F00095132 /* MMDrawerBarButtonItem.h */,
+				18CDE26118FE561F00095132 /* MMDrawerBarButtonItem.m */,
+				18CDE26218FE561F00095132 /* MMDrawerController.h */,
+				18CDE26318FE561F00095132 /* MMDrawerController.m */,
+				18CDE26418FE561F00095132 /* MMDrawerController+Subclass.h */,
+				18CDE26518FE561F00095132 /* MMDrawerVisualState.h */,
+				18CDE26618FE561F00095132 /* MMDrawerVisualState.m */,
+				18CDE26718FE561F00095132 /* UIViewController+MMDrawerController.h */,
+				18CDE26818FE561F00095132 /* UIViewController+MMDrawerController.m */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		18CDE25518FE550000095132 /* Pic */ = {
+			isa = PBXGroup;
+			children = (
+				18CDE25618FE550000095132 /* icon_rightarrow.png */,
+				18CDE25718FE550000095132 /* icon_rightarrow@2x.png */,
+				18CDE25818FE550000095132 /* red_line_and_shadow@2x.png */,
+			);
+			path = Pic;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18CDE21718FE543E00095132 /* QCSliderTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18CDE24418FE543E00095132 /* Build configuration list for PBXNativeTarget "QCSliderTableView" */;
+			buildPhases = (
+				18CDE21418FE543E00095132 /* Sources */,
+				18CDE21518FE543E00095132 /* Frameworks */,
+				18CDE21618FE543E00095132 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QCSliderTableView;
+			productName = QCSliderTableView;
+			productReference = 18CDE21818FE543E00095132 /* QCSliderTableView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18CDE23218FE543E00095132 /* QCSliderTableViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18CDE24718FE543E00095132 /* Build configuration list for PBXNativeTarget "QCSliderTableViewTests" */;
+			buildPhases = (
+				18CDE22F18FE543E00095132 /* Sources */,
+				18CDE23018FE543E00095132 /* Frameworks */,
+				18CDE23118FE543E00095132 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18CDE23918FE543E00095132 /* PBXTargetDependency */,
+			);
+			name = QCSliderTableViewTests;
+			productName = QCSliderTableViewTests;
+			productReference = 18CDE23318FE543E00095132 /* QCSliderTableViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18CDE21018FE543D00095132 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = QC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Scasy;
+				TargetAttributes = {
+					18CDE23218FE543E00095132 = {
+						TestTargetID = 18CDE21718FE543E00095132;
+					};
+				};
+			};
+			buildConfigurationList = 18CDE21318FE543D00095132 /* Build configuration list for PBXProject "QCSliderTableView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 18CDE20F18FE543D00095132;
+			productRefGroup = 18CDE21918FE543E00095132 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18CDE21718FE543E00095132 /* QCSliderTableView */,
+				18CDE23218FE543E00095132 /* QCSliderTableViewTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18CDE21618FE543E00095132 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1842F48A18FE641C00A68403 /* QCListViewController.xib in Resources */,
+				1842F48318FE634200A68403 /* QCSlideViewController.xib in Resources */,
+				18CDE25B18FE550000095132 /* red_line_and_shadow@2x.png in Resources */,
+				18CDE25A18FE550000095132 /* icon_rightarrow@2x.png in Resources */,
+				18CDE25918FE550000095132 /* icon_rightarrow.png in Resources */,
+				18CDE22618FE543E00095132 /* InfoPlist.strings in Resources */,
+				1842F48518FE639000A68403 /* QCLeftMenuViewController.xib in Resources */,
+				18CDE22E18FE543E00095132 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CDE23118FE543E00095132 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18CDE23F18FE543E00095132 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18CDE21418FE543E00095132 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18B5E4B818FE669400159EED /* QCViewController.m in Sources */,
+				18CDE26F18FE565400095132 /* QCSlideSwitchView.m in Sources */,
+				18CDE24C18FE548E00095132 /* QCSlideViewController.m in Sources */,
+				1842F47C18FE615300A68403 /* SUNTextField.m in Sources */,
+				18CDE26918FE561F00095132 /* MMDrawerBarButtonItem.m in Sources */,
+				18CDE26C18FE561F00095132 /* UIViewController+MMDrawerController.m in Sources */,
+				18CDE22C18FE543E00095132 /* QCAppDelegate.m in Sources */,
+				1842F48118FE628700A68403 /* QCLeftMenuViewController.m in Sources */,
+				18CDE26A18FE561F00095132 /* MMDrawerController.m in Sources */,
+				18CDE22818FE543E00095132 /* main.m in Sources */,
+				1842F48818FE63D100A68403 /* QCListViewController.m in Sources */,
+				18CDE26B18FE561F00095132 /* MMDrawerVisualState.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18CDE22F18FE543E00095132 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18CDE24118FE543E00095132 /* QCSliderTableViewTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18CDE23918FE543E00095132 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18CDE21718FE543E00095132 /* QCSliderTableView */;
+			targetProxy = 18CDE23818FE543E00095132 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18CDE22418FE543E00095132 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18CDE22518FE543E00095132 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		18CDE23D18FE543E00095132 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18CDE23E18FE543E00095132 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18CDE24218FE543E00095132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18CDE24318FE543E00095132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18CDE24518FE543E00095132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QCSliderTableView/QCSliderTableView-Prefix.pch";
+				INFOPLIST_FILE = "QCSliderTableView/QCSliderTableView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		18CDE24618FE543E00095132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QCSliderTableView/QCSliderTableView-Prefix.pch";
+				INFOPLIST_FILE = "QCSliderTableView/QCSliderTableView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		18CDE24818FE543E00095132 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QCSliderTableView.app/QCSliderTableView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QCSliderTableView/QCSliderTableView-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "QCSliderTableViewTests/QCSliderTableViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		18CDE24918FE543E00095132 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QCSliderTableView.app/QCSliderTableView";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QCSliderTableView/QCSliderTableView-Prefix.pch";
+				INFOPLIST_FILE = "QCSliderTableViewTests/QCSliderTableViewTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18CDE21318FE543D00095132 /* Build configuration list for PBXProject "QCSliderTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18CDE24218FE543E00095132 /* Debug */,
+				18CDE24318FE543E00095132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18CDE24418FE543E00095132 /* Build configuration list for PBXNativeTarget "QCSliderTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18CDE24518FE543E00095132 /* Debug */,
+				18CDE24618FE543E00095132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18CDE24718FE543E00095132 /* Build configuration list for PBXNativeTarget "QCSliderTableViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18CDE24818FE543E00095132 /* Debug */,
+				18CDE24918FE543E00095132 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18CDE21018FE543D00095132 /* Project object */;
+}
