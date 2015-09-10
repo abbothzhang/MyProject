@@ -7,6 +7,12 @@
 //
 
 #import "AppDelegate.h"
+#import "MyTeamViewController.h"
+#import "BallListViewController.h"
+#import "VoteViewController.h"
+#import "BallCircleViewController.h"
+#import "BallInfoViewController.h"
+#import "ImageUtil.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +22,42 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window makeKeyAndVisible];
+    self.window.backgroundColor = [UIColor whiteColor];
+    
+    MyTeamViewController *myTeamVC = [[MyTeamViewController alloc] init];
+    BallListViewController *ballListVC = [[BallListViewController alloc] init];
+    VoteViewController *voteVC = [[VoteViewController alloc] init];
+    BallCircleViewController *ballCircleVC = [[BallCircleViewController alloc] init];
+    BallInfoViewController *ballInfoVC = [[BallInfoViewController alloc] init];
+    
+    //set VC
+    UIImage *img1Nor = [UIImage imageNamed:@"img1.png"];
+    img1Nor = [ImageUtil scaleImg:img1Nor toScale:0.3];
+    
+    
+    myTeamVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"我的队"image:img1Nor selectedImage:img1Nor];
+    ballListVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"嗨球榜" image:img1Nor tag:0];
+    voteVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"投票"image:img1Nor selectedImage:img1Nor];
+    ballCircleVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"嗨球圈"image:img1Nor selectedImage:img1Nor];
+    ballInfoVC.tabBarItem = [[UITabBarItem alloc] initWithTitle:@"球讯"image:img1Nor selectedImage:img1Nor];
+
+    
+    UINavigationController *nav1VC = [[UINavigationController alloc] initWithRootViewController:myTeamVC];
+    UINavigationController *nav2VC = [[UINavigationController alloc] initWithRootViewController:ballListVC];
+    UINavigationController *nav3VC = [[UINavigationController alloc] initWithRootViewController:voteVC];
+    UINavigationController *nav4VC = [[UINavigationController alloc] initWithRootViewController:ballCircleVC];
+    UINavigationController *nav5VC = [[UINavigationController alloc] initWithRootViewController:ballInfoVC];
+    
+    UITabBarController *tabBarVC = [[UITabBarController alloc] init];
+    NSArray *tabArray = [[NSArray alloc] initWithObjects:nav1VC,nav2VC,nav3VC,nav4VC,nav5VC, nil];
+    tabBarVC.viewControllers = tabArray;
+    tabBarVC.selectedIndex = 0;
+    
+    self.window.rootViewController = tabBarVC;
+    
+    
     return YES;
 }
 

@@ -14,6 +14,14 @@
 		505591561BA1B10D006F0100 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 505591551BA1B10D006F0100 /* Images.xcassets */; };
 		505591591BA1B10D006F0100 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505591571BA1B10D006F0100 /* LaunchScreen.xib */; };
 		505591651BA1B10D006F0100 /* BallClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 505591641BA1B10D006F0100 /* BallClientTests.m */; };
+		505591731BA1B1C6006F0100 /* DemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505591721BA1B1C6006F0100 /* DemoViewController.m */; };
+		505591761BA1B236006F0100 /* MyTeamViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505591751BA1B236006F0100 /* MyTeamViewController.m */; };
+		505591791BA1B250006F0100 /* BallListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505591781BA1B250006F0100 /* BallListViewController.m */; };
+		5055917C1BA1B305006F0100 /* VoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5055917B1BA1B305006F0100 /* VoteViewController.m */; };
+		5055917F1BA1B34E006F0100 /* BallCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5055917E1BA1B34E006F0100 /* BallCircleViewController.m */; };
+		505591821BA1B373006F0100 /* BallInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505591811BA1B373006F0100 /* BallInfoViewController.m */; };
+		505591851BA1B5FE006F0100 /* img1.png in Resources */ = {isa = PBXBuildFile; fileRef = 505591841BA1B5FE006F0100 /* img1.png */; };
+		505591891BA1B69A006F0100 /* ImageUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 505591881BA1B69A006F0100 /* ImageUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +48,21 @@
 		5055915E1BA1B10D006F0100 /* BallClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BallClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		505591631BA1B10D006F0100 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		505591641BA1B10D006F0100 /* BallClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BallClientTests.m; sourceTree = "<group>"; };
+		505591711BA1B1C6006F0100 /* DemoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DemoViewController.h; path = ViewController/DemoViewController.h; sourceTree = "<group>"; };
+		505591721BA1B1C6006F0100 /* DemoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DemoViewController.m; path = ViewController/DemoViewController.m; sourceTree = "<group>"; };
+		505591741BA1B236006F0100 /* MyTeamViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyTeamViewController.h; path = ViewController/MyTeamViewController.h; sourceTree = "<group>"; };
+		505591751BA1B236006F0100 /* MyTeamViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyTeamViewController.m; path = ViewController/MyTeamViewController.m; sourceTree = "<group>"; };
+		505591771BA1B250006F0100 /* BallListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BallListViewController.h; path = ViewController/BallListViewController.h; sourceTree = "<group>"; };
+		505591781BA1B250006F0100 /* BallListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BallListViewController.m; path = ViewController/BallListViewController.m; sourceTree = "<group>"; };
+		5055917A1BA1B305006F0100 /* VoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = VoteViewController.h; path = ViewController/VoteViewController.h; sourceTree = "<group>"; };
+		5055917B1BA1B305006F0100 /* VoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = VoteViewController.m; path = ViewController/VoteViewController.m; sourceTree = "<group>"; };
+		5055917D1BA1B34E006F0100 /* BallCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BallCircleViewController.h; path = ViewController/BallCircleViewController.h; sourceTree = "<group>"; };
+		5055917E1BA1B34E006F0100 /* BallCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BallCircleViewController.m; path = ViewController/BallCircleViewController.m; sourceTree = "<group>"; };
+		505591801BA1B373006F0100 /* BallInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BallInfoViewController.h; path = ViewController/BallInfoViewController.h; sourceTree = "<group>"; };
+		505591811BA1B373006F0100 /* BallInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BallInfoViewController.m; path = ViewController/BallInfoViewController.m; sourceTree = "<group>"; };
+		505591841BA1B5FE006F0100 /* img1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img1.png; sourceTree = "<group>"; };
+		505591871BA1B69A006F0100 /* ImageUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageUtil.h; sourceTree = "<group>"; };
+		505591881BA1B69A006F0100 /* ImageUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageUtil.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +104,11 @@
 		505591471BA1B10D006F0100 /* BallClient */ = {
 			isa = PBXGroup;
 			children = (
+				505591701BA1B1A2006F0100 /* Model */,
+				5055916F1BA1B19D006F0100 /* View */,
+				5055916E1BA1B192006F0100 /* ViewController */,
+				505591861BA1B68D006F0100 /* Util */,
+				505591831BA1B5B6006F0100 /* Resource */,
 				505591481BA1B10D006F0100 /* Supporting Files */,
 			);
 			path = BallClient;
@@ -117,6 +145,56 @@
 				505591631BA1B10D006F0100 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5055916E1BA1B192006F0100 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				505591711BA1B1C6006F0100 /* DemoViewController.h */,
+				505591721BA1B1C6006F0100 /* DemoViewController.m */,
+				505591741BA1B236006F0100 /* MyTeamViewController.h */,
+				505591751BA1B236006F0100 /* MyTeamViewController.m */,
+				505591771BA1B250006F0100 /* BallListViewController.h */,
+				505591781BA1B250006F0100 /* BallListViewController.m */,
+				5055917A1BA1B305006F0100 /* VoteViewController.h */,
+				5055917B1BA1B305006F0100 /* VoteViewController.m */,
+				5055917D1BA1B34E006F0100 /* BallCircleViewController.h */,
+				5055917E1BA1B34E006F0100 /* BallCircleViewController.m */,
+				505591801BA1B373006F0100 /* BallInfoViewController.h */,
+				505591811BA1B373006F0100 /* BallInfoViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		5055916F1BA1B19D006F0100 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		505591701BA1B1A2006F0100 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		505591831BA1B5B6006F0100 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				505591841BA1B5FE006F0100 /* img1.png */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		505591861BA1B68D006F0100 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				505591871BA1B69A006F0100 /* ImageUtil.h */,
+				505591881BA1B69A006F0100 /* ImageUtil.m */,
+			);
+			name = Util;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				505591541BA1B10D006F0100 /* Main.storyboard in Resources */,
+				505591851BA1B5FE006F0100 /* img1.png in Resources */,
 				505591591BA1B10D006F0100 /* LaunchScreen.xib in Resources */,
 				505591561BA1B10D006F0100 /* Images.xcassets in Resources */,
 			);
@@ -219,9 +298,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5055917C1BA1B305006F0100 /* VoteViewController.m in Sources */,
+				5055917F1BA1B34E006F0100 /* BallCircleViewController.m in Sources */,
 				505591511BA1B10D006F0100 /* ViewController.m in Sources */,
 				5055914E1BA1B10D006F0100 /* AppDelegate.m in Sources */,
+				505591761BA1B236006F0100 /* MyTeamViewController.m in Sources */,
+				505591821BA1B373006F0100 /* BallInfoViewController.m in Sources */,
+				505591791BA1B250006F0100 /* BallListViewController.m in Sources */,
 				5055914B1BA1B10D006F0100 /* main.m in Sources */,
+				505591731BA1B1C6006F0100 /* DemoViewController.m in Sources */,
+				505591891BA1B69A006F0100 /* ImageUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
