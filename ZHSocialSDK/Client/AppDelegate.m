@@ -1,13 +1,12 @@
 //
 //  AppDelegate.m
-//  TestClient
+//  Client
 //
 //  Created by albert on 15/9/13.
 //  Copyright (c) 2015年 penghui.zh. All rights reserved.
 //
 
 #import "AppDelegate.h"
-#import "MainViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,11 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    [self.window makeKeyAndVisible];
-    self.window.backgroundColor = [UIColor whiteColor];
-    MainViewController *mainVC = [[MainViewController alloc] init];
-    self.window.rootViewController = mainVC;
+    // Override point for customization after application launch.
     return YES;
 }
 

@@ -1,15 +1,13 @@
 //
-//  ViewController.h
-//  TestClient
+//  ZHSocialSDK.m
+//  ZHSocialSDK
 //
 //  Created by albert on 15/9/13.
 //  Copyright (c) 2015年 penghui.zh. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "ZHSocialSDK.h"
 
-@interface ViewController : UIViewController
-
+@implementation ZHSocialSDK
 
 @end
-

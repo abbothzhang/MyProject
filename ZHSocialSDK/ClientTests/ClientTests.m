@@ -1,6 +1,6 @@
 //
-//  TestClientTests.m
-//  TestClientTests
+//  ClientTests.m
+//  ClientTests
 //
 //  Created by albert on 15/9/13.
 //  Copyright (c) 2015年 penghui.zh. All rights reserved.
@@ -9,11 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-@interface TestClientTests : XCTestCase
+@interface ClientTests : XCTestCase
 
 @end
 
-@implementation TestClientTests
+@implementation ClientTests
 
 - (void)setUp {
     [super setUp];
