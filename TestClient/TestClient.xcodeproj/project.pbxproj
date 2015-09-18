@@ -27,6 +27,28 @@
 		5034465A1BA580B100606F37 /* TBSCDataTypes.m in Sources */ = {isa = PBXBuildFile; fileRef = 503446591BA580B100606F37 /* TBSCDataTypes.m */; };
 		5034465E1BA5C07300606F37 /* feed_praise@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5034465C1BA5C07300606F37 /* feed_praise@2x.png */; };
 		5034465F1BA5C07300606F37 /* feed_unpraise@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5034465D1BA5C07300606F37 /* feed_unpraise@2x.png */; };
+		5034474A1BA6F1FE00606F37 /* ZHCommentListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 503447491BA6F1FE00606F37 /* ZHCommentListView.m */; };
+		5034474D1BA6F24600606F37 /* ZHCommentBtnView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5034474C1BA6F24600606F37 /* ZHCommentBtnView.m */; };
+		503447511BA6F42600606F37 /* ZHCommentListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 503447501BA6F42600606F37 /* ZHCommentListViewController.m */; };
+		503447531BA6F8F100606F37 /* comment@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 503447521BA6F8F100606F37 /* comment@2x.png */; };
+		503447561BA7C53A00606F37 /* ZHUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 503447551BA7C53A00606F37 /* ZHUtil.m */; };
+		5034475B1BA7CCDF00606F37 /* ZHCmtCellHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5034475A1BA7CCDF00606F37 /* ZHCmtCellHeadView.m */; };
+		503447611BA7CE4500606F37 /* ZHCmtCellContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 503447601BA7CE4500606F37 /* ZHCmtCellContentView.m */; };
+		503447641BA7CEDD00606F37 /* ZHCmtCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 503447631BA7CEDD00606F37 /* ZHCmtCell.m */; };
+		503447671BA7CF0B00606F37 /* ZHCmtList.m in Sources */ = {isa = PBXBuildFile; fileRef = 503447661BA7CF0B00606F37 /* ZHCmtList.m */; };
+		503447831BA7F9F900606F37 /* MJDictionaryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 5034476D1BA7F9F900606F37 /* MJDictionaryCache.m */; };
+		503447841BA7F9F900606F37 /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 503447701BA7F9F900606F37 /* MJExtensionConst.m */; };
+		503447851BA7F9F900606F37 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 503447721BA7F9F900606F37 /* MJFoundation.m */; };
+		503447861BA7F9F900606F37 /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 503447741BA7F9F900606F37 /* MJProperty.m */; };
+		503447871BA7F9F900606F37 /* MJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = 503447761BA7F9F900606F37 /* MJPropertyKey.m */; };
+		503447881BA7F9F900606F37 /* MJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = 503447781BA7F9F900606F37 /* MJPropertyType.m */; };
+		503447891BA7F9F900606F37 /* NSObject+MJClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 5034477A1BA7F9F900606F37 /* NSObject+MJClass.m */; };
+		5034478A1BA7F9F900606F37 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 5034477C1BA7F9F900606F37 /* NSObject+MJCoding.m */; };
+		5034478B1BA7F9F900606F37 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5034477E1BA7F9F900606F37 /* NSObject+MJKeyValue.m */; };
+		5034478C1BA7F9F900606F37 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 503447801BA7F9F900606F37 /* NSObject+MJProperty.m */; };
+		5034478D1BA7F9F900606F37 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 503447821BA7F9F900606F37 /* NSString+MJExtension.m */; };
+		503447901BA7FB0500606F37 /* TBSCCommentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5034478F1BA7FB0500606F37 /* TBSCCommentItem.m */; };
+		503447941BA801C700606F37 /* ZHCmtModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 503447931BA801C700606F37 /* ZHCmtModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +101,50 @@
 		503446591BA580B100606F37 /* TBSCDataTypes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBSCDataTypes.m; sourceTree = "<group>"; };
 		5034465C1BA5C07300606F37 /* feed_praise@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feed_praise@2x.png"; sourceTree = "<group>"; };
 		5034465D1BA5C07300606F37 /* feed_unpraise@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "feed_unpraise@2x.png"; sourceTree = "<group>"; };
+		503447481BA6F1FE00606F37 /* ZHCommentListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHCommentListView.h; path = SocialSDK/View/ZHCommentListView.h; sourceTree = "<group>"; };
+		503447491BA6F1FE00606F37 /* ZHCommentListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHCommentListView.m; path = SocialSDK/View/ZHCommentListView.m; sourceTree = "<group>"; };
+		5034474B1BA6F24600606F37 /* ZHCommentBtnView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHCommentBtnView.h; path = SocialSDK/View/ZHCommentBtnView.h; sourceTree = "<group>"; };
+		5034474C1BA6F24600606F37 /* ZHCommentBtnView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHCommentBtnView.m; path = SocialSDK/View/ZHCommentBtnView.m; sourceTree = "<group>"; };
+		5034474F1BA6F42600606F37 /* ZHCommentListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHCommentListViewController.h; path = SocialSDK/ViewController/ZHCommentListViewController.h; sourceTree = "<group>"; };
+		503447501BA6F42600606F37 /* ZHCommentListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHCommentListViewController.m; path = SocialSDK/ViewController/ZHCommentListViewController.m; sourceTree = "<group>"; };
+		503447521BA6F8F100606F37 /* comment@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "comment@2x.png"; path = "SocialSDK/Resource/comment@2x.png"; sourceTree = "<group>"; };
+		503447541BA7C53A00606F37 /* ZHUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHUtil.h; path = Util/ZHUtil.h; sourceTree = "<group>"; };
+		503447551BA7C53A00606F37 /* ZHUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHUtil.m; path = Util/ZHUtil.m; sourceTree = "<group>"; };
+		503447591BA7CCDF00606F37 /* ZHCmtCellHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHCmtCellHeadView.h; path = SocialSDK/View/CommenList/ZHCmtCellHeadView.h; sourceTree = "<group>"; };
+		5034475A1BA7CCDF00606F37 /* ZHCmtCellHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHCmtCellHeadView.m; path = SocialSDK/View/CommenList/ZHCmtCellHeadView.m; sourceTree = "<group>"; };
+		5034475F1BA7CE4500606F37 /* ZHCmtCellContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHCmtCellContentView.h; path = SocialSDK/View/CommenList/ZHCmtCellContentView.h; sourceTree = "<group>"; };
+		503447601BA7CE4500606F37 /* ZHCmtCellContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHCmtCellContentView.m; path = SocialSDK/View/CommenList/ZHCmtCellContentView.m; sourceTree = "<group>"; };
+		503447621BA7CEDD00606F37 /* ZHCmtCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHCmtCell.h; path = SocialSDK/View/CommenList/ZHCmtCell.h; sourceTree = "<group>"; };
+		503447631BA7CEDD00606F37 /* ZHCmtCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHCmtCell.m; path = SocialSDK/View/CommenList/ZHCmtCell.m; sourceTree = "<group>"; };
+		503447651BA7CF0B00606F37 /* ZHCmtList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHCmtList.h; path = SocialSDK/View/CommenList/ZHCmtList.h; sourceTree = "<group>"; };
+		503447661BA7CF0B00606F37 /* ZHCmtList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHCmtList.m; path = SocialSDK/View/CommenList/ZHCmtList.m; sourceTree = "<group>"; };
+		5034476C1BA7F9F900606F37 /* MJDictionaryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJDictionaryCache.h; sourceTree = "<group>"; };
+		5034476D1BA7F9F900606F37 /* MJDictionaryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJDictionaryCache.m; sourceTree = "<group>"; };
+		5034476E1BA7F9F900606F37 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		5034476F1BA7F9F900606F37 /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
+		503447701BA7F9F900606F37 /* MJExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConst.m; sourceTree = "<group>"; };
+		503447711BA7F9F900606F37 /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
+		503447721BA7F9F900606F37 /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
+		503447731BA7F9F900606F37 /* MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJProperty.h; sourceTree = "<group>"; };
+		503447741BA7F9F900606F37 /* MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJProperty.m; sourceTree = "<group>"; };
+		503447751BA7F9F900606F37 /* MJPropertyKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyKey.h; sourceTree = "<group>"; };
+		503447761BA7F9F900606F37 /* MJPropertyKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyKey.m; sourceTree = "<group>"; };
+		503447771BA7F9F900606F37 /* MJPropertyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyType.h; sourceTree = "<group>"; };
+		503447781BA7F9F900606F37 /* MJPropertyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyType.m; sourceTree = "<group>"; };
+		503447791BA7F9F900606F37 /* NSObject+MJClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJClass.h"; sourceTree = "<group>"; };
+		5034477A1BA7F9F900606F37 /* NSObject+MJClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJClass.m"; sourceTree = "<group>"; };
+		5034477B1BA7F9F900606F37 /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		5034477C1BA7F9F900606F37 /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		5034477D1BA7F9F900606F37 /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		5034477E1BA7F9F900606F37 /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		5034477F1BA7F9F900606F37 /* NSObject+MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJProperty.h"; sourceTree = "<group>"; };
+		503447801BA7F9F900606F37 /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
+		503447811BA7F9F900606F37 /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
+		503447821BA7F9F900606F37 /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
+		5034478E1BA7FB0500606F37 /* TBSCCommentItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TBSCCommentItem.h; sourceTree = "<group>"; };
+		5034478F1BA7FB0500606F37 /* TBSCCommentItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TBSCCommentItem.m; sourceTree = "<group>"; };
+		503447921BA801C700606F37 /* ZHCmtModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHCmtModel.h; path = SocialSDK/Model/ZHCmtModel.h; sourceTree = "<group>"; };
+		503447931BA801C700606F37 /* ZHCmtModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHCmtModel.m; path = SocialSDK/Model/ZHCmtModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,9 +186,10 @@
 		503445FE1BA514F500606F37 /* TestClient */ = {
 			isa = PBXGroup;
 			children = (
-				503446511BA52C7A00606F37 /* Util */,
+				5034476B1BA7F9F900606F37 /* MJExtension */,
 				503446291BA5157500606F37 /* SocialSDK */,
 				503446251BA5153800606F37 /* ViewController */,
+				503446511BA52C7A00606F37 /* Util */,
 				503445FF1BA514F500606F37 /* Supporting Files */,
 			);
 			path = TestClient;
@@ -173,11 +240,13 @@
 		503446291BA5157500606F37 /* SocialSDK */ = {
 			isa = PBXGroup;
 			children = (
-				5034465B1BA5C04100606F37 /* Resouce */,
-				5034464F1BA52BC400606F37 /* Util */,
+				503447911BA7FB3E00606F37 /* Mock */,
 				5034462E1BA515EC00606F37 /* Model */,
-				5034462F1BA515F800606F37 /* Adapter */,
 				5034462D1BA515E600606F37 /* View */,
+				5034474E1BA6F3F000606F37 /* ViewController */,
+				5034464F1BA52BC400606F37 /* Util */,
+				5034462F1BA515F800606F37 /* Adapter */,
+				5034465B1BA5C04100606F37 /* Resouce */,
 			);
 			name = SocialSDK;
 			sourceTree = "<group>";
@@ -185,10 +254,8 @@
 		5034462D1BA515E600606F37 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				5034462A1BA515E100606F37 /* ZHSocailBar.h */,
-				5034462B1BA515E100606F37 /* ZHSocailBar.m */,
-				503446521BA57D5200606F37 /* ZHPraiseView.h */,
-				503446531BA57D5200606F37 /* ZHPraiseView.m */,
+				503447581BA7CC6400606F37 /* CommentList */,
+				503447571BA7CC5600606F37 /* ActionBar */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -203,6 +270,7 @@
 				5034464A1BA5238E00606F37 /* ZHSocialResult.m */,
 				503446581BA580B100606F37 /* TBSCDataTypes.h */,
 				503446591BA580B100606F37 /* TBSCDataTypes.m */,
+				5034476A1BA7F36900606F37 /* CommentList */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -235,6 +303,8 @@
 		503446511BA52C7A00606F37 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				503447541BA7C53A00606F37 /* ZHUtil.h */,
+				503447551BA7C53A00606F37 /* ZHUtil.m */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -242,10 +312,98 @@
 		5034465B1BA5C04100606F37 /* Resouce */ = {
 			isa = PBXGroup;
 			children = (
+				503447521BA6F8F100606F37 /* comment@2x.png */,
 				5034465C1BA5C07300606F37 /* feed_praise@2x.png */,
 				5034465D1BA5C07300606F37 /* feed_unpraise@2x.png */,
 			);
 			name = Resouce;
+			sourceTree = "<group>";
+		};
+		5034474E1BA6F3F000606F37 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5034474F1BA6F42600606F37 /* ZHCommentListViewController.h */,
+				503447501BA6F42600606F37 /* ZHCommentListViewController.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		503447571BA7CC5600606F37 /* ActionBar */ = {
+			isa = PBXGroup;
+			children = (
+				5034462A1BA515E100606F37 /* ZHSocailBar.h */,
+				5034462B1BA515E100606F37 /* ZHSocailBar.m */,
+				503446521BA57D5200606F37 /* ZHPraiseView.h */,
+				503446531BA57D5200606F37 /* ZHPraiseView.m */,
+				5034474B1BA6F24600606F37 /* ZHCommentBtnView.h */,
+				5034474C1BA6F24600606F37 /* ZHCommentBtnView.m */,
+				503447481BA6F1FE00606F37 /* ZHCommentListView.h */,
+				503447491BA6F1FE00606F37 /* ZHCommentListView.m */,
+			);
+			name = ActionBar;
+			sourceTree = "<group>";
+		};
+		503447581BA7CC6400606F37 /* CommentList */ = {
+			isa = PBXGroup;
+			children = (
+				503447591BA7CCDF00606F37 /* ZHCmtCellHeadView.h */,
+				5034475A1BA7CCDF00606F37 /* ZHCmtCellHeadView.m */,
+				5034475F1BA7CE4500606F37 /* ZHCmtCellContentView.h */,
+				503447601BA7CE4500606F37 /* ZHCmtCellContentView.m */,
+				503447621BA7CEDD00606F37 /* ZHCmtCell.h */,
+				503447631BA7CEDD00606F37 /* ZHCmtCell.m */,
+				503447651BA7CF0B00606F37 /* ZHCmtList.h */,
+				503447661BA7CF0B00606F37 /* ZHCmtList.m */,
+			);
+			name = CommentList;
+			sourceTree = "<group>";
+		};
+		5034476A1BA7F36900606F37 /* CommentList */ = {
+			isa = PBXGroup;
+			children = (
+				503447921BA801C700606F37 /* ZHCmtModel.h */,
+				503447931BA801C700606F37 /* ZHCmtModel.m */,
+				5034478E1BA7FB0500606F37 /* TBSCCommentItem.h */,
+				5034478F1BA7FB0500606F37 /* TBSCCommentItem.m */,
+			);
+			name = CommentList;
+			sourceTree = "<group>";
+		};
+		5034476B1BA7F9F900606F37 /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				5034476C1BA7F9F900606F37 /* MJDictionaryCache.h */,
+				5034476D1BA7F9F900606F37 /* MJDictionaryCache.m */,
+				5034476E1BA7F9F900606F37 /* MJExtension.h */,
+				5034476F1BA7F9F900606F37 /* MJExtensionConst.h */,
+				503447701BA7F9F900606F37 /* MJExtensionConst.m */,
+				503447711BA7F9F900606F37 /* MJFoundation.h */,
+				503447721BA7F9F900606F37 /* MJFoundation.m */,
+				503447731BA7F9F900606F37 /* MJProperty.h */,
+				503447741BA7F9F900606F37 /* MJProperty.m */,
+				503447751BA7F9F900606F37 /* MJPropertyKey.h */,
+				503447761BA7F9F900606F37 /* MJPropertyKey.m */,
+				503447771BA7F9F900606F37 /* MJPropertyType.h */,
+				503447781BA7F9F900606F37 /* MJPropertyType.m */,
+				503447791BA7F9F900606F37 /* NSObject+MJClass.h */,
+				5034477A1BA7F9F900606F37 /* NSObject+MJClass.m */,
+				5034477B1BA7F9F900606F37 /* NSObject+MJCoding.h */,
+				5034477C1BA7F9F900606F37 /* NSObject+MJCoding.m */,
+				5034477D1BA7F9F900606F37 /* NSObject+MJKeyValue.h */,
+				5034477E1BA7F9F900606F37 /* NSObject+MJKeyValue.m */,
+				5034477F1BA7F9F900606F37 /* NSObject+MJProperty.h */,
+				503447801BA7F9F900606F37 /* NSObject+MJProperty.m */,
+				503447811BA7F9F900606F37 /* NSString+MJExtension.h */,
+				503447821BA7F9F900606F37 /* NSString+MJExtension.m */,
+			);
+			path = MJExtension;
+			sourceTree = "<group>";
+		};
+		503447911BA7FB3E00606F37 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +490,7 @@
 				5034460B1BA514F500606F37 /* Main.storyboard in Resources */,
 				503446101BA514F500606F37 /* LaunchScreen.xib in Resources */,
 				5034465E1BA5C07300606F37 /* feed_praise@2x.png in Resources */,
+				503447531BA6F8F100606F37 /* comment@2x.png in Resources */,
 				5034460D1BA514F500606F37 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,19 +509,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				503447901BA7FB0500606F37 /* TBSCCommentItem.m in Sources */,
 				503446081BA514F500606F37 /* ViewController.m in Sources */,
+				503447891BA7F9F900606F37 /* NSObject+MJClass.m in Sources */,
+				5034474D1BA6F24600606F37 /* ZHCommentBtnView.m in Sources */,
+				503447671BA7CF0B00606F37 /* ZHCmtList.m in Sources */,
 				5034464B1BA5238E00606F37 /* ZHSocialResult.m in Sources */,
+				503447871BA7F9F900606F37 /* MJPropertyKey.m in Sources */,
+				503447881BA7F9F900606F37 /* MJPropertyType.m in Sources */,
 				503446441BA516D600606F37 /* ZHNetworkParam.m in Sources */,
 				503446571BA57F6200606F37 /* TBSCUtils.m in Sources */,
 				5034462C1BA515E100606F37 /* ZHSocailBar.m in Sources */,
 				503446431BA516D600606F37 /* ZHNetworkAdapter.m in Sources */,
+				5034478B1BA7F9F900606F37 /* NSObject+MJKeyValue.m in Sources */,
 				503446421BA516D600606F37 /* ZHAdapterManager.m in Sources */,
 				503446051BA514F500606F37 /* AppDelegate.m in Sources */,
+				503447511BA6F42600606F37 /* ZHCommentListViewController.m in Sources */,
+				5034478C1BA7F9F900606F37 /* NSObject+MJProperty.m in Sources */,
+				5034478A1BA7F9F900606F37 /* NSObject+MJCoding.m in Sources */,
 				503446471BA5212A00606F37 /* ZHSocialParam.m in Sources */,
+				503447561BA7C53A00606F37 /* ZHUtil.m in Sources */,
+				503447611BA7CE4500606F37 /* ZHCmtCellContentView.m in Sources */,
 				5034465A1BA580B100606F37 /* TBSCDataTypes.m in Sources */,
+				5034474A1BA6F1FE00606F37 /* ZHCommentListView.m in Sources */,
+				503447841BA7F9F900606F37 /* MJExtensionConst.m in Sources */,
+				5034478D1BA7F9F900606F37 /* NSString+MJExtension.m in Sources */,
+				503447861BA7F9F900606F37 /* MJProperty.m in Sources */,
+				5034475B1BA7CCDF00606F37 /* ZHCmtCellHeadView.m in Sources */,
 				5034464E1BA52BAE00606F37 /* UIColor+Hex.m in Sources */,
 				503446021BA514F500606F37 /* main.m in Sources */,
+				503447831BA7F9F900606F37 /* MJDictionaryCache.m in Sources */,
 				503446541BA57D5200606F37 /* ZHPraiseView.m in Sources */,
+				503447641BA7CEDD00606F37 /* ZHCmtCell.m in Sources */,
+				503447851BA7F9F900606F37 /* MJFoundation.m in Sources */,
+				503447941BA801C700606F37 /* ZHCmtModel.m in Sources */,
 				503446281BA5155900606F37 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -558,6 +738,7 @@
 				503446211BA514F500606F37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		503446221BA514F500606F37 /* Build configuration list for PBXNativeTarget "TestClientTests" */ = {
 			isa = XCConfigurationList;
@@ -566,6 +747,7 @@
 				503446241BA514F500606F37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

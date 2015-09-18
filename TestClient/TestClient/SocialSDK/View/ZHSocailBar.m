@@ -10,6 +10,7 @@
 #import "ZHSocialParam.h"
 #import "TBSCConst.h"
 #import "ZHPraiseView.h"
+#import "ZHCommentBtnView.h"
 
 @interface ZHSocailBar()
 
@@ -41,7 +42,12 @@
     CGRect praiseFrame = CGRectMake(0, 0, SCITEM_WIDTH, self.frame.size.height);
     ZHPraiseView *praiseView = [[ZHPraiseView alloc] initWithFrame:praiseFrame socialParam:self.socialParam];
     
+    CGRect commentFrame = CGRectMake(SCITEM_WIDTH, 0, SCITEM_WIDTH, self.frame.size.height);
+    ZHCommentBtnView *commentBtnView = [[ZHCommentBtnView alloc] initWithFrame:commentFrame socialParam:self.socialParam];
+    
+    
     [self addSubview:praiseView];
+    [self addSubview:commentBtnView];
     
 }
 
