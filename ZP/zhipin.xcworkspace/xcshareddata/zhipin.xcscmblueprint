@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A503FC00C3D17B9792410301F1280DF081F7285D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "669BDF2AD36D99B937B4B2F0607F73450F591FC3" : 0,
+    "A503FC00C3D17B9792410301F1280DF081F7285D" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "7F7F4830-D0B8-4576-8D69-1FA13093D707",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "669BDF2AD36D99B937B4B2F0607F73450F591FC3" : "",
+    "A503FC00C3D17B9792410301F1280DF081F7285D" : "ZP"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "zhipin",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "zhipin.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:abbothzhang\/MyProject.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "669BDF2AD36D99B937B4B2F0607F73450F591FC3"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/gitshell.com\/newjia\/ZP.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A503FC00C3D17B9792410301F1280DF081F7285D"
+    }
+  ]
+}
