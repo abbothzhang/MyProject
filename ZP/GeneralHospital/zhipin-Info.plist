@@ -18,6 +18,13 @@
 	<string>6.0</string>
 	<key>CFBundleName</key>
 	<string>至品</string>
+    
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+    </dict>
+    
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
