@@ -143,7 +143,7 @@
     midLabel.textAlignment=NSTextAlignmentLeft;
     [midBtn addSubview:midLabel];
     
-    UILabel* arrowLabel1=[[UILabel alloc] initWithFrame:CGRectMake(100, 0,200, 44)];
+    UILabel* arrowLabel1=[[UILabel alloc] initWithFrame:CGRectMake(100*WITH_SCALE, 0,midBtn.frame.size.width-120*WITH_SCALE, 44)];
     arrowLabel1.text=@"\ue629";
     [arrowLabel1 setFont:[UIFont fontWithName:@"icomoon" size:18]];
     arrowLabel1.textColor=UIColorFromRGB(0x666666);
@@ -203,11 +203,11 @@
     aboutLabel.textAlignment=NSTextAlignmentLeft;
     [aboutBtn addSubview:aboutLabel];
     
-    UILabel* arrowAboutLabel=[[UILabel alloc] initWithFrame:CGRectMake(100, 0,200, 44)];
+    UILabel* arrowAboutLabel=[[UILabel alloc] initWithFrame:CGRectMake(100*WITH_SCALE, 0,aboutBtn.frame.size.width-120*WITH_SCALE, 44)];
     arrowAboutLabel.text=@"\ue629";
     [arrowAboutLabel setFont:[UIFont fontWithName:@"icomoon" size:18]];
     arrowAboutLabel.textColor=UIColorFromRGB(0x666666);
-    arrowAboutLabel.backgroundColor=[UIColor clearColor];
+    arrowAboutLabel.backgroundColor=[UIColor clearColor];//test
     arrowAboutLabel.textAlignment=NSTextAlignmentRight;
     [aboutBtn addSubview:arrowAboutLabel];
  

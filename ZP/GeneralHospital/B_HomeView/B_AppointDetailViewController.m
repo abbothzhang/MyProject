@@ -88,7 +88,7 @@
                           [topView addSubview:orderStateTitle];
                           
                           //订单状态，1-待付款，2-待发货，3-已发货，4-已完成，5-已取消
-                          UILabel* orderState=[[UILabel alloc] initWithFrame:CGRectMake(10, 35,300, 22)];
+                          UILabel* orderState=[[UILabel alloc] initWithFrame:CGRectMake(10*WITH_SCALE, 35,300*WITH_SCALE, 22)];
                           orderState.text=[[ReturnDict objectForKey:@"data"] objectForKey:@"orderStatusName"];
                           orderState.textColor=UIColorFromRGB(0xFF9900);
                           orderState.backgroundColor=[UIColor clearColor];
@@ -105,7 +105,7 @@
                           orderFeeTitle.textAlignment=NSTextAlignmentLeft;
                           [topView addSubview:orderFeeTitle];
                           
-                          UILabel* orderFee=[[UILabel alloc] initWithFrame:CGRectMake(10, 57,300, 22)];
+                          UILabel* orderFee=[[UILabel alloc] initWithFrame:CGRectMake(10*WITH_SCALE, 57,300*WITH_SCALE, 22)];
                           orderFee.text=[NSString stringWithFormat:@"¥%.2f",[[[ReturnDict objectForKey:@"data"] objectForKey:@"amount"] floatValue]];
                           orderFee.textColor=UIColorFromRGB(0xFF9900);
                           orderFee.backgroundColor=[UIColor clearColor];
@@ -121,7 +121,7 @@
                           orderFreightTitle.textAlignment=NSTextAlignmentLeft;
                           [topView addSubview:orderFreightTitle];
                           
-                          UILabel* orderFreight=[[UILabel alloc] initWithFrame:CGRectMake(10, 79,300, 22)];
+                          UILabel* orderFreight=[[UILabel alloc] initWithFrame:CGRectMake(10*WITH_SCALE, 79,300*WITH_SCALE, 22)];
                           orderFreight.text=[NSString stringWithFormat:@"%@人",[[ReturnDict objectForKey:@"data"] ObjectForKey:@"persons"]];
                           orderFreight.textColor=UIColorFromRGB(0x000000);
                           orderFreight.backgroundColor=[UIColor clearColor];
@@ -137,7 +137,7 @@
                           orderTime.textAlignment=NSTextAlignmentLeft;
                           [topView addSubview:orderTime];
                           
-                          UILabel* orderTimeD=[[UILabel alloc] initWithFrame:CGRectMake(10, 101,300, 22)];
+                          UILabel* orderTimeD=[[UILabel alloc] initWithFrame:CGRectMake(10*WITH_SCALE, 101,300*WITH_SCALE, 22)];
                           orderTimeD.text=[NSString stringWithFormat:@"%@",[[ReturnDict objectForKey:@"data"] objectForKey:@"createTime"]];
                           orderTimeD.textColor=UIColorFromRGB(0x000000);
                           orderTimeD.backgroundColor=[UIColor clearColor];
@@ -145,7 +145,7 @@
                           orderTimeD.textAlignment=NSTextAlignmentRight;
                           [topView addSubview:orderTimeD];
                           
-                          UILabel* orderScoreTitle=[[UILabel alloc] initWithFrame:CGRectMake(10, 123,200, 22)];
+                          UILabel* orderScoreTitle=[[UILabel alloc] initWithFrame:CGRectMake(10*WITH_SCALE, 123,200*WITH_SCALE, 22)];
                           orderScoreTitle.text=@"赠送积分：";
                           orderScoreTitle.textColor=UIColorFromRGB(0x666666);
                           orderScoreTitle.backgroundColor=[UIColor clearColor];
@@ -268,7 +268,7 @@
                           
  
                           
-                          UILabel* payTypeLabel=[[UILabel alloc] initWithFrame:CGRectMake(10, 0,300, 45)];
+                          UILabel* payTypeLabel=[[UILabel alloc] initWithFrame:CGRectMake(10*WITH_SCALE, 0,300*WITH_SCALE, 45)];
                           payTypeLabel.text=@"在线支付";
                           payTypeLabel.numberOfLines = 2;
                           payTypeLabel.textColor=UIColorFromRGB(0x666666);
@@ -312,7 +312,7 @@
                           listInfo.textAlignment=NSTextAlignmentLeft;
                           [belowView addSubview:listInfo];
                           
-                          UILabel* listInfoDetail=[[UILabel alloc] initWithFrame:CGRectMake(10, 0,300, 45)];
+                          UILabel* listInfoDetail=[[UILabel alloc] initWithFrame:CGRectMake(10*WITH_SCALE, 0,300*WITH_SCALE, 45)];
                           listInfoDetail.text=[NSString stringWithFormat:@"共%lu项    合计：¥%.02f",(unsigned long)[listArray count],[[[ReturnDict objectForKey:@"data"] objectForKey:@"amount"] floatValue]];
                           listInfoDetail.numberOfLines = 2;
                           listInfoDetail.textColor=UIColorFromRGB(0x666666);
@@ -321,7 +321,7 @@
                           listInfoDetail.textAlignment=NSTextAlignmentRight;
                           [belowView addSubview:listInfoDetail];
                           
-                          UILabel* shopName=[[UILabel alloc] initWithFrame:CGRectMake(10, 45,300, 40)];
+                          UILabel* shopName=[[UILabel alloc] initWithFrame:CGRectMake(10, 45,300*WITH_SCALE, 40)];
                           shopName.text=[NSString stringWithFormat:@"商铺：%@",[[ReturnDict objectForKey:@"data"] objectForKey:@"shopName"]];
                           shopName.numberOfLines = 2;
                           shopName.textColor=UIColorFromRGB(0x666666);
@@ -330,7 +330,7 @@
                           shopName.textAlignment=NSTextAlignmentLeft;
                           [belowView addSubview:shopName];
                           
-                          UILabel* shopPhone=[[UILabel alloc] initWithFrame:CGRectMake(10, 85,300, 40)];
+                          UILabel* shopPhone=[[UILabel alloc] initWithFrame:CGRectMake(10, 85,300*WITH_SCALE, 40)];
                           shopPhone.text=[NSString stringWithFormat:@"电话：%@",[[ReturnDict objectForKey:@"data"] objectForKey:@"shopPhone"]];
                           shopPhone.textColor=UIColorFromRGB(0x666666);
                           shopPhone.backgroundColor=[UIColor clearColor];
@@ -355,7 +355,7 @@
                               titleLabel.textAlignment=NSTextAlignmentLeft;
                               [belowView addSubview:titleLabel];
                               
-                              UILabel* priceLabel=[[UILabel alloc] initWithFrame:CGRectMake(250,  135+i*85,57,20)];
+                              UILabel* priceLabel=[[UILabel alloc] initWithFrame:CGRectMake(250*WITH_SCALE,135+i*85,57*WITH_SCALE,20)];
                               priceLabel.text=[NSString stringWithFormat:@"¥%@",[[listArray ObjectAtIndex:i] ObjectForKey:@"price"]];
                               priceLabel.textColor=UIColorFromRGB(0x333333);
                               priceLabel.numberOfLines=5;
@@ -378,7 +378,7 @@
                               areaLabel.textAlignment=NSTextAlignmentLeft;
                               [belowView addSubview:areaLabel];
                               
-                              UILabel *CodeLabel=[[UILabel alloc] initWithFrame:CGRectMake(250,  155+i*85, 57, 28)];
+                              UILabel *CodeLabel=[[UILabel alloc] initWithFrame:CGRectMake(250*WITH_SCALE,155+i*85, 57*WITH_SCALE, 28)];
                               CodeLabel.text=[NSString stringWithFormat:@"x%@",[[listArray ObjectAtIndex:i] ObjectForKey:@"quantity"]];
                               CodeLabel.textColor=UIColorFromRGB(0x666666);
                               CodeLabel.backgroundColor=[UIColor clearColor];

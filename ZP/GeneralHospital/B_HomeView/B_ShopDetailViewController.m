@@ -229,7 +229,7 @@
                           
                           UIButton *collectionBtn = [UIButton buttonWithType:UIButtonTypeCustom];
                           collectionBtn.tag=[[[Dictionary ObjectForKey:@"data"] ObjectForKey:@"collectFlag"] intValue];
-                            collectionBtn.frame = CGRectMake(265, 140, 40, 25);
+                            collectionBtn.frame = CGRectMake(265*WITH_SCALE, 140, 40*WITH_SCALE, 25);
                           [collectionBtn setTitle:string forState:UIControlStateNormal];
                           [collectionBtn setTitle:string forState:UIControlStateHighlighted];
                             collectionBtn.titleLabel.font = [UIFont boldSystemFontOfSize:12];
@@ -249,7 +249,8 @@
                           for (int k=0; k<[btnArray count]; k++) {
                               
                               UIButton *selectBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-                              selectBtn.frame = CGRectMake(4+79*k, 16, 75, 40);
+                              selectBtn.frame = CGRectMake((4+79*k)*WITH_SCALE, 16, 75*WITH_SCALE, 40);
+                              
                               [selectBtn.titleLabel setFont:[UIFont systemFontOfSize:12]];
                               [selectBtn setContentEdgeInsets:UIEdgeInsetsMake(5, 0, 25, 0)];
                               [selectBtn setTitle:[[btnArray ObjectAtIndex:k] ObjectAtIndex:0]
@@ -379,7 +380,7 @@
                           mesDetailLabel.textAlignment=NSTextAlignmentLeft;
                           [descriptView addSubview:mesDetailLabel];
                           
-                          UILabel* arrowLabel=[[UILabel alloc] initWithFrame:CGRectMake(290, 0,30, 100)];
+                          UILabel* arrowLabel=[[UILabel alloc] initWithFrame:CGRectMake(290*WITH_SCALE, 0,30*WITH_SCALE, 100)];
                           arrowLabel.text=@"\ue629";
                           [arrowLabel setFont:[UIFont fontWithName:@"icomoon" size:20]];
                           arrowLabel.textColor=UIColorFromRGB(0x888888);
@@ -387,7 +388,7 @@
                           arrowLabel.textAlignment=NSTextAlignmentCenter;
                           [descriptView addSubview:arrowLabel];
                           
-                          UIView *addView=[[UIView alloc] initWithFrame:CGRectMake(4, 176, 233, 50)];
+                          UIView *addView=[[UIView alloc] initWithFrame:CGRectMake(4*WITH_SCALE, 176, 233*WITH_SCALE, 50)];
                           addView.backgroundColor=[UIColor whiteColor];
                           [midView addSubview:addView];
                           [[addView layer] setMasksToBounds:YES];
@@ -402,7 +403,7 @@
                           [addView addSubview:addLabel];
                           
                           
-                          UILabel* tLabel=[[UILabel alloc] initWithFrame:CGRectMake(35,2,200,14)];
+                          UILabel* tLabel=[[UILabel alloc] initWithFrame:CGRectMake(35,2,200*WITH_SCALE,14)];
                           tLabel.text=[[Dictionary objectForKey:@"data"] objectForKey:@"title"];
                           [tLabel setFont:[UIFont systemFontOfSize:12]];
                           tLabel.textColor=[UIColor blackColor];
@@ -411,7 +412,7 @@
                           [addView addSubview:tLabel];
                           
                           
-                          UILabel* addDetailLabel=[[UILabel alloc] initWithFrame:CGRectMake(35, 13,200, 40)];
+                          UILabel* addDetailLabel=[[UILabel alloc] initWithFrame:CGRectMake(35, 13,200*WITH_SCALE, 40)];
                           addDetailLabel.numberOfLines=10;
                           addDetailLabel.text=[[Dictionary objectForKey:@"data"] objectForKey:@"address"];
                           [addDetailLabel setFont:[UIFont systemFontOfSize:12]];
@@ -423,7 +424,7 @@
 
                           
                           UIButton *addressBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-                          addressBtn.frame = CGRectMake(240, 176, 75, 50);
+                          addressBtn.frame = CGRectMake(240*WITH_SCALE, 176, 75*WITH_SCALE, 50);
                           [addressBtn setBackgroundImage:[GeneralClass CreateImageWithColor:UIColorFromRGB(0xffffff)] forState:UIControlStateNormal];
                           [addressBtn setBackgroundImage:[GeneralClass CreateImageWithColor:UIColorFromRGB(0xffffff)] forState:UIControlStateSelected];
                           [addressBtn addTarget:self action:@selector(addressAct) forControlEvents:UIControlEventTouchUpInside];
@@ -440,7 +441,7 @@
                           locLabel.textAlignment=NSTextAlignmentCenter;
                           [addressBtn addSubview:locLabel];
                           
-                          UILabel* locDetailLabel=[[UILabel alloc] initWithFrame:CGRectMake(0, 32,70, 15)];
+                          UILabel* locDetailLabel=[[UILabel alloc] initWithFrame:CGRectMake(0, 32,70*WITH_SCALE, 15)];
                           locDetailLabel.text=@"地图导航";
                           [locDetailLabel setFont:[UIFont systemFontOfSize:10]];
                           locDetailLabel.textColor=UIColorFromRGB(0x5b6869);
@@ -449,7 +450,7 @@
                           [addressBtn addSubview:locDetailLabel];
                           
                           
-                          UILabel* noticeLabel=[[UILabel alloc] initWithFrame:CGRectMake(50, 236,220, 30)];
+                          UILabel* noticeLabel=[[UILabel alloc] initWithFrame:CGRectMake(50*WITH_SCALE, 236,220*WITH_SCALE, 30)];
                           noticeLabel.text=[[Dictionary objectForKey:@"data"] objectForKey:@"notice"];
                           [noticeLabel setFont:[UIFont systemFontOfSize:12]];
                           noticeLabel.numberOfLines=2;

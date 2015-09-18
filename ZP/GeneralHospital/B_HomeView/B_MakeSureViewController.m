@@ -227,7 +227,7 @@
                           listLabel.textAlignment=NSTextAlignmentLeft;
                           [infoBtn addSubview:listLabel];
                           
-                          UILabel* moneyLabel=[[UILabel alloc] initWithFrame:CGRectMake(110, 0,200, 45)];
+                          UILabel* moneyLabel=[[UILabel alloc] initWithFrame:CGRectMake(110*WITH_SCALE, 0,200*WITH_SCALE, 45)];
                           moneyLabel.text=[NSString stringWithFormat:@"共%lu项  合计：¥%.2f",(unsigned long)[listArray count],[[DetailDict objectForKey:@"totalPrice"] floatValue]];
                           moneyLabel.textColor=UIColorFromRGB(0x666666);
                           moneyLabel.backgroundColor=[UIColor clearColor];
@@ -283,7 +283,7 @@
                               titleLabel.textAlignment=NSTextAlignmentLeft;
                               [belowView addSubview:titleLabel];
                               
-                              UILabel* priceLabel=[[UILabel alloc] initWithFrame:CGRectMake(180,  20+i*85+91,120, 20)];
+                              UILabel* priceLabel=[[UILabel alloc] initWithFrame:CGRectMake(180*WITH_SCALE,  20+i*85+91,120*WITH_SCALE, 20)];
                               priceLabel.text=[NSString stringWithFormat:@"¥%@",[[listArray ObjectAtIndex:i] ObjectForKey:@"price"]];
                               priceLabel.textColor=UIColorFromRGB(0x333333);
                               priceLabel.numberOfLines=5;
@@ -292,7 +292,7 @@
                               priceLabel.textAlignment=NSTextAlignmentRight;
                               [belowView addSubview:priceLabel];
                               
-                              UILabel* quantityLabel=[[UILabel alloc] initWithFrame:CGRectMake(180,  40+i*85+91,120, 20)];
+                              UILabel* quantityLabel=[[UILabel alloc] initWithFrame:CGRectMake(180*WITH_SCALE,  40+i*85+91,120*WITH_SCALE, 20)];
                               quantityLabel.text=[NSString stringWithFormat:@"x%@",[[listArray ObjectAtIndex:i] ObjectForKey:@"quantity"]];
                               quantityLabel.textColor=UIColorFromRGB(0x333333);
                               quantityLabel.numberOfLines=5;

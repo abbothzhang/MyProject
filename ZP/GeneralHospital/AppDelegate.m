@@ -109,7 +109,8 @@ BMKMapManager* _mapManager;
         if (ProcessView==nil) {
             ProcessView=[[KJProcessView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HIGHE) setStyle:(KJViewStyle)[[notification object] intValue] setColor:STYLECLOLR];
             ProcessView.center=[UIApplication sharedApplication].keyWindow.center;
-            ProcessView.backgroundColor=[UIColor colorWithWhite:0 alpha:0.2];
+//            ProcessView.backgroundColor=[UIColor colorWithWhite:0 alpha:0.2];
+            ProcessView.backgroundColor = [UIColor clearColor];
             [[UIApplication sharedApplication].keyWindow addSubview:ProcessView];
             [ProcessView setTranslatesAutoresizingMaskIntoConstraints:NO];
         }else{

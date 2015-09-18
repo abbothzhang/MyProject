@@ -48,7 +48,7 @@
     ListArray =[[NSMutableArray alloc] init];
     NSArray *segmentedArray = [[NSArray alloc]initWithObjects:@"处理中",@"已完成",nil];
     SegmentedControl = [[UISegmentedControl alloc]initWithItems:segmentedArray];
-    SegmentedControl.frame = CGRectMake(60.0, 5.0, 200.0, 30.0);
+    SegmentedControl.frame = CGRectMake(60.0*WITH_SCALE, 5.0, SCREEN_WIDTH-120*WITH_SCALE, 30.0);
     SegmentedControl.selectedSegmentIndex = 0;//设置默认选择项索0
     SegmentedControl.tintColor = STYLECLOLR;
     SegmentedControl.segmentedControlStyle = UISegmentedControlStylePlain;//设置样式
@@ -142,7 +142,7 @@
     nameLabel.textAlignment=NSTextAlignmentLeft;
     [shopDetail addSubview:nameLabel];
     
-    UILabel* arrowLabel=[[UILabel alloc] initWithFrame:CGRectMake(100, 0,200, 45)];
+    UILabel* arrowLabel=[[UILabel alloc] initWithFrame:CGRectMake(100*WITH_SCALE, 0,200*WITH_SCALE, 45)];
     arrowLabel.text=@"\ue629";
     [arrowLabel setFont:[UIFont fontWithName:@"icomoon" size:18]];
     arrowLabel.textColor=UIColorFromRGB(0x666666);
@@ -198,7 +198,7 @@
         titleLabel.textAlignment=NSTextAlignmentLeft;
         [cellView addSubview:titleLabel];
         
-        UILabel* priceLabel=[[UILabel alloc] initWithFrame:CGRectMake(250, 20,57,20)];
+        UILabel* priceLabel=[[UILabel alloc] initWithFrame:CGRectMake(250*WITH_SCALE,20,57*WITH_SCALE,20)];
         priceLabel.text=[NSString stringWithFormat:@"¥%@",[[cellArray ObjectAtIndex:i] ObjectForKey:@"price"]];
         priceLabel.textColor=UIColorFromRGB(0x333333);
         priceLabel.numberOfLines=5;
@@ -221,7 +221,7 @@
         areaLabel.textAlignment=NSTextAlignmentLeft;
         [cellView addSubview:areaLabel];
         
-        UILabel *CodeLabel=[[UILabel alloc] initWithFrame:CGRectMake(250, 40, 57, 28)];
+        UILabel *CodeLabel=[[UILabel alloc] initWithFrame:CGRectMake(250*WITH_SCALE, 40, 57*WITH_SCALE, 28)];
         CodeLabel.text=[NSString stringWithFormat:@"x%@",[[cellArray ObjectAtIndex:i] ObjectForKey:@"quantity"]];
         CodeLabel.textColor=UIColorFromRGB(0x666666);
         CodeLabel.backgroundColor=[UIColor clearColor];
@@ -255,8 +255,8 @@
     [backView addSubview:stateLabel];
     
     
-    UILabel* numLabel=[[UILabel alloc] initWithFrame:CGRectMake(120, 45+100*[cellArray count],130, 35)];
-    numLabel.text=[NSString stringWithFormat:@"共%d项   金额：",[cellArray count]];
+    UILabel* numLabel=[[UILabel alloc] initWithFrame:CGRectMake(120*WITH_SCALE, 45+100*[cellArray count],130*WITH_SCALE, 35)];
+    numLabel.text=[NSString stringWithFormat:@"共%ld项   金额：",[cellArray count]];
     numLabel.numberOfLines=1;
     numLabel.textColor=UIColorFromRGB(0xaeaeae);
     numLabel.backgroundColor=[UIColor clearColor];
@@ -264,7 +264,7 @@
     numLabel.textAlignment=NSTextAlignmentRight;
     [backView addSubview:numLabel];
     
-    UILabel* moneyLabel=[[UILabel alloc] initWithFrame:CGRectMake(250, 45+100*[cellArray count],80, 35)];
+    UILabel* moneyLabel=[[UILabel alloc] initWithFrame:CGRectMake(250*WITH_SCALE, 45+100*[cellArray count],80*WITH_SCALE, 35)];
     moneyLabel.text=[NSString stringWithFormat:@"¥%.2f",[[[ListArray objectAtIndex:row] ObjectForKey:@"amount"] floatValue]];
     moneyLabel.numberOfLines=1;
     moneyLabel.textColor=UIColorFromRGB(0xff5000);

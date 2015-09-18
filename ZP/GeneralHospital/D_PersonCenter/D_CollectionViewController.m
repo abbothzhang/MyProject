@@ -106,7 +106,7 @@
     
     SegmentedControl = [[UISegmentedControl alloc]initWithItems:segmentedArray];
     
-    SegmentedControl.frame = CGRectMake(60.0, 5.0, 200.0, 30.0);
+    SegmentedControl.frame = CGRectMake(60.0*WITH_SCALE, 5.0, SCREEN_WIDTH - 120*WITH_SCALE, 30.0);
     
     SegmentedControl.selectedSegmentIndex = 0;//设置默认选择项索0
     
@@ -261,7 +261,7 @@
         [cell.contentView addSubview:distanceLabel];
         
     }
-    UILabel* arrowLabel=[[UILabel alloc] initWithFrame:CGRectMake(290, 40,40, 40)];
+    UILabel* arrowLabel=[[UILabel alloc] initWithFrame:CGRectMake(290*WITH_SCALE, 40,40, 40)];
     arrowLabel.text=@"\ue629";
     [arrowLabel setFont:[UIFont fontWithName:@"icomoon" size:20]];
     arrowLabel.textColor=UIColorFromRGB(0x888888);

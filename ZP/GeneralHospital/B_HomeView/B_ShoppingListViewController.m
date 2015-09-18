@@ -130,7 +130,7 @@
     [downView addSubview:PriceLabel];
     
     appointBtn= [UIButton buttonWithType:UIButtonTypeCustom];
-    appointBtn.frame = CGRectMake(150, 5, 71, 30);
+    appointBtn.frame = CGRectMake(150*WITH_SCALE, 5, 71*WITH_SCALE, 30);
     [appointBtn setTitle:@"预约" forState:UIControlStateNormal];
     [appointBtn setTitle:@"预约" forState:UIControlStateHighlighted];
     appointBtn.titleLabel.font = [UIFont boldSystemFontOfSize:15];
@@ -142,7 +142,7 @@
     [[appointBtn layer] setCornerRadius:2];
     
     sendBtn= [UIButton buttonWithType:UIButtonTypeCustom];
-    sendBtn.frame = CGRectMake(235, 5, 71, 30);
+    sendBtn.frame = CGRectMake(235*WITH_SCALE, 5, 71*WITH_SCALE, 30);
     [sendBtn setTitle:@"配送" forState:UIControlStateNormal];
     [sendBtn setTitle:@"配送" forState:UIControlStateHighlighted];
     sendBtn.titleLabel.font = [UIFont boldSystemFontOfSize:15];
@@ -572,7 +572,7 @@
         titleLabel.textAlignment=NSTextAlignmentLeft;
         [cellView addSubview:titleLabel];
         
-        UILabel* priceLabel=[[UILabel alloc] initWithFrame:CGRectMake(250, 20,57,30)];
+        UILabel* priceLabel=[[UILabel alloc] initWithFrame:CGRectMake(250*WITH_SCALE, 20,57*WITH_SCALE,30)];
         priceLabel.text=[NSString stringWithFormat:@"¥%@",[[cellArray ObjectAtIndex:i] ObjectForKey:@"price"]];
         priceLabel.textColor=UIColorFromRGB(0x333333);
         priceLabel.numberOfLines=5;
@@ -595,7 +595,7 @@
         areaLabel.textAlignment=NSTextAlignmentLeft;
         [cellView addSubview:areaLabel];
         
-        UIView *addBtn=[[UIView alloc]initWithFrame:CGRectMake(220,60, 85, 28)];
+        UIView *addBtn=[[UIView alloc]initWithFrame:CGRectMake(220*WITH_SCALE,60, 85*WITH_SCALE, 28)];
         [cellView addSubview:addBtn];
         [[addBtn layer]setBorderWidth:1];
         [[addBtn layer]setBorderColor:[UIColorFromRGB(0xcccccc) CGColor]];
