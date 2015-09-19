@@ -279,57 +279,38 @@
                         ];
     
     for (int i=0; i<[btnArray count]; i++) {
-        UIButton *menuBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        menuBtn.tag=i;
-        menuBtn.frame = CGRectMake(110*(i%3) + 30, 180+100*(i/3), 32 , 32);
         
-
-        menuBtn.center = CGPointMake(sepWidth*(i%3+1)-(addWidth*WITH_SCALE)/2, menuBtn.center.y);
+        
+        UIButton *menuBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        menuBtn.frame = CGRectMake(0, 0, 32, 32);
         [menuBtn setImage:[UIImage imageNamed:[[btnArray objectAtIndex:i] objectAtIndex:0]] forState:UIControlStateNormal];
         //[menuBtn setImageEdgeInsets:UIEdgeInsetsMake(0, 0, 0, 0)];
-        [menuBtn addTarget:self action:@selector(menuAct:) forControlEvents:UIControlEventTouchUpInside];
         [menuBtn setTitle:[[btnArray objectAtIndex:i] objectAtIndex:1] forState:UIControlStateNormal];
         [menuBtn setTitleColor:UIColorFromRGB(0x666666) forState:UIControlStateNormal];
+        menuBtn.backgroundColor = [UIColor clearColor];
         [menuBtn setTitleEdgeInsets:UIEdgeInsetsMake(60, -55, 0, -10)];
         [menuBtn.titleLabel setTextAlignment:NSTextAlignmentCenter];
         [menuBtn.titleLabel setFont:[UIFont systemFontOfSize:12]];
+        menuBtn.userInteractionEnabled = NO;
         
-        [self.view addSubview:menuBtn];
+        if ([menuBtn.titleLabel.text isEqualToString:@"购物车"]) {
+            
+            menuBtn.frame = CGRectMake(0, 0, 45, 32);
+        }
+        
+        
+        UIButton *bgBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        bgBtn.tag=i;
+        bgBtn.frame = CGRectMake(110*(i%3) + 30, 160+100*(i/3), 75*WITH_SCALE, 75*WITH_SCALE);
+        bgBtn.center = CGPointMake(sepWidth*(i%3+1)-(addWidth*WITH_SCALE)/2, bgBtn.center.y);
+        [bgBtn addTarget:self action:@selector(menuAct:) forControlEvents:UIControlEventTouchUpInside];
+        bgBtn.backgroundColor = [UIColor clearColor];
+        menuBtn.center = CGPointMake(bgBtn.frame.size.width/2, bgBtn.frame.size.height/2);
+        [bgBtn addSubview:menuBtn];
+        
+        [self.view addSubview:bgBtn];
         
     }
-    
-//    NSArray *btnArray=@[
-//                        @[@"\ue60b",UIColorFromRGB(0xffb05c),@"购物车"],
-//                        @[@"\ue607",UIColorFromRGB(0x00ba98),@"配送订单"],
-//
-//                        @[@"\ue61d",UIColorFromRGB(0x5badea),@"预约订单"],
-//                        @[@"\ue608",UIColorFromRGB(0x5c78a3),@"我的主页"],
-//                        @[@"\ue61c",UIColorFromRGB(0x69d4D3),@"收藏"],
-//                        //@[@"\ue606",UIColorFromRGB(0x72d4e8),@"消息"]
-//                        
-//                        ];
-//    
-//    for (int i=0; i<[btnArray count]; i++) {
-//        UIButton *menuBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-//        menuBtn.tag=i;
-//        menuBtn.frame = CGRectMake( 106.7*(i%3), 140+130*(i/3), 106.7, 120);
-//        [menuBtn setTitle:[[btnArray objectAtIndex:i] objectAtIndex:0] forState:UIControlStateNormal];
-//        [menuBtn setTitle:[[btnArray objectAtIndex:i] objectAtIndex:0] forState:UIControlStateHighlighted];
-//        [menuBtn setTitleEdgeInsets:UIEdgeInsetsMake(5, 0, 50, 0)];
-//        [menuBtn.titleLabel setFont:[UIFont fontWithName:@"icomoon" size:30]];
-//        [menuBtn setTitleColor:[[btnArray objectAtIndex:i] objectAtIndex:1] forState:UIControlStateNormal];
-//        [menuBtn setTitleColor:[[btnArray objectAtIndex:i] objectAtIndex:1] forState:UIControlStateSelected];
-//        [menuBtn addTarget:self action:@selector(menuAct:) forControlEvents:UIControlEventTouchUpInside];
-//        [self.view addSubview:menuBtn];
-//        
-//        UILabel* titleLabel=[[UILabel alloc] initWithFrame:CGRectMake(0, 60,106.7, 30)];
-//        titleLabel.text=[[btnArray objectAtIndex:i] objectAtIndex:2];
-//        titleLabel.textColor=UIColorFromRGB(0x666666);
-//        titleLabel.backgroundColor=[UIColor clearColor];
-//        titleLabel.font=[UIFont systemFontOfSize:12];
-//        titleLabel.textAlignment=NSTextAlignmentCenter;
-//        [menuBtn addSubview:titleLabel];
-//    }
 
 }
 

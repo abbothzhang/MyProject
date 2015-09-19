@@ -109,7 +109,7 @@
     [BelowView addSubview:callBtn];
     
     UIButton *barBtn= [UIButton buttonWithType:UIButtonTypeCustom];
-    [barBtn setFrame:CGRectMake(0, 0, 25, 25)];
+    [barBtn setFrame:CGRectMake(0, 0, 35, 25)];
     [barBtn setBackgroundImage:[UIImage imageNamed:@"shopcart1"] forState:UIControlStateNormal];
 //    [barBtn setTitle:@"\ue60b" forState:UIControlStateNormal];
 //    [barBtn setTitle:@"\ue60b" forState:UIControlStateHighlighted];

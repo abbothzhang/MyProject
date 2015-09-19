@@ -16,7 +16,7 @@
 #import "D_LoginViewController.h"
 #import "AESCrypt.h"
 #import <AlipaySDK/AlipaySDK.h>
-#define INDEX 3//zhtest
+#define INDEX 1//zhtest
 @implementation AppDelegate
 BMKMapManager* _mapManager;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
