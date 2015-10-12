@@ -10,7 +10,7 @@
 #import "ZHPathBaseView.h"
 #import "ZHPathView1.h"
 
-@interface MainViewController ()<ZHPathViewDelegate>
+@interface MainViewController ()<ZHPathViewDelegate,UIAlertViewDelegate>
 
 @property (nonatomic,strong) UIView                     *navBar;
 
@@ -38,10 +38,19 @@
 
 - (void)setUpView{
     [self.view addSubview:self.navBar];
+    [self setUpGameViewWithLevel:self.currentLevel];
+
+}
+
+- (void)setUpGameViewWithLevel:(int)level{
     self.currentGameView = [[ZHPathView1 alloc] initWithFrame:self.view.bounds];
     self.currentGameView.delegate = self;
     [self.view addSubview:self.currentGameView];
+}
 
+- (void)reloadGame{
+    [self.currentGameView removeFromSuperview];
+    [self setUpGameViewWithLevel:self.currentLevel];
 }
 
 - (UIView *)navBar{
@@ -78,23 +87,61 @@
 
 #pragma mark - ZHPathViewDelegate
 - (void)failed{
+//    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"game over" message:@"rePlay?" delegate:self cancelButtonTitle:@"cancel" otherButtonTitles:@"yes", nil];
+//    [alert show];
+    [ZHHint showToast:@"碰到障碍物"];
+    UIView *bgView = [[UIView alloc] initWithFrame:self.view.bounds];
+    bgView.backgroundColor = [UIColor blackColor];
+    bgView.alpha = 0.1;
+    [self.view addSubview:bgView];
+    MainViewController __weak *weakSelf = self;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [weakSelf reloadGame];
+        [bgView removeFromSuperview];
+    });
     
 }
 
 - (void)succeed{
+    [ZHHint showToast:@"恭喜过关!下一关:第二关"];
+    [self nextGameWithCurrentLevel:self.currentLevel];
+}
+
+#pragma mark - UIAlertViewDelegate
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex{
+    switch (buttonIndex) {
+        case 0:
+            
+            break;
+        case 1:
+            
+            break;
+            
+        default:
+            break;
+    }
+}
+
+- (void)alertViewCancel:(UIAlertView *)alertView{
     
 }
 
 #pragma mark - 
 - (void)nextGameWithCurrentLevel:(NSInteger)currentLevel{
-    [self.currentGameView removeFromSuperview];
-    NSString *className = [NSString stringWithFormat:@"ZHPathView%ld",currentLevel+1];
-    Class nextGameViewCls = NSClassFromString(className);
-    if ([nextGameViewCls isSubclassOfClass:[ZHPathBaseView class]]) {
-        self.currentGameView = [[nextGameViewCls alloc] initWithFrame:self.view.bounds];
-    }
     
-    [self.view addSubview:self.currentGameView];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.currentGameView removeFromSuperview];
+        NSString *className = [NSString stringWithFormat:@"ZHPathView%ld",currentLevel+1];
+        Class nextGameViewCls = NSClassFromString(className);
+        if ([nextGameViewCls isSubclassOfClass:[ZHPathBaseView class]]) {
+            self.currentGameView = [[nextGameViewCls alloc] initWithFrame:self.view.bounds];
+            self.currentGameView.delegate = self;
+        }
+        
+        [self.view addSubview:self.currentGameView];
+
+    });
+    
 }
 
 
