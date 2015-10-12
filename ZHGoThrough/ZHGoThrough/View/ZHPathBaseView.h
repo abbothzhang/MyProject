@@ -9,6 +9,12 @@
 #import <UIKit/UIKit.h>
 
 
+@protocol ZHPathViewDelegate <NSObject>
+
+- (void)failed;
+- (void)succeed;
+
+@end
 
 @interface ZHPathBaseView : UIView
 
@@ -20,6 +26,11 @@
 @property (nonatomic) CGFloat                               MOVEVIEW_RADIO;
 @property (nonatomic) CGPoint                               endPointCenter;
 @property (nonatomic) CGFloat                               ENDVIEW_RADIO;
+
+@property (nonatomic,strong) NSMutableArray                 *testPointArray;
+@property (nonatomic) CGPoint                               distance;
+
+@property (nonatomic) id<ZHPathViewDelegate>                delegate;
 
 
 - (void)handelMoveViewPan:(UIPanGestureRecognizer *)gestureRecognizer;

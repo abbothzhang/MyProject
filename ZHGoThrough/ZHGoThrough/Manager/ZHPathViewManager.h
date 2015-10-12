@@ -1,15 +1,13 @@
 //
-//  ZHPathView.h
+//  ZHPathViewManager.h
 //  ZHGoThrough
 //
 //  Created by albert on 15/10/11.
 //  Copyright © 2015年 penghui.zh. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-#import "ZHPathBaseView.h"
+#import <Foundation/Foundation.h>
 
-
-@interface ZHPathView1 : ZHPathBaseView
+@interface ZHPathViewManager : NSObject
 
 @end

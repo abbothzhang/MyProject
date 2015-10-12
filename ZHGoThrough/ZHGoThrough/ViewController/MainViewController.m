@@ -7,11 +7,15 @@
 //
 
 #import "MainViewController.h"
-#import "ZHGameView.h"
+#import "ZHPathBaseView.h"
 #import "ZHPathView1.h"
 
-@interface MainViewController ()<UICollisionBehaviorDelegate>
+@interface MainViewController ()<ZHPathViewDelegate>
 
+@property (nonatomic,strong) UIView                     *navBar;
+
+@property (nonatomic,strong) ZHPathBaseView             *currentGameView;
+@property (nonatomic) int                               currentLevel;
 
 
 @end
@@ -21,18 +25,61 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
+    [self setUpData];
     [self setUpView];
+    [self nextGameWithCurrentLevel:2];
     
     
 }
 
+- (void)setUpData{
+    self.currentLevel = 1;
+}
 
 - (void)setUpView{
-    ZHPathView1 *pathView1 = [[ZHPathView1 alloc] initWithFrame:self.view.bounds];
-    [self.view addSubview:pathView1];
+    [self.view addSubview:self.navBar];
+    self.currentGameView = [[ZHPathView1 alloc] initWithFrame:self.view.bounds];
+    self.currentGameView.delegate = self;
+    [self.view addSubview:self.currentGameView];
 
 }
 
+- (UIView *)navBar{
+    if (_navBar == nil) {
+        _navBar = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 40, self.view.frame.size.width, 40)];
+        UIView *topLine = [[UIView alloc] initWithFrame:CGRectMake(0, 0, _navBar.frame.size.width, 0.5)];
+        topLine.backgroundColor = [UIColor grayColor];
+        [_navBar addSubview:topLine];
+        //
+        UIButton *backBtn = [ZHIconFont iconFontButtonWithType:UIButtonTypeCustom fontSize:24 text:@"back"];
+        backBtn.frame = CGRectMake(0, 0, 40, 40);
+        [_navBar addSubview:backBtn];
+        
+    }
+    
+    return _navBar;
+}
+
+#pragma mark - ZHPathViewDelegate
+- (void)failed{
+    
+}
+
+- (void)succeed{
+    
+}
+
+#pragma mark - 
+- (void)nextGameWithCurrentLevel:(NSInteger)currentLevel{
+    [self.currentGameView removeFromSuperview];
+    NSString *className = [NSString stringWithFormat:@"ZHPathView%ld",currentLevel+1];
+    Class nextGameViewCls = NSClassFromString(className);
+    if ([nextGameViewCls isSubclassOfClass:[ZHPathBaseView class]]) {
+        self.currentGameView = [[nextGameViewCls alloc] initWithFrame:self.view.bounds];
+    }
+    
+    [self.view addSubview:self.currentGameView];
+}
 
 
 

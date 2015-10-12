@@ -1,35 +1,29 @@
 //
-//  ZHPathView.m
+//  ZHPathView2.m
 //  ZHGoThrough
 //
 //  Created by albert on 15/10/11.
 //  Copyright © 2015年 penghui.zh. All rights reserved.
 //
 
-#import "ZHPathView1.h"
+#import "ZHPathView2.h"
 #import "ZHUtil.h"
 
-//#define MOVEPOINT_CENTER_X      10
-//#define MOVEPOINT_CENTER_Y      205
-//#define MOVEPOINT_RADIO         20
-//
-//#define ENDPOINT_CENTER_X       (self.frame.size.width/2)
-//#define ENDPOINT_CENTER_Y       400
-//#define ENDPOINT_CERTER         CGPointMake(ENDPOINT_CENTER_X, ENDPOINT_CENTER_Y)
-//#define ENDPOINT_RADIO          60
 
+@implementation ZHPathView2
 
-@interface ZHPathView1()
-
-
-
-@end
-
-@implementation ZHPathView1
+/*
+// Only override drawRect: if you perform custom drawing.
+// An empty implementation adversely affects performance during animation.
+- (void)drawRect:(CGRect)rect {
+    // Drawing code
+}
+*/
 
 - (instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
+        self.backgroundColor = [UIColor yellowColor];
         [self drawPath];
         self.movePointStartCenter = CGPointMake(10, 205);
         self.MOVEVIEW_RADIO = 20;
@@ -63,7 +57,7 @@
         [self addSubview:point];
         [self.testPointArray addObject:point];
     }
-
+    
     
     
 }
@@ -113,13 +107,5 @@
     }
     
 }
-
-
-
-
-
-
-
-
 
 @end
