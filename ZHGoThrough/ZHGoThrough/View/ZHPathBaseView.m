@@ -21,7 +21,7 @@
     if (_movePointView == nil) {
         _movePointView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.MOVEVIEW_RADIO, self.MOVEVIEW_RADIO)];
         _movePointView.center = self.movePointStartCenter;
-        _movePointView.backgroundColor = [UIColor greenColor];
+        _movePointView.backgroundColor = [UIColor colorWithHex:Color_bg_green];
         _movePointView.layer.cornerRadius = self.MOVEVIEW_RADIO/2;
         [_movePointView addGestureRecognizer:self.moveViewPan];
     }
@@ -33,7 +33,7 @@
         _endPointView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.ENDVIEW_RADIO, self.ENDVIEW_RADIO)];
         _endPointView.center = self.endPointCenter;
         _endPointView.layer.cornerRadius = self.ENDVIEW_RADIO/2;
-        _endPointView.layer.borderColor = [UIColor blackColor].CGColor;
+        _endPointView.layer.borderColor = [UIColor colorWithHex:Color_L2].CGColor;
         _endPointView.layer.borderWidth = 0.5;
     }
     

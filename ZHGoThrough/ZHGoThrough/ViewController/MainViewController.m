@@ -48,16 +48,32 @@
     if (_navBar == nil) {
         _navBar = [[UIView alloc] initWithFrame:CGRectMake(0, self.view.frame.size.height - 40, self.view.frame.size.width, 40)];
         UIView *topLine = [[UIView alloc] initWithFrame:CGRectMake(0, 0, _navBar.frame.size.width, 0.5)];
-        topLine.backgroundColor = [UIColor grayColor];
+        topLine.backgroundColor = [UIColor colorWithHex:Color_L4];
         [_navBar addSubview:topLine];
-        //
+        
+        //backBtn
         UIButton *backBtn = [ZHIconFont iconFontButtonWithType:UIButtonTypeCustom fontSize:24 text:@"back"];
         backBtn.frame = CGRectMake(0, 0, 40, 40);
+        [backBtn addTarget:self action:@selector(navBackBtnClick:) forControlEvents:UIControlEventTouchUpInside];
         [_navBar addSubview:backBtn];
         
+        //nextBtn
+        UIButton *nextBtn = [ZHIconFont iconFontButtonWithType:UIButtonTypeCustom fontSize:24 text:@"right"];
+        nextBtn.frame = CGRectMake(40, 0, 40, 40);
+        [nextBtn addTarget:self action:@selector(navNextBtnClick:) forControlEvents:UIControlEventTouchUpInside];
+        [_navBar addSubview:nextBtn];
     }
     
     return _navBar;
+}
+
+#pragma mark - click
+- (void)navBackBtnClick:(UIButton *)btn{
+    
+}
+
+- (void)navNextBtnClick:(UIButton *)btn{
+    
 }
 
 #pragma mark - ZHPathViewDelegate

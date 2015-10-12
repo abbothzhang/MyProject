@@ -51,7 +51,7 @@
     for(float x=5;x<320;x = x+5){
         y = baseY + sin(x/180*3.14)*100+120.0;
         UIView *point = [[UIView alloc] initWithFrame:CGRectMake(x, y, 1, 1)];
-        point.backgroundColor = [UIColor blackColor];
+        point.backgroundColor = [UIColor colorWithHex:Color_L1];
         [self addSubview:point];
         [self.testPointArray addObject:point];
     }
@@ -59,7 +59,7 @@
     for(float x=5;x<320;x = x+5){
         y = baseY + sin(x/180*3.14)*100+120.0 + addY;
         UIView *point = [[UIView alloc] initWithFrame:CGRectMake(x, y, 1, 1)];
-        point.backgroundColor = [UIColor blackColor];
+        point.backgroundColor = [UIColor colorWithHex:Color_L1];
         [self addSubview:point];
         [self.testPointArray addObject:point];
     }

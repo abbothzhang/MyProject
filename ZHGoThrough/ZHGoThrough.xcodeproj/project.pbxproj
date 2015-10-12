@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		50234CFA1BCB9A64007DEB83 /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 50234CF81BCB98E1007DEB83 /* iconfont.ttf */; };
 		50234CFD1BCBA613007DEB83 /* ZHIconFont.m in Sources */ = {isa = PBXBuildFile; fileRef = 50234CFC1BCBA613007DEB83 /* ZHIconFont.m */; settings = {ASSET_TAGS = (); }; };
+		50234D011BCBAC22007DEB83 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 50234D001BCBAC22007DEB83 /* UIColor+Hex.m */; settings = {ASSET_TAGS = (); }; };
+		50234D041BCBB475007DEB83 /* ZHDeviceUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 50234D031BCBB475007DEB83 /* ZHDeviceUtil.m */; settings = {ASSET_TAGS = (); }; };
 		503C6B481BCA9E8E009638B1 /* ZHPathBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 503C6B471BCA9E8E009638B1 /* ZHPathBaseView.m */; settings = {ASSET_TAGS = (); }; };
 		503C6B4B1BCAA6EF009638B1 /* ZHPathViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 503C6B4A1BCAA6EF009638B1 /* ZHPathViewManager.m */; settings = {ASSET_TAGS = (); }; };
 		503C6B4F1BCAB331009638B1 /* ZHPathView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 503C6B4E1BCAB331009638B1 /* ZHPathView2.m */; settings = {ASSET_TAGS = (); }; };
-		503C6B511BCB32B7009638B1 /* iconfont-back.png in Resources */ = {isa = PBXBuildFile; fileRef = 503C6B501BCB32B7009638B1 /* iconfont-back.png */; settings = {ASSET_TAGS = (); }; };
 		507E4BFD1BC64BFE00C525BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 507E4BFC1BC64BFE00C525BA /* main.m */; };
 		507E4C001BC64BFE00C525BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 507E4BFF1BC64BFE00C525BA /* AppDelegate.m */; };
 		507E4C031BC64BFE00C525BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 507E4C021BC64BFE00C525BA /* ViewController.m */; };
@@ -31,13 +32,16 @@
 		50234CFB1BCBA613007DEB83 /* ZHIconFont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHIconFont.h; sourceTree = "<group>"; };
 		50234CFC1BCBA613007DEB83 /* ZHIconFont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHIconFont.m; sourceTree = "<group>"; };
 		50234CFE1BCBA699007DEB83 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		50234CFF1BCBAC22007DEB83 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		50234D001BCBAC22007DEB83 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		50234D021BCBB475007DEB83 /* ZHDeviceUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHDeviceUtil.h; path = Util/ZHDeviceUtil.h; sourceTree = "<group>"; };
+		50234D031BCBB475007DEB83 /* ZHDeviceUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHDeviceUtil.m; path = Util/ZHDeviceUtil.m; sourceTree = "<group>"; };
 		503C6B461BCA9E8E009638B1 /* ZHPathBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHPathBaseView.h; path = View/ZHPathBaseView.h; sourceTree = "<group>"; };
 		503C6B471BCA9E8E009638B1 /* ZHPathBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHPathBaseView.m; path = View/ZHPathBaseView.m; sourceTree = "<group>"; };
 		503C6B491BCAA6EF009638B1 /* ZHPathViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHPathViewManager.h; path = Manager/ZHPathViewManager.h; sourceTree = "<group>"; };
 		503C6B4A1BCAA6EF009638B1 /* ZHPathViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHPathViewManager.m; path = Manager/ZHPathViewManager.m; sourceTree = "<group>"; };
 		503C6B4D1BCAB331009638B1 /* ZHPathView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHPathView2.h; path = View/ZHPathView2.h; sourceTree = "<group>"; };
 		503C6B4E1BCAB331009638B1 /* ZHPathView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHPathView2.m; path = View/ZHPathView2.m; sourceTree = "<group>"; };
-		503C6B501BCB32B7009638B1 /* iconfont-back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iconfont-back.png"; path = "Resource/iconfont-back.png"; sourceTree = "<group>"; };
 		507E4BF81BC64BFE00C525BA /* ZHGoThrough.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZHGoThrough.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		507E4BFC1BC64BFE00C525BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		507E4BFE1BC64BFE00C525BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -154,7 +158,6 @@
 			isa = PBXGroup;
 			children = (
 				50234CF81BCB98E1007DEB83 /* iconfont.ttf */,
-				503C6B501BCB32B7009638B1 /* iconfont-back.png */,
 			);
 			name = Resource;
 			sourceTree = "<group>";
@@ -164,8 +167,12 @@
 			children = (
 				5088DFAE1BC9570F00A7A15C /* ZHUtil.h */,
 				5088DFAF1BC9570F00A7A15C /* ZHUtil.m */,
+				50234CFF1BCBAC22007DEB83 /* UIColor+Hex.h */,
+				50234D001BCBAC22007DEB83 /* UIColor+Hex.m */,
 				50234CFB1BCBA613007DEB83 /* ZHIconFont.h */,
 				50234CFC1BCBA613007DEB83 /* ZHIconFont.m */,
+				50234D021BCBB475007DEB83 /* ZHDeviceUtil.h */,
+				50234D031BCBB475007DEB83 /* ZHDeviceUtil.m */,
 			);
 			name = Util;
 			sourceTree = "<group>";
@@ -230,7 +237,6 @@
 				50234CFA1BCB9A64007DEB83 /* iconfont.ttf in Resources */,
 				507E4C0E1BC64BFE00C525BA /* LaunchScreen.storyboard in Resources */,
 				507E4C0B1BC64BFE00C525BA /* Assets.xcassets in Resources */,
-				503C6B511BCB32B7009638B1 /* iconfont-back.png in Resources */,
 				507E4C061BC64BFE00C525BA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,6 +260,8 @@
 				5088DFB01BC9570F00A7A15C /* ZHUtil.m in Sources */,
 				507E4BFD1BC64BFE00C525BA /* main.m in Sources */,
 				507E4C1B1BC660AA00C525BA /* ZHGameView.m in Sources */,
+				50234D011BCBAC22007DEB83 /* UIColor+Hex.m in Sources */,
+				50234D041BCBB475007DEB83 /* ZHDeviceUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
