@@ -1,129 +1,58 @@
 //
-//  ZHPathView.m
+//  ZHPathView1.m
 //  ZHGoThrough
 //
-//  Created by albert on 15/10/11.
+//  Created by albert on 15/10/13.
 //  Copyright © 2015年 penghui.zh. All rights reserved.
 //
 
 #import "ZHPathView1.h"
-#import "ZHUtil.h"
-
-//#define MOVEPOINT_CENTER_X      10
-//#define MOVEPOINT_CENTER_Y      205
-//#define MOVEPOINT_RADIO         20
-//
-//#define ENDPOINT_CENTER_X       (self.frame.size.width/2)
-//#define ENDPOINT_CENTER_Y       400
-//#define ENDPOINT_CERTER         CGPointMake(ENDPOINT_CENTER_X, ENDPOINT_CENTER_Y)
-//#define ENDPOINT_RADIO          60
-
-
-@interface ZHPathView1()
-
-
-
-@end
 
 @implementation ZHPathView1
 
 - (instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
-        [self drawPath];
-        self.movePointStartCenter = CGPointMake(10, 205);
-        self.MOVEVIEW_RADIO = 20;
-        self.endPointCenter = CGPointMake(self.frame.size.width/2, 400);
-        self.ENDVIEW_RADIO = 60;
-        
-        self.isEnd = NO;
-        
-        [self addSubview:self.movePointView];
-        [self addSubview:self.endPointView];
+        [self setUpData];
+        [self setUpView];
     }
     return self;
+}
+
+- (void)setUpData{
+    self.movePointStartCenter = CGPointMake(10, 205);
+    self.MOVEVIEW_RADIO = 20;
+    self.endPointCenter = CGPointMake(self.frame.size.width/2, 400);
+    self.ENDVIEW_RADIO = 60;
+    
+    self.isEnd = NO;
+}
+
+- (void)setUpView{
+    [self addSubview:self.movePointView];
+    [self addSubview:self.endPointView];
+    [self drawPath];
 }
 
 #pragma mark - draw Path
 - (void)drawPath {
     self.testPointArray = [[NSMutableArray alloc] initWithCapacity:60];
-    CGFloat baseY = 30;
-    CGFloat addY = 80;
+    CGFloat baseY = 150*HEIGHT_SCALE;
+    CGFloat addY = 45*HEIGHT_SCALE;
     CGFloat y;
-    for(float x=5;x<320;x = x+5){
-        y = baseY + sin(x/180*3.14)*100+120.0;
+    for(float x=5;x<280*WITH_SCALE;x=x+5){
+        y = baseY;
         UIView *point = [[UIView alloc] initWithFrame:CGRectMake(x, y, 1, 1)];
         point.backgroundColor = [UIColor colorWithHex:Color_L1];
         [self addSubview:point];
         [self.testPointArray addObject:point];
-    }
-    
-    for(float x=5;x<320;x = x+5){
-        y = baseY + sin(x/180*3.14)*100+120.0 + addY;
-        UIView *point = [[UIView alloc] initWithFrame:CGRectMake(x, y, 1, 1)];
-        point.backgroundColor = [UIColor colorWithHex:Color_L1];
-        [self addSubview:point];
+        
+        UIView *point2 = [[UIView alloc] initWithFrame:CGRectMake(x,y+addY,1, 1)];
+        point2.backgroundColor = [UIColor colorWithHex:Color_L1];
+        [self addSubview:point2];
         [self.testPointArray addObject:point];
     }
-
-    
     
 }
-
-
-
-#pragma mark - click
-
-- (void)handelMoveViewPan:(UIPanGestureRecognizer *)gestureRecognizer{
-    CGPoint curPoint = [gestureRecognizer locationInView:self];
-    switch (gestureRecognizer.state) {
-        case UIGestureRecognizerStateBegan:
-        {
-            CGFloat x = self.movePointView.center.x - curPoint.x;
-            CGFloat y = self.movePointView.center.y - curPoint.y;
-            self.distance = CGPointMake(x, y);
-        }
-            break;
-        case UIGestureRecognizerStateEnded:
-            
-            break;
-        default:
-            break;
-    }
-    
-    self.movePointView.center = CGPointMake(curPoint.x + self.distance.x, curPoint.y + self.distance.y);
-    
-    for (UIView *point in self.testPointArray) {
-        BOOL isIn =  CGRectIntersectsRect(self.movePointView.frame, point.frame);
-        if (isIn && !self.isEnd) {
-            NSLog(@"collide");
-            if (self.delegate && [self.delegate respondsToSelector:@selector(failed)]) {
-                self.isEnd = YES;
-                [self.delegate failed];
-            }
-        }
-    }
-    
-    
-    
-    float distanceBetweenEndPoint = [ZHUtil distanceFromPointX:curPoint distanceToPointY:self.endPointCenter];
-    BOOL isInEndPoint = self.ENDVIEW_RADIO/2 - self.MOVEVIEW_RADIO/2 - distanceBetweenEndPoint > 0;
-    if (isInEndPoint && !self.isEnd) {
-        NSLog(@"inEndPoint");
-        if (self.delegate && [self.delegate respondsToSelector:@selector(succeed)]) {
-            self.isEnd = YES;
-            [self.delegate succeed];
-        }
-    }
-    
-}
-
-
-
-
-
-
-
-
 
 @end

@@ -1,13 +1,13 @@
 //
-//  ZHPathView1.h
+//  TipsViewController.h
 //  ZHGoThrough
 //
 //  Created by albert on 15/10/13.
 //  Copyright © 2015年 penghui.zh. All rights reserved.
 //
 
-#import "ZHPathBaseView.h"
+#import <UIKit/UIKit.h>
 
-@interface ZHPathView1 : ZHPathBaseView
+@interface TipsViewController : UIViewController
 
 @end

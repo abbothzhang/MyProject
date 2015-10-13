@@ -19,7 +19,7 @@
 @interface ZHPathBaseView : UIView
 
 @property (nonatomic,strong) UIView                         *movePointView;
-@property (nonatomic,strong) UIView                         *endPointView;
+@property (nonatomic,strong) UIButton                       *endPointView;
 @property (nonatomic,strong) UIPanGestureRecognizer         *moveViewPan;
 
 @property (nonatomic) CGPoint                               movePointStartCenter;

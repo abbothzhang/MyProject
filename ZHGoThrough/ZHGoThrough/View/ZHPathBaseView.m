@@ -28,13 +28,15 @@
     return _movePointView;
 }
 
-- (UIView *)endPointView{
+- (UIButton *)endPointView{
     if (_endPointView == nil) {
-        _endPointView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.ENDVIEW_RADIO, self.ENDVIEW_RADIO)];
+//        _endPointView = [ZHIconFont iconFontButtonWithType:UIButtonTypeCustom fontSize:self.ENDVIEW_RADIO text:@"round"];
+        CGRect frame = CGRectMake(0, 0, self.ENDVIEW_RADIO, self.ENDVIEW_RADIO);
+        _endPointView = [[UIButton alloc] initWithFrame:frame];
         _endPointView.center = self.endPointCenter;
         _endPointView.layer.cornerRadius = self.ENDVIEW_RADIO/2;
-        _endPointView.layer.borderColor = [UIColor colorWithHex:Color_L2].CGColor;
-        _endPointView.layer.borderWidth = 0.5;
+        _endPointView.layer.borderColor = [UIColor colorWithHex:Color_L1].CGColor;
+        _endPointView.layer.borderWidth = 0.8;
     }
     
     return _endPointView;
@@ -49,7 +51,51 @@
     return _moveViewPan;
 }
 
-- (void)handelMoveViewPan:(UIPanGestureRecognizer *)gestureRecognizer{}
+//- (void)handelMoveViewPan:(UIPanGestureRecognizer *)gestureRecognizer{}
+
+- (void)handelMoveViewPan:(UIPanGestureRecognizer *)gestureRecognizer{
+    CGPoint curPoint = [gestureRecognizer locationInView:self];
+    switch (gestureRecognizer.state) {
+        case UIGestureRecognizerStateBegan:
+        {
+            CGFloat x = self.movePointView.center.x - curPoint.x;
+            CGFloat y = self.movePointView.center.y - curPoint.y;
+            self.distance = CGPointMake(x, y);
+        }
+            break;
+        case UIGestureRecognizerStateEnded:
+            
+            break;
+        default:
+            break;
+    }
+    
+    self.movePointView.center = CGPointMake(curPoint.x + self.distance.x, curPoint.y + self.distance.y);
+    
+    for (UIView *point in self.testPointArray) {
+        BOOL isIn =  CGRectIntersectsRect(self.movePointView.frame, point.frame);
+        if (isIn && !self.isEnd) {
+            NSLog(@"collide");
+            if (self.delegate && [self.delegate respondsToSelector:@selector(failed)]) {
+                self.isEnd = YES;
+                [self.delegate failed];
+            }
+        }
+    }
+    
+    
+    
+    float distanceBetweenEndPoint = [ZHUtil distanceFromPointX:curPoint distanceToPointY:self.endPointCenter];
+    BOOL isInEndPoint = self.ENDVIEW_RADIO/2 - self.MOVEVIEW_RADIO/2 - distanceBetweenEndPoint > 0;
+    if (isInEndPoint && !self.isEnd) {
+        NSLog(@"inEndPoint");
+        if (self.delegate && [self.delegate respondsToSelector:@selector(succeed)]) {
+            self.isEnd = YES;
+            [self.delegate succeed];
+        }
+    }
+    
+}
 
 
 @end

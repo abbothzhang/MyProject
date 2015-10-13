@@ -16,7 +16,7 @@
 #define Color_bg_green                  0x66CD00
 #define Color_bg_blue_light             0xf9f9f9
 
-#define Color_L1  0x000000
+#define Color_L1  0x737396
 #define Color_L2  0x222222
 #define Color_L3  0xcccccc
 #define Color_L4  0xdddddd

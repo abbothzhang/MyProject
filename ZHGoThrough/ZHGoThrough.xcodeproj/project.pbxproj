@@ -17,7 +17,7 @@
 		50234D151BCBFFD0007DEB83 /* ZHHUDActivityView.m in Sources */ = {isa = PBXBuildFile; fileRef = 50234D0E1BCBFFD0007DEB83 /* ZHHUDActivityView.m */; settings = {ASSET_TAGS = (); }; };
 		503C6B481BCA9E8E009638B1 /* ZHPathBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 503C6B471BCA9E8E009638B1 /* ZHPathBaseView.m */; settings = {ASSET_TAGS = (); }; };
 		503C6B4B1BCAA6EF009638B1 /* ZHPathViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 503C6B4A1BCAA6EF009638B1 /* ZHPathViewManager.m */; settings = {ASSET_TAGS = (); }; };
-		503C6B4F1BCAB331009638B1 /* ZHPathView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 503C6B4E1BCAB331009638B1 /* ZHPathView2.m */; settings = {ASSET_TAGS = (); }; };
+		503C6B4F1BCAB331009638B1 /* ZHPathView3.m in Sources */ = {isa = PBXBuildFile; fileRef = 503C6B4E1BCAB331009638B1 /* ZHPathView3.m */; settings = {ASSET_TAGS = (); }; };
 		507E4BFD1BC64BFE00C525BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 507E4BFC1BC64BFE00C525BA /* main.m */; };
 		507E4C001BC64BFE00C525BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 507E4BFF1BC64BFE00C525BA /* AppDelegate.m */; };
 		507E4C031BC64BFE00C525BA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 507E4C021BC64BFE00C525BA /* ViewController.m */; };
@@ -28,8 +28,11 @@
 		507E4C181BC65C8200C525BA /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 507E4C171BC65C8200C525BA /* MainViewController.m */; settings = {ASSET_TAGS = (); }; };
 		507E4C1B1BC660AA00C525BA /* ZHGameView.m in Sources */ = {isa = PBXBuildFile; fileRef = 507E4C1A1BC660AA00C525BA /* ZHGameView.m */; settings = {ASSET_TAGS = (); }; };
 		5088DFB01BC9570F00A7A15C /* ZHUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 5088DFAF1BC9570F00A7A15C /* ZHUtil.m */; settings = {ASSET_TAGS = (); }; };
-		5088DFB31BC9F8FC00A7A15C /* ZHPathView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 5088DFB21BC9F8FC00A7A15C /* ZHPathView1.m */; settings = {ASSET_TAGS = (); }; };
+		5088DFB31BC9F8FC00A7A15C /* ZHPathView2.m in Sources */ = {isa = PBXBuildFile; fileRef = 5088DFB21BC9F8FC00A7A15C /* ZHPathView2.m */; settings = {ASSET_TAGS = (); }; };
+		50ABCD081BCD4F36003AB068 /* ZHPathView1.m in Sources */ = {isa = PBXBuildFile; fileRef = 50ABCD071BCD4F36003AB068 /* ZHPathView1.m */; settings = {ASSET_TAGS = (); }; };
 		50AC84291BCC055500A8BC63 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AC84281BCC055500A8BC63 /* NSString+FontAwesome.m */; settings = {ASSET_TAGS = (); }; };
+		50AC842D1BCCE3C100A8BC63 /* TipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AC842B1BCCE3C100A8BC63 /* TipsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		50AC842E1BCCE3C100A8BC63 /* TipsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50AC842C1BCCE3C100A8BC63 /* TipsViewController.xib */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,8 +56,8 @@
 		503C6B471BCA9E8E009638B1 /* ZHPathBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHPathBaseView.m; path = View/ZHPathBaseView.m; sourceTree = "<group>"; };
 		503C6B491BCAA6EF009638B1 /* ZHPathViewManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHPathViewManager.h; path = Manager/ZHPathViewManager.h; sourceTree = "<group>"; };
 		503C6B4A1BCAA6EF009638B1 /* ZHPathViewManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHPathViewManager.m; path = Manager/ZHPathViewManager.m; sourceTree = "<group>"; };
-		503C6B4D1BCAB331009638B1 /* ZHPathView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHPathView2.h; path = View/ZHPathView2.h; sourceTree = "<group>"; };
-		503C6B4E1BCAB331009638B1 /* ZHPathView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHPathView2.m; path = View/ZHPathView2.m; sourceTree = "<group>"; };
+		503C6B4D1BCAB331009638B1 /* ZHPathView3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHPathView3.h; path = View/ZHPathView3.h; sourceTree = "<group>"; };
+		503C6B4E1BCAB331009638B1 /* ZHPathView3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHPathView3.m; path = View/ZHPathView3.m; sourceTree = "<group>"; };
 		507E4BF81BC64BFE00C525BA /* ZHGoThrough.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZHGoThrough.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		507E4BFC1BC64BFE00C525BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		507E4BFE1BC64BFE00C525BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -72,10 +75,15 @@
 		507E4C1A1BC660AA00C525BA /* ZHGameView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHGameView.m; path = View/ZHGameView.m; sourceTree = "<group>"; };
 		5088DFAE1BC9570F00A7A15C /* ZHUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHUtil.h; path = Util/ZHUtil.h; sourceTree = "<group>"; };
 		5088DFAF1BC9570F00A7A15C /* ZHUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHUtil.m; path = Util/ZHUtil.m; sourceTree = "<group>"; };
-		5088DFB11BC9F8FC00A7A15C /* ZHPathView1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHPathView1.h; path = View/ZHPathView1.h; sourceTree = "<group>"; };
-		5088DFB21BC9F8FC00A7A15C /* ZHPathView1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHPathView1.m; path = View/ZHPathView1.m; sourceTree = "<group>"; };
+		5088DFB11BC9F8FC00A7A15C /* ZHPathView2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHPathView2.h; path = View/ZHPathView2.h; sourceTree = "<group>"; };
+		5088DFB21BC9F8FC00A7A15C /* ZHPathView2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHPathView2.m; path = View/ZHPathView2.m; sourceTree = "<group>"; };
+		50ABCD061BCD4F36003AB068 /* ZHPathView1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZHPathView1.h; path = View/ZHPathView1.h; sourceTree = "<group>"; };
+		50ABCD071BCD4F36003AB068 /* ZHPathView1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZHPathView1.m; path = View/ZHPathView1.m; sourceTree = "<group>"; };
 		50AC84271BCC055500A8BC63 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+FontAwesome.h"; path = "Util/NSString+FontAwesome.h"; sourceTree = "<group>"; };
 		50AC84281BCC055500A8BC63 /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+FontAwesome.m"; path = "Util/NSString+FontAwesome.m"; sourceTree = "<group>"; };
+		50AC842A1BCCE3C100A8BC63 /* TipsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TipsViewController.h; path = ViewController/TipsViewController.h; sourceTree = "<group>"; };
+		50AC842B1BCCE3C100A8BC63 /* TipsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TipsViewController.m; path = ViewController/TipsViewController.m; sourceTree = "<group>"; };
+		50AC842C1BCCE3C100A8BC63 /* TipsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TipsViewController.xib; path = ViewController/TipsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,6 +179,9 @@
 			children = (
 				507E4C161BC65C8200C525BA /* MainViewController.h */,
 				507E4C171BC65C8200C525BA /* MainViewController.m */,
+				50AC842A1BCCE3C100A8BC63 /* TipsViewController.h */,
+				50AC842B1BCCE3C100A8BC63 /* TipsViewController.m */,
+				50AC842C1BCCE3C100A8BC63 /* TipsViewController.xib */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -182,10 +193,12 @@
 				507E4C1A1BC660AA00C525BA /* ZHGameView.m */,
 				503C6B461BCA9E8E009638B1 /* ZHPathBaseView.h */,
 				503C6B471BCA9E8E009638B1 /* ZHPathBaseView.m */,
-				5088DFB11BC9F8FC00A7A15C /* ZHPathView1.h */,
-				5088DFB21BC9F8FC00A7A15C /* ZHPathView1.m */,
-				503C6B4D1BCAB331009638B1 /* ZHPathView2.h */,
-				503C6B4E1BCAB331009638B1 /* ZHPathView2.m */,
+				50ABCD061BCD4F36003AB068 /* ZHPathView1.h */,
+				50ABCD071BCD4F36003AB068 /* ZHPathView1.m */,
+				5088DFB11BC9F8FC00A7A15C /* ZHPathView2.h */,
+				5088DFB21BC9F8FC00A7A15C /* ZHPathView2.m */,
+				503C6B4D1BCAB331009638B1 /* ZHPathView3.h */,
+				503C6B4E1BCAB331009638B1 /* ZHPathView3.m */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -270,6 +283,7 @@
 				50234CFA1BCB9A64007DEB83 /* iconfont.ttf in Resources */,
 				507E4C0E1BC64BFE00C525BA /* LaunchScreen.storyboard in Resources */,
 				507E4C0B1BC64BFE00C525BA /* Assets.xcassets in Resources */,
+				50AC842E1BCCE3C100A8BC63 /* TipsViewController.xib in Resources */,
 				507E4C061BC64BFE00C525BA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,11 +298,13 @@
 				507E4C031BC64BFE00C525BA /* ViewController.m in Sources */,
 				50234CFD1BCBA613007DEB83 /* ZHIconFont.m in Sources */,
 				50234D121BCBFFD0007DEB83 /* UIButton+Bootstrap.m in Sources */,
-				5088DFB31BC9F8FC00A7A15C /* ZHPathView1.m in Sources */,
+				5088DFB31BC9F8FC00A7A15C /* ZHPathView2.m in Sources */,
 				503C6B481BCA9E8E009638B1 /* ZHPathBaseView.m in Sources */,
 				507E4C091BC64BFE00C525BA /* ZHGoThrough.xcdatamodeld in Sources */,
+				50ABCD081BCD4F36003AB068 /* ZHPathView1.m in Sources */,
+				50AC842D1BCCE3C100A8BC63 /* TipsViewController.m in Sources */,
 				507E4C001BC64BFE00C525BA /* AppDelegate.m in Sources */,
-				503C6B4F1BCAB331009638B1 /* ZHPathView2.m in Sources */,
+				503C6B4F1BCAB331009638B1 /* ZHPathView3.m in Sources */,
 				50234D111BCBFFD0007DEB83 /* MBProgressHUD.m in Sources */,
 				503C6B4B1BCAA6EF009638B1 /* ZHPathViewManager.m in Sources */,
 				50AC84291BCC055500A8BC63 /* NSString+FontAwesome.m in Sources */,
@@ -411,7 +427,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = ZHGoThrough/PrefixHeader.pch;
 				INFOPLIST_FILE = ZHGoThrough/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.taobao.taobao4iphone.ZHGoThrough;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,7 +440,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PREFIX_HEADER = ZHGoThrough/PrefixHeader.pch;
 				INFOPLIST_FILE = ZHGoThrough/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.taobao.taobao4iphone.ZHGoThrough;
 				PRODUCT_NAME = "$(TARGET_NAME)";

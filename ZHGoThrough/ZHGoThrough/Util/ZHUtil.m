@@ -17,7 +17,7 @@
     static  dispatch_once_t onceToken;
     
     dispatch_once(&onceToken,^{
-        //iPhone 6
+        //iPhone 5
         if ([[UIScreen mainScreen]bounds].size.width == 320.f) {
             withScale = 1;
         }else if ([[UIScreen mainScreen]bounds].size.width == 375.f){
