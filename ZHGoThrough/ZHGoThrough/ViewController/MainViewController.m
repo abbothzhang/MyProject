@@ -92,7 +92,7 @@
     [ZHHint showToast:@"碰到障碍物"];
     UIView *bgView = [[UIView alloc] initWithFrame:self.view.bounds];
     bgView.backgroundColor = [UIColor blackColor];
-    bgView.alpha = 0.1;
+    bgView.alpha = 0.5;
     [self.view addSubview:bgView];
     MainViewController __weak *weakSelf = self;
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{

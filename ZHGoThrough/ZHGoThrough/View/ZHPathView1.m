@@ -36,6 +36,8 @@
         self.endPointCenter = CGPointMake(self.frame.size.width/2, 400);
         self.ENDVIEW_RADIO = 60;
         
+        self.isEnd = NO;
+        
         [self addSubview:self.movePointView];
         [self addSubview:self.endPointView];
     }
@@ -93,9 +95,10 @@
     
     for (UIView *point in self.testPointArray) {
         BOOL isIn =  CGRectIntersectsRect(self.movePointView.frame, point.frame);
-        if (isIn) {
+        if (isIn && !self.isEnd) {
             NSLog(@"collide");
             if (self.delegate && [self.delegate respondsToSelector:@selector(failed)]) {
+                self.isEnd = YES;
                 [self.delegate failed];
             }
         }
@@ -105,9 +108,10 @@
     
     float distanceBetweenEndPoint = [ZHUtil distanceFromPointX:curPoint distanceToPointY:self.endPointCenter];
     BOOL isInEndPoint = self.ENDVIEW_RADIO/2 - self.MOVEVIEW_RADIO/2 - distanceBetweenEndPoint > 0;
-    if (isInEndPoint) {
+    if (isInEndPoint && !self.isEnd) {
         NSLog(@"inEndPoint");
         if (self.delegate && [self.delegate respondsToSelector:@selector(succeed)]) {
+            self.isEnd = YES;
             [self.delegate succeed];
         }
     }

@@ -31,6 +31,7 @@
 @property (nonatomic) CGPoint                               distance;
 
 @property (nonatomic) id<ZHPathViewDelegate>                delegate;
+@property (nonatomic) BOOL                                  isEnd;
 
 
 - (void)handelMoveViewPan:(UIPanGestureRecognizer *)gestureRecognizer;
