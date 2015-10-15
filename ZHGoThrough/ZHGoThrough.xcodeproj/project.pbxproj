@@ -33,6 +33,7 @@
 		50AC84291BCC055500A8BC63 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AC84281BCC055500A8BC63 /* NSString+FontAwesome.m */; settings = {ASSET_TAGS = (); }; };
 		50AC842D1BCCE3C100A8BC63 /* TipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 50AC842B1BCCE3C100A8BC63 /* TipsViewController.m */; settings = {ASSET_TAGS = (); }; };
 		50AC842E1BCCE3C100A8BC63 /* TipsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 50AC842C1BCCE3C100A8BC63 /* TipsViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		50E2B8441BCDE1C10065A1FB /* UserDataCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 50E2B8431BCDE1C10065A1FB /* UserDataCenter.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,8 @@
 		50AC842A1BCCE3C100A8BC63 /* TipsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TipsViewController.h; path = ViewController/TipsViewController.h; sourceTree = "<group>"; };
 		50AC842B1BCCE3C100A8BC63 /* TipsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TipsViewController.m; path = ViewController/TipsViewController.m; sourceTree = "<group>"; };
 		50AC842C1BCCE3C100A8BC63 /* TipsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TipsViewController.xib; path = ViewController/TipsViewController.xib; sourceTree = "<group>"; };
+		50E2B8421BCDE1C10065A1FB /* UserDataCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserDataCenter.h; path = Manager/UserDataCenter.h; sourceTree = "<group>"; };
+		50E2B8431BCDE1C10065A1FB /* UserDataCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserDataCenter.m; path = Manager/UserDataCenter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +126,8 @@
 			children = (
 				503C6B491BCAA6EF009638B1 /* ZHPathViewManager.h */,
 				503C6B4A1BCAA6EF009638B1 /* ZHPathViewManager.m */,
+				50E2B8421BCDE1C10065A1FB /* UserDataCenter.h */,
+				50E2B8431BCDE1C10065A1FB /* UserDataCenter.m */,
 			);
 			name = Manager;
 			sourceTree = "<group>";
@@ -314,6 +319,7 @@
 				507E4C1B1BC660AA00C525BA /* ZHGameView.m in Sources */,
 				50234D141BCBFFD0007DEB83 /* ZHHint.m in Sources */,
 				50234D011BCBAC22007DEB83 /* UIColor+Hex.m in Sources */,
+				50E2B8441BCDE1C10065A1FB /* UserDataCenter.m in Sources */,
 				50234D041BCBB475007DEB83 /* ZHDeviceUtil.m in Sources */,
 				50234D151BCBFFD0007DEB83 /* ZHHUDActivityView.m in Sources */,
 			);

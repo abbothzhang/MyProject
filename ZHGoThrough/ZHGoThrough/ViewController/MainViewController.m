@@ -10,13 +10,14 @@
 #import "ZHPathBaseView.h"
 #import "ZHPathView2.h"
 #import "TipsViewController.h"
+#import "UserDataCenter.h"
 
 @interface MainViewController ()<ZHPathViewDelegate,UIAlertViewDelegate>
 
 @property (nonatomic,strong) UIView                     *navBar;
 
 @property (nonatomic,strong) ZHPathBaseView             *currentGameView;
-@property (nonatomic) int                               currentLevel;
+@property (nonatomic) NSInteger                         currentLevel;
 
 
 @end
@@ -34,25 +35,48 @@
 }
 
 - (void)setUpData{
-    self.currentLevel = 1;
+    self.currentLevel = [[UserDataCenter sharedInstance] gameLevel];
 }
 
 - (void)setUpView{
     [self setUpGameViewWithLevel:self.currentLevel];
     [self.view addSubview:self.navBar];
+    
 
 }
 
-- (void)setUpGameViewWithLevel:(int)level{
-    NSString *className = [NSString stringWithFormat:@"ZHPathView%d",level];
-    Class nextGameViewCls = NSClassFromString(className);
-    if ([nextGameViewCls isSubclassOfClass:[ZHPathBaseView class]]) {
-        self.currentGameView = [[nextGameViewCls alloc] initWithFrame:self.view.bounds];
-        self.currentGameView.delegate = self;
+- (void)setUpGameViewWithLevel:(NSInteger)level{
+    if (level == 0) {
+        [ZHHint showToast:@"已经是最前面一关"];
+        return;
+    }
+    NSInteger userTopLevel = [[UserDataCenter sharedInstance] userTopLevel];
+    if (level > userTopLevel) {
+        NSString *msg = [NSString stringWithFormat:@"第%ld关还没过哦",level-1];
+        [ZHHint showToast:msg];
+        return;
     }
     
-    [self.view addSubview:self.currentGameView];
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [UIView animateWithDuration:1.5f animations:^{
+            [self.currentGameView removeFromSuperview];
+            NSString *className = [NSString stringWithFormat:@"ZHPathView%ld",level];
+            Class nextGameViewCls = NSClassFromString(className);
+            if ([nextGameViewCls isSubclassOfClass:[ZHPathBaseView class]]) {
+                self.currentGameView = [[nextGameViewCls alloc] initWithFrame:self.view.bounds];
+                self.currentGameView.delegate = self;
+            }
+            
+            self.currentLevel = level;
+            [self.view addSubview:self.currentGameView];
+            [self.view bringSubviewToFront:self.navBar];
+        }];
+        
+        
+    });
 }
+
+
 
 - (void)reloadGame{
     [self.currentGameView removeFromSuperview];
@@ -90,11 +114,11 @@
 
 #pragma mark - click
 - (void)navBackBtnClick:(UIButton *)btn{
-    
+    [self setUpGameViewWithLevel:self.currentLevel-1];
 }
 
 - (void)navNextBtnClick:(UIButton *)btn{
-    
+    [self setUpGameViewWithLevel:self.currentLevel + 1];
 }
 
 - (void)tipsBtnClick:(UIButton *)btn{
@@ -128,9 +152,10 @@
 
 - (void)succeed{
     self.currentLevel++;
-    NSString *msg = [NSString stringWithFormat:@"恭喜过关!下一关:第%d关",self.currentLevel];
+    [[UserDataCenter sharedInstance] setGameLevel:self.currentLevel];
+    NSString *msg = [NSString stringWithFormat:@"恭喜过关!下一关:第%ld关",self.currentLevel];
     [ZHHint showToast:msg];
-    [self nextGameWithLevel:self.currentLevel];
+    [self setUpGameViewWithLevel:self.currentLevel];
 }
 
 #pragma mark - UIAlertViewDelegate
@@ -152,26 +177,7 @@
     
 }
 
-#pragma mark - 
-- (void)nextGameWithLevel:(int)level{
-    
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [UIView animateWithDuration:1.5f animations:^{
-            [self.currentGameView removeFromSuperview];
-            NSString *className = [NSString stringWithFormat:@"ZHPathView%d",level];
-            Class nextGameViewCls = NSClassFromString(className);
-            if ([nextGameViewCls isSubclassOfClass:[ZHPathBaseView class]]) {
-                self.currentGameView = [[nextGameViewCls alloc] initWithFrame:self.view.bounds];
-                self.currentGameView.delegate = self;
-            }
-            
-            [self.view addSubview:self.currentGameView];
-        }];
-        
 
-    });
-    
-}
 
 
 

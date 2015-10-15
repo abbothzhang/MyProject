@@ -30,4 +30,15 @@
     [hud hide:YES afterDelay:1];
 }
 
++(void)showLongToast:(NSString*)str
+{
+    
+    MBProgressHUD *hud = [[MBProgressHUD alloc] initWithWindow:[UIApplication sharedApplication].keyWindow];
+    [[UIApplication sharedApplication].keyWindow addSubview:hud];
+    hud.labelText = str;
+    hud.mode = MBProgressHUDModeText;
+    [hud show:YES];
+    [hud hide:YES afterDelay:3];
+}
+
 @end

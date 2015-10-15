@@ -11,5 +11,5 @@
 @interface ZHHint : UIView
 
 +(void)showToast:(NSString*)str;
-
++(void)showLongToast:(NSString*)str;
 @end
