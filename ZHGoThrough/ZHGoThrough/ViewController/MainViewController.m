@@ -29,7 +29,6 @@
     self.view.backgroundColor = [UIColor whiteColor];
     [self setUpData];
     [self setUpView];
-//    [self nextGameWithCurrentLevel:2];
     
     
 }
@@ -59,17 +58,22 @@
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [UIView animateWithDuration:1.5f animations:^{
-            [self.currentGameView removeFromSuperview];
             NSString *className = [NSString stringWithFormat:@"ZHPathView%ld",level];
             Class nextGameViewCls = NSClassFromString(className);
             if ([nextGameViewCls isSubclassOfClass:[ZHPathBaseView class]]) {
                 self.currentGameView = [[nextGameViewCls alloc] initWithFrame:self.view.bounds];
                 self.currentGameView.delegate = self;
+                
+                self.currentLevel = level;
+                [self.currentGameView removeFromSuperview];
+                [self.view addSubview:self.currentGameView];
+                [self.view bringSubviewToFront:self.navBar];
+            }else{
+                [ZHHint showToast:@"已经是最后一关啦"];
             }
             
-            self.currentLevel = level;
-            [self.view addSubview:self.currentGameView];
-            [self.view bringSubviewToFront:self.navBar];
+            
+            
         }];
         
         
