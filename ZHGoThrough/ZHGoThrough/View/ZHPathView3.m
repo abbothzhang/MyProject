@@ -12,100 +12,107 @@
 
 @implementation ZHPathView3
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
-}
-*/
 
 - (instancetype)initWithFrame:(CGRect)frame{
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor yellowColor];
+//        self.backgroundColor = [UIColor yellowColor];
         [self drawPath];
-        self.movePointStartCenter = CGPointMake(10, 205);
+        self.movePointStartCenter = CGPointMake(10*WITH_SCALE, 195*HEIGHT_SCALE);
         self.MOVEVIEW_RADIO = 20;
         self.endPointCenter = CGPointMake(self.frame.size.width/2, 400);
         self.ENDVIEW_RADIO = 60;
-        
         [self addSubview:self.movePointView];
         [self addSubview:self.endPointView];
+        
     }
+    
+    
     return self;
 }
+
+
 
 #pragma mark - draw Path
 - (void)drawPath {
     self.testPointArray = [[NSMutableArray alloc] initWithCapacity:60];
-    CGFloat baseY = 30;
-    CGFloat addY = 80;
-    CGFloat y;
-    for(float x=5;x<320;x = x+5){
-        y = baseY + sin(x/180*3.14)*100+120.0;
+    CGFloat baseY = 150*HEIGHT_SCALE;
+    CGFloat addY = 70*HEIGHT_SCALE;
+    int y;
+    for(int x=5;x<70*WITH_SCALE;x = x+5){
+        y = x+baseY;
         UIView *point = [[UIView alloc] initWithFrame:CGRectMake(x, y, 1, 1)];
-        point.backgroundColor = [UIColor blackColor];
+        point.backgroundColor = [UIColor colorWithHex:Color_L1];
         [self addSubview:point];
         [self.testPointArray addObject:point];
+        
+        CGFloat y2 = y+addY;
+        UIView *p2 = [[UIView alloc] initWithFrame:CGRectMake(x, y2, 1, 1)];
+        p2.backgroundColor = [UIColor colorWithHex:Color_L1];
+        [self addSubview:p2];
+        [self.testPointArray addObject:p2];
+        
+        
+        NSString *msg = [NSString stringWithFormat:@"x->%d  y->%d",x,y];
+        NSLog(msg);
     }
+    NSLog(@"----1-----");
     
-    for(float x=5;x<320;x = x+5){
-        y = baseY + sin(x/180*3.14)*100+120.0 + addY;
+    for(int x=70*WITH_SCALE;x<140*WITH_SCALE;x = x+5){
+        y = -x+baseY+160;
         UIView *point = [[UIView alloc] initWithFrame:CGRectMake(x, y, 1, 1)];
-        point.backgroundColor = [UIColor blackColor];
+        point.backgroundColor = [UIColor colorWithHex:Color_L1];
         [self addSubview:point];
         [self.testPointArray addObject:point];
+        
+        CGFloat y2 = y+addY;
+        UIView *p2 = [[UIView alloc] initWithFrame:CGRectMake(x, y2, 1, 1)];
+        p2.backgroundColor = [UIColor colorWithHex:Color_L1];
+        [self addSubview:p2];
+        [self.testPointArray addObject:p2];
+        
+        NSString *msg = [NSString stringWithFormat:@"x->%d  y->%d",x,y];
+        NSLog(msg);
     }
     
+    NSLog(@"-----2----");
+    for(int x=140*WITH_SCALE;x<210*WITH_SCALE;x = x+5){
+        y = x+baseY-166;
+        UIView *point = [[UIView alloc] initWithFrame:CGRectMake(x, y, 1, 1)];
+        point.backgroundColor = [UIColor colorWithHex:Color_L1];
+        [self addSubview:point];
+        [self.testPointArray addObject:point];
+        
+        CGFloat y2 = y+addY;
+        UIView *p2 = [[UIView alloc] initWithFrame:CGRectMake(x, y2, 1, 1)];
+        p2.backgroundColor = [UIColor colorWithHex:Color_L1];
+        [self addSubview:p2];
+        [self.testPointArray addObject:p2];
+        
+        NSString *msg = [NSString stringWithFormat:@"x->%d  y->%d",x,y];
+        NSLog(msg);
+    }
     
+    NSLog(@"-----3----");
+    
+    for(int x=210*WITH_SCALE;x<280*WITH_SCALE;x = x+5){
+        y = -x+baseY+324;
+        UIView *point = [[UIView alloc] initWithFrame:CGRectMake(x, y, 1, 1)];
+        point.backgroundColor = [UIColor colorWithHex:Color_L1];
+        [self addSubview:point];
+        [self.testPointArray addObject:point];
+        
+        CGFloat y2 = y+addY;
+        UIView *p2 = [[UIView alloc] initWithFrame:CGRectMake(x, y2, 1, 1)];
+        p2.backgroundColor = [UIColor colorWithHex:Color_L1];
+        [self addSubview:p2];
+        [self.testPointArray addObject:p2];
+        
+        NSString *msg = [NSString stringWithFormat:@"x->%d  y->%d",x,y];
+        NSLog(msg);
+    }
     
 }
 
-
-
-#pragma mark - click
-
-- (void)handelMoveViewPan:(UIPanGestureRecognizer *)gestureRecognizer{
-    CGPoint curPoint = [gestureRecognizer locationInView:self];
-    switch (gestureRecognizer.state) {
-        case UIGestureRecognizerStateBegan:
-        {
-            CGFloat x = self.movePointView.center.x - curPoint.x;
-            CGFloat y = self.movePointView.center.y - curPoint.y;
-            self.distance = CGPointMake(x, y);
-        }
-            break;
-        case UIGestureRecognizerStateEnded:
-            
-            break;
-        default:
-            break;
-    }
-    
-    self.movePointView.center = CGPointMake(curPoint.x + self.distance.x, curPoint.y + self.distance.y);
-    
-    for (UIView *point in self.testPointArray) {
-        BOOL isIn =  CGRectIntersectsRect(self.movePointView.frame, point.frame);
-        if (isIn) {
-            NSLog(@"collide");
-            if (self.delegate && [self.delegate respondsToSelector:@selector(failed)]) {
-                [self.delegate failed];
-            }
-        }
-    }
-    
-    
-    
-    float distanceBetweenEndPoint = [ZHUtil distanceFromPointX:curPoint distanceToPointY:self.endPointCenter];
-    BOOL isInEndPoint = self.ENDVIEW_RADIO/2 - self.MOVEVIEW_RADIO/2 - distanceBetweenEndPoint > 0;
-    if (isInEndPoint) {
-        NSLog(@"inEndPoint");
-        if (self.delegate && [self.delegate respondsToSelector:@selector(succeed)]) {
-            [self.delegate succeed];
-        }
-    }
-    
-}
 
 @end

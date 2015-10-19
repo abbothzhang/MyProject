@@ -31,8 +31,8 @@
     self.MOVEVIEW_RADIO = 20;
     self.endPointCenter = CGPointMake(self.frame.size.width/2, 400);
     self.ENDVIEW_RADIO = 60;
-    
-    self.isEnd = NO;
+    [self addSubview:self.movePointView];
+    [self addSubview:self.endPointView];
 }
 
 - (void)setUpView{
@@ -44,10 +44,10 @@
 #pragma mark - draw Path
 - (void)drawPath {
     self.testPointArray = [[NSMutableArray alloc] initWithCapacity:60];
-    CGFloat baseY = 30;
-    CGFloat addY = 80;
+    CGFloat baseY = 30*HEIGHT_SCALE;
+    CGFloat addY = 80*HEIGHT_SCALE;
     CGFloat y;
-    for(float x=5;x<320;x = x+5){
+    for(float x=5;x<280*WITH_SCALE;x = x+5){
         y = baseY + sin(x/180*3.14)*100+120.0;
         UIView *point = [[UIView alloc] initWithFrame:CGRectMake(x, y, 1, 1)];
         point.backgroundColor = [UIColor colorWithHex:Color_L1];

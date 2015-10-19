@@ -35,6 +35,8 @@
 
 - (void)setUpData{
     self.currentLevel = [[UserDataCenter sharedInstance] gameLevel];
+    [[UserDataCenter sharedInstance] setUserTopLevel:3];//mock
+    self.currentLevel = 3;//mock
 }
 
 - (void)setUpView{
@@ -61,11 +63,11 @@
             NSString *className = [NSString stringWithFormat:@"ZHPathView%ld",level];
             Class nextGameViewCls = NSClassFromString(className);
             if ([nextGameViewCls isSubclassOfClass:[ZHPathBaseView class]]) {
+                [self.currentGameView removeFromSuperview];
                 self.currentGameView = [[nextGameViewCls alloc] initWithFrame:self.view.bounds];
                 self.currentGameView.delegate = self;
                 
                 self.currentLevel = level;
-                [self.currentGameView removeFromSuperview];
                 [self.view addSubview:self.currentGameView];
                 [self.view bringSubviewToFront:self.navBar];
             }else{
@@ -108,7 +110,7 @@
         
         //tipsBtn
         UIButton *tipsBtn = [ZHIconFont iconFontButtonWithType:UIButtonTypeCustom fontSize:24 text:@"magic"];
-        tipsBtn.frame = CGRectMake(_navBar.frame.size.width - 80, 0, 40, 40);
+        tipsBtn.frame = CGRectMake(_navBar.frame.size.width - 40, 0, 40, 40);
         [tipsBtn addTarget:self action:@selector(tipsBtnClick:) forControlEvents:UIControlEventTouchUpInside];
         [_navBar addSubview:tipsBtn];
     }

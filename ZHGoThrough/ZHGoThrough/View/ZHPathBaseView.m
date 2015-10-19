@@ -17,6 +17,17 @@
 @implementation ZHPathBaseView
 
 #pragma mark - getter
+
+- (instancetype)initWithFrame:(CGRect)frame{
+    self = [super initWithFrame:frame];
+    if (self) {
+        
+        self.isEnd = NO;
+    }
+    
+    return self;
+}
+
 - (UIView *)movePointView{
     if (_movePointView == nil) {
         _movePointView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.MOVEVIEW_RADIO, self.MOVEVIEW_RADIO)];

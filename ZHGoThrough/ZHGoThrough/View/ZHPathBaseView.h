@@ -34,6 +34,5 @@
 @property (nonatomic) BOOL                                  isEnd;
 
 
-- (void)handelMoveViewPan:(UIPanGestureRecognizer *)gestureRecognizer;
 
 @end

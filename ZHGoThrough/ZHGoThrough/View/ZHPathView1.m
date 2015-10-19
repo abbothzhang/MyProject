@@ -24,8 +24,8 @@
     self.MOVEVIEW_RADIO = 20;
     self.endPointCenter = CGPointMake(self.frame.size.width/2, 400);
     self.ENDVIEW_RADIO = 60;
-    
-    self.isEnd = NO;
+    [self addSubview:self.movePointView];
+    [self addSubview:self.endPointView];
 }
 
 - (void)setUpView{
